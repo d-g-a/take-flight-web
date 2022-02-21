@@ -11,6 +11,7 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 import { AnimationTest } from "../components/AnimationTest";
+import { ScrollTest } from '../components/ScrollTest';
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -98,6 +99,9 @@ const IndexPage = (props) => {
       />
       <Container>
         <AnimationTest />
+        <hr />
+        
+        <ScrollTest />
         {/* <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList
