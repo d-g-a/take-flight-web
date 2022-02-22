@@ -6,10 +6,11 @@ export const AnimationTestStyled = styled.div`
    height: auto;
    width: 100vw;
    background-color: black;
-   
-   .polymorph{
-       //background-image: url('https://images.squarespace-cdn.com/content/v1/58554c5037c5814553ee34a8/1482015174020-YV4RL0FYL2B4NB7ZHF9D/15002252_1807984276140132_6753659464503816101_o.jpg?format=1500w%22');
-       //fill: black;
+   background-image: url('https://images.squarespace-cdn.com/content/v1/58554c5037c5814553ee34a8/1482015174020-YV4RL0FYL2B4NB7ZHF9D/15002252_1807984276140132_6753659464503816101_o.jpg?format=1500w%22');
+   background-repeat: no-repeat;
+   background-position: 100vw;
+   .morph{
+       fill: white;
    }
 
    #cta, #cta2 {

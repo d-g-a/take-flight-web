@@ -1,18 +1,19 @@
 import React from "react";
-import Header from "./header";
+import Header from "../header";
 
-import "../styles/layout.css";
-import * as styles from "./layout.module.css";
+//import "../styles/layout.css";
+//import * as styles from "./layout.module.css";
+import { LayoutStyled } from "./style";
 
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
-  <>
+  <LayoutStyled>
     {/* <Header
       siteTitle={siteTitle}
       onHideNav={onHideNav}
       onShowNav={onShowNav}
       showNav={showNav}
     /> */}
-    <div className={styles.content}>{children}</div>
+    <div>{children}</div>
     {/* <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
@@ -22,7 +23,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
         </div>
       </div>
     </footer> */}
-  </>
+  </LayoutStyled>
 );
 
 export default Layout;

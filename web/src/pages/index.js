@@ -5,7 +5,7 @@ import {
   filterOutDocsWithoutSlugs,
   mapEdgesToNodes,
 } from "../lib/helpers";
-import BlogPostPreviewList from "../components/blog-post-preview-list";
+//import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
@@ -96,8 +96,12 @@ const IndexPage = (props) => {
         description={site.description}
         keywords={site.keywords}
       />
-      <Container>
+      <Container style>
         <Link to="/animation">AnimationTest Page</Link>
+        <Link to="/scroll">Scroll Page</Link>
+        <Link to="/teachers">Teachers Scroll</Link>
+        <Link to="/future-events">Future Events</Link>
+        <Link to="marquee">Marquee Test</Link>
         {/* <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList
