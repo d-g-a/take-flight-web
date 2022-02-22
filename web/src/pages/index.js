@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import {
   filterOutDocsPublishedInTheFuture,
   filterOutDocsWithoutSlugs,
@@ -97,7 +97,7 @@ const IndexPage = (props) => {
         keywords={site.keywords}
       />
       <Container>
-        <AnimationTest />
+        <Link to="/animation">AnimationTest Page</Link>
         {/* <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList

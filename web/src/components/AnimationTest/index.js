@@ -1,6 +1,7 @@
 import React from "react";
 import { AnimationTestStyled } from "./style";
 import anime from "animejs/lib/anime.es.js";
+import takeFlight from "../../images/takeFlight.jpg";
 
 export const AnimationTest = () => {
   const buttonOnClick = () => {
@@ -129,8 +130,28 @@ export const AnimationTest = () => {
           Click Me
         </button>
         <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1920 1080">
+          {/* <defs>
+          <pattern
+            id="img1"
+            patternUnits="userSpaceOnUse"
+            viewBox="0 0 1920 1080"
+          >
+            <image href={takeFlight} x="0" y="0" viewBox="0 0 1920 1080" />
+          </pattern>
+        </defs> */}
+          <defs>
+            <pattern
+              id="img1"
+              patternUnits="userSpaceOnUse"
+              width="1920"
+              height="1080"
+            >
+              <image href={takeFlight} x="0" y="0" />
+            </pattern>
+          </defs>
           <path
             class="polymorph"
+            fill="url(#img1)"
             d={`M1718,382.1c12.2-22.7,34.2-60.6,18.1-86.1c-3.8-6.1-9.5-10.5-15.9-13c-11.4-4.5-61-2-70.9,6.7
             c-14.4,12.7,166.3,34.9,162.8,52.7c-5.5,27.6-14.4,55-35.2,75.1c-5,4.9-30.2,28.2-37.4,18.9c-5-6.5,2.1-18.2,4.6-24.4
             c10.3-25.6,19.3-47.4,19.3-75.2c-2.3-13.2-12-26-25.3-27.4c-17."M1638.8,552.4c12.2-22.7,34.2-60.6,18.1-86.1c-3.8-6.1-9.5-10.5-15.9-13c-11.4-4.5-25-3.1-34.9,5.6
@@ -263,7 +284,7 @@ export const AnimationTest = () => {
           />
         </svg>
       </div>
-      <div></div>
+      <div>{/* <img src={takeFlight} alt="take flight"/> */}</div>
     </AnimationTestStyled>
   );
 };
