@@ -7,10 +7,11 @@ export const MarqueeStyled = styled.div`
   -webkit-text-stroke: 5px blue;
   color: white;
 
+
   .marquee {
     margin: 0 auto;
-    width: 100vw; // or 100% inside a container
-    height: 600px;
+    width: 100%; // or 100% inside a container
+    height: 120px;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
@@ -39,8 +40,8 @@ export const MarqueeStyled = styled.div`
   .marquee__content {
     width: 300% !important;
     display: flex;
-    //line-height: 30px;
-    animation: marquee 10s linear infinite forwards;
+    //line-height: 10px;
+    animation: marquee 60s linear infinite forwards;
     &:hover {
       animation-play-state: paused;
     }
@@ -54,11 +55,11 @@ export const MarqueeStyled = styled.div`
 
     /* reset list */
     list-style: none;
-    padding: 0 20px;
+    //padding: 0 20px;
     margin: 0 20px;
-    li{
-        margin-left: 100px;
-    }
+    /* li{
+        margin-left: 10px;
+    } */
   }
   @keyframes marquee {
     0% {

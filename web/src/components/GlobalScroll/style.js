@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ScrollTestStyled = styled.div`
+export const GlobalScrollStyled = styled.div`
 
 font-family: Arial, Helvetica, sans-serif;
 text-align: center;
@@ -22,12 +22,15 @@ font-size: 64px;
   }
 
   .blue{
-    background-color: blue;
+    background-color: black;
     color: whitesmoke;
     width: 100%;
     height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
-        width: 50vw;
+        width: 90vw;
         color: white;
     }
   }

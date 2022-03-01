@@ -5,13 +5,13 @@ export const AnimationTestStyled = styled.div`
    margin: 0;
    height: auto;
    width: 100vw;
-   background-color: black;
-   background-image: url('https://images.squarespace-cdn.com/content/v1/58554c5037c5814553ee34a8/1482015174020-YV4RL0FYL2B4NB7ZHF9D/15002252_1807984276140132_6753659464503816101_o.jpg?format=1500w%22');
-   background-repeat: no-repeat;
-   background-position: 100vw;
-   .morph{
+  // background-color: black;
+   background-image: url('https://i.pinimg.com/originals/b8/92/b0/b892b08f0b748c27d861bfd1ca761282.jpg');
+   background-repeat: repeat;
+   //background-position: 100vw;
+   /* .morph{
        fill: white;
-   }
+   } */
 
    #cta, #cta2 {
        //position: absolute;

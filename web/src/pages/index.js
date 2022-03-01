@@ -97,11 +97,11 @@ const IndexPage = (props) => {
         keywords={site.keywords}
       />
       <Container style>
-        <Link to="/animation">AnimationTest Page</Link>
-        <Link to="/scroll">Scroll Page</Link>
+        {/* <Link to="/animation">AnimationTest Page</Link>
         <Link to="/teachers">Teachers Scroll</Link>
         <Link to="/future-events">Future Events</Link>
         <Link to="marquee">Marquee Test</Link>
+        <Link to="/home">Home</Link> */}
         {/* <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList
@@ -110,6 +110,7 @@ const IndexPage = (props) => {
             browseMoreHref="/archive/"
           />
         )} */}
+        <AnimationTest />
       </Container>
     </Layout>
   );

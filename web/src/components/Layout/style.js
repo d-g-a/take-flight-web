@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const LayoutStyled = styled.div`
 
-
+margin: 0;
+padding: 0;
 a{
     display: flex;
     flex-direction: column;
@@ -14,5 +15,6 @@ a{
     font-size: 64px;
 }
 a:hover{
-    color: blue;;
+    color: blue;
+}
 `;

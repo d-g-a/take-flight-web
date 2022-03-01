@@ -1,7 +1,7 @@
 import React from "react";
 import { GlobalScroll } from "../components/GlobalScroll";
 
-const scroll = () => {
+const Home = () => {
   return (
     <div>
       <GlobalScroll />
@@ -9,4 +9,4 @@ const scroll = () => {
   );
 };
 
-export default scroll;
+export default Home;

@@ -1,7 +1,9 @@
 import React from "react";
+import { navigate } from 'gatsby';
 import { AnimationTestStyled } from "./style";
 import anime from "animejs/lib/anime.es.js";
 import takeFlight from "../../images/takeFlight.jpg";
+import psychTest from '../../images/psychTest.png'
 
 export const AnimationTest = () => {
   const buttonOnClick = () => {
@@ -75,32 +77,34 @@ export const AnimationTest = () => {
            M1303.1,331c16.4,0,29.7,13.3,29.7,29.7s-13.3,29.7-29.7,29.7c-16.4,0-29.7-13.3-29.7-29.7S1286.6,331,1303.1,331z`,
         },
       ],
-      duration: 2000,
+      duration: 3000,
       loop: true,
       left: "240px",
       backgroundColor: "#FFF",
       borderRadius: ["0%", "50%"],
       easing: "easeInOutQuad",
     });
+    //setTimeout(() => navigate('/home'), 3000)
+  
   };
 
   return (
     <AnimationTestStyled>
       <div className="takeFlight">
-        <button id="cta" onClick={() => buttonOnClick()}>
+        {/* <button id="cta" onClick={() => buttonOnClick()}>
           Click Me
-        </button>
-        <svg x="0px" y="0px" viewBox="0 0 1920 1080">
-          {/* <defs>
+        </button> */}
+        <svg x="0px" y="0px" viewBox="0 0 1920 1080" onMouseEnter={() => buttonOnClick()}>
+          <defs>
             <pattern
               id="img1"
               patternUnits="userSpaceOnUse"
               width="1920"
               height="1080"
             >
-              <image href={takeFlight} x="0" y="0" />
+              <image href={psychTest} x="0" y="0" />
             </pattern>
-          </defs> */}
+          </defs>
           <path
             class="morph"
             fill="url(#img1)"
