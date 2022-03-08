@@ -20,6 +20,12 @@ export const FloatingFooterStyled = styled.div`
       border: none;
       cursor: pointer;
     }
+
+    a{ 
+      text-decoration: none;
+      color: #f2e7d7;
+    }
+    
     .events {
       width: auto;
       background-color: #4814cc;

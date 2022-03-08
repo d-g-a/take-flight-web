@@ -4,11 +4,13 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import takeFlightLog from "../../images/Logotipo_SVG_test.svg";
 import { Landing } from "../Landing";
-import { EventsPage } from "../EventsPage";
-import { FloatingFooter } from '../FloatingFooter';
+import { ExperiencePage } from "../ExperiencePage";
+import { FloatingFooter } from "../FloatingFooter";
+import isotipo from '../../images/isotipo.svg'
+import { TeachersPage } from "../TeachersPage";
+
 
 export const GlobalScroll = () => {
-  
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".panel:not(:last-child)", {
@@ -28,28 +30,34 @@ export const GlobalScroll = () => {
 
   return (
     <FloatingFooter>
-
-   
-    <GlobalScrollStyled>
-      <div id="container">
-        <div className="description panel blue">
-          <div>
-            <Landing />
+      <GlobalScrollStyled>
+        <div id="container">
+          <div className="description panel blue">
+            <div>
+              <Landing />
+            </div>
           </div>
+          <section className="panel red">
+            <div>
+            <ExperiencePage />
+
+            </div>
+
+          </section>
+          <section className="panel orange">
+            <TeachersPage />
+          </section>
+          <section className="panel purple">
+            <ul>
+              <li><a>YOUTUBE</a></li>
+              <li><a>INSTAGRAM</a></li>
+              <li><a>HELLO@TAKEFLIGHT.COM</a></li>
+              <li><img src={isotipo} alt="Isotipo" /></li>
+            </ul>
+
+          </section>
         </div>
-        <section className="panel red">
-          <EventsPage />
-        </section>
-        <section className="panel orange">
-          <h1>TEACHERS</h1>
-          <img src={takeFlightLog} alt="logo" />
-        </section>
-        <section className="panel purple">
-          <h1>FOOTER</h1>
-          <img src={takeFlightLog} alt="logo" />
-        </section>
-      </div>
-    </GlobalScrollStyled>
+      </GlobalScrollStyled>
     </FloatingFooter>
   );
 };

@@ -16,9 +16,21 @@ align-items: center;
 
 
 .TakeFlight3D{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     height: 70vh;
+
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
     img{
-        width: 80vw;
+        width: 90vw;
     }
 }
 `;

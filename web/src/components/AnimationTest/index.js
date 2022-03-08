@@ -91,10 +91,7 @@ export const AnimationTest = () => {
   return (
     <AnimationTestStyled>
       <div className="takeFlight">
-        {/* <button id="cta" onClick={() => buttonOnClick()}>
-          Click Me
-        </button> */}
-        <svg x="0px" y="0px" viewBox="0 0 1920 1080" onMouseEnter={() => buttonOnClick()}>
+        <svg x="0px" y="0px" viewBox="0 0 1920 1080" onMouseEnter={() => buttonOnClick()} onClick={() => navigate('/home')}>
           <defs>
             <pattern
               id="img1"

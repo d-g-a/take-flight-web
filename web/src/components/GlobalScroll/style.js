@@ -36,9 +36,9 @@ font-size: 64px;
   }
 
   .red {
-    background-color: red;
+    background-color: #F2E7D7;
     color: whitesmoke;
-    width: 100%;
+    width: 100vw;
     height: 100%;
 
     img{
@@ -48,8 +48,8 @@ font-size: 64px;
   }
 
   .orange {
-    background-color: orange;
-    color: black;
+    background-color: #000;
+    color: white;
     width: 100%;
     height: 100%;
     img{
@@ -58,12 +58,19 @@ font-size: 64px;
   }
 
   .purple {
-    background-color: purple;
+    background-color: #04A025;
     color: white;
     width: 100%;
     height: 100%;
+    ul{
+      list-style: none;
+      li{
+        margin: 50px 0;
+      }
+
+    }
     img{
-        width: 50vw;
+      width: 160px;
     }
   }
 `;
