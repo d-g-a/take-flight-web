@@ -6,6 +6,12 @@ height: auto;
 margin: 0;
 padding: 0;
 font-size: 16px;
+width: 100vw;
+height: auto ;
+text-align: center ;
+margin: 0;
+-webkit-overflow-scrolling: touch;
+  font-family: "Avenir", sans-serif, Arial;
 
 .nav {
   position: sticky;
@@ -13,21 +19,22 @@ font-size: 16px;
   z-index: 9999;
   width: 100%;
   height: 75px;
-  background-color: #021c53;
-  color: white;
+  background-color: #F2E7D7;
+  color: black;
   text-align: center;
+  border: 1px solid black ;
 }
 
 .intro {
   color: white;
-  height: auto;
+  height: 75vh;
   width: 100%;
   text-align: center;
 }
 
 .today-header {
   background: #f4f4f4;
-  height: auto;
+  height: 75px;
   width: 100%;
   text-align: center;
   cursor:pointer;
@@ -41,25 +48,40 @@ font-size: 16px;
 
 .tomorrow-header {
   background: #cecece;
-  height: auto;
+  height: 75px;
   width: 100%;
   text-align: center;
   cursor:pointer;
 }
 
 .tomorrow-content {
-  height: auto;
+  height: 800px;
   text-align: center;
 }
 
 .sticky-today {
   position: absolute;
-  bottom: 75px;
+  bottom: 150px;
 }
 .sticky-tomorrow {
   position: absolute;
+  bottom: 75px;
+}
+
+.sticky-take-fligt{
+  position: absolute;
   bottom: 0px;
 }
+
+.take-flight-header{
+  background: #f4f4f4;
+  height: 75px;
+  width: 100%;
+  text-align: center;
+  cursor:pointer;
+}
+
+
 
 
 .footer {
@@ -83,6 +105,7 @@ font-size: 16px;
 .green {
   background-color: #28a92b;
 }
+
 
 
 `;

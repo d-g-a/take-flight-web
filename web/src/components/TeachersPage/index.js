@@ -1,12 +1,14 @@
 import React from 'react'
 import {TeacherPageStyled} from './style';
-import { TeacherScrollTwo } from '../TeachersScrollTwo'
+import { TeachersScrollTwo } from '../TeachersScrollTwo'
+import { TeachersScroll } from '../TeachersScroll';
 
 export const TeachersPage = () => {
   return (
     <TeacherPageStyled>
          <h1>TEACHERS</h1>
-            <TeacherScrollTwo />
+         <TeachersScroll className="TeachersScroll" />
+            
     </TeacherPageStyled>
   )
 }

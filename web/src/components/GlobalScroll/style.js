@@ -8,8 +8,8 @@ font-size: 64px;
 
 
   #container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 300vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,10 +22,10 @@ font-size: 64px;
   }
 
   .blue{
-    background-color: black;
-    color: whitesmoke;
+    //background-color: black;
+    //color: whitesmoke;
     width: 100%;
-    height: 100%; 
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

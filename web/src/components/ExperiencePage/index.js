@@ -7,8 +7,8 @@ export const ExperiencePage = () => {
   return (
     <EventsPageStyled>
       <div className="Content">
-        <h2>EXPERIENCE</h2>
-        <p>
+        {/* <h2>EXPERIENCE</h2> */}
+        {/* <p>
           Take Flight in an immersive dance experience like no other. Dancers
           gather from all over the world, under one roof, and immerse themselves
           in an intensive training program, with the world’s leading, and most
@@ -18,13 +18,13 @@ export const ExperiencePage = () => {
         Highlight
           the upcoming events Take Flight Immersive Take Flight Intensive Take
           Flight Tour
-        </p>
-        {/* <ExperienceTabs /> */}
+        </p> */}
+        <ExperienceTabs />
       </div>
 
-      <div className="Vertical">
+      {/* <div className="Vertical">
         <MarqueeVertical className="Marquee" />
-      </div>
+      </div> */}
     </EventsPageStyled>
   );
 };

@@ -42,20 +42,18 @@ export const GlobalScroll = () => {
             <ExperiencePage />
 
             </div>
-
           </section>
-          <section className="panel orange">
+          {/* <section className="panel orange">
             <TeachersPage />
-          </section>
-          <section className="panel purple">
+          </section> */}
+          {/* <section className="panel purple">
             <ul>
               <li><a>YOUTUBE</a></li>
               <li><a>INSTAGRAM</a></li>
               <li><a>HELLO@TAKEFLIGHT.COM</a></li>
               <li><img src={isotipo} alt="Isotipo" /></li>
             </ul>
-
-          </section>
+          </section> */}
         </div>
       </GlobalScrollStyled>
     </FloatingFooter>

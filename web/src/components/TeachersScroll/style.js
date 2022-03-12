@@ -1,25 +1,27 @@
 import styled from 'styled-components';
 
 export const TeachersScrollStyled = styled.div`
-* {
+/* * {
 	box-sizing: border-box;
-}
-body {
+} */
+
+/* body {
 	background: #111;
 	min-height: 100vh;
 	padding: 0;
 	margin: 0;
-}
-.gallery {
+} */
+
+/* .gallery {
 	position: absolute;
-	width: 100%;
-	height: 100vh;
+	//width: 100%;
+	//height: 100vh;
 	overflow: hidden;
-}
+} */
 
 .cards {
 	position: absolute;
-	width: 14rem;
+	width: 15rem;
 	height: 18rem;
 	top: 40%;
 	left: 50%;
@@ -30,7 +32,7 @@ body {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	width: 30rem;
+	width: 20rem;
 	height: 30rem;
 	text-align: center;
 	line-height: 18rem;
@@ -40,7 +42,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-radius: 0.8rem;
+	border-radius: 1rem;
 }
 
 .profile{
@@ -58,7 +60,7 @@ body {
     color: white;
   }
   img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   }
 }
