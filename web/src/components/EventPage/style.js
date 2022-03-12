@@ -1,0 +1,80 @@
+import styled from "styled-components";
+
+export const EventPageWrapper = styled.div`
+  width: 100vw;
+  height: 150vh;
+  //max-height: 150vh;
+  background-color: #4814cc;
+  color: #F2E7D7;
+  .EventDetails {
+    margin: 25px;
+    height: auto;
+    h2 {
+      text-transform: uppercase;
+      font-size: 80px;
+    }
+  }
+  .GetTicketsButton{
+    border-radius: 20px;
+    width: 200px;
+    background-color: #04A025;
+    border: none;
+    padding: 5px 10px;
+    a{
+      text-decoration: none;
+        color: white
+    }
+  }
+
+
+`;
+
+export const SecondaryContent = styled.div`
+  font-family: "Signika Negative", sans-serif; 
+  font-weight: 300;
+  height: 150vh;
+  text-align: center;
+  background-color: #4814cc;
+  overflow: hidden;
+
+.delayed-section {
+  position: absolute;
+  width: 30vw;
+  height: 80%;
+  overflow: hidden;
+}
+.delayed-section .inner-container {
+  will-change: transform;
+  overflow: hidden;
+  
+}
+.delayed-section img {
+  max-width: 100%;
+  will-change: transform;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#del1 {
+  top: ${props => props.heightDel1};
+  left: 2vw;
+}
+#del2 {
+  top: ${props => props.heightDel2};
+  left: 70vw;
+}
+#del3 {
+  top: ${props => props.heightDel3};
+  left: 30vw;
+}
+#del4 {
+  top: ${props => props.heightDel4};
+  left: 16vw;
+}
+#del5 {
+  top: ${props => props.heightDel5};
+  left: 50vw;
+}
+
+`;

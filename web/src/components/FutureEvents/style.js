@@ -1,30 +1,22 @@
 import styled from "styled-components";
 
 export const FutureEventsStyled = styled.div`
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    background-color: #4814CC;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 64px;
-    text-transform: uppercase;
+  width: 100%;
+  height: 100%;
 
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+  color: white;
+  background-color: #4814cc;
+  //margin: 20px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
 
-    a{
-        text-decoration: none;
-        color: #F2E7D7;
-    }
+  .tabSelector {
+  }
 
-    a:hover{
-        color: #04A025;
-    }
-
-
-`;  
+  .individualTab {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+  }
+`;

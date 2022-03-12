@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const MarqueeStyled = styled.div`
+export const DateMarqueeWrapper = styled.div`
   font-size: 64px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  -webkit-text-stroke: 5px blue;
+  font-weight: 400;
   color: white;
+  margin: 0 10px;
 
-
+  
   .marquee {
     margin: 0 auto;
     width: 100%; // or 100% inside a container
@@ -16,8 +16,8 @@ export const MarqueeStyled = styled.div`
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    background-color: black;
-
+    
+    
     &:before,
     &:after {
       position: relative;
@@ -36,8 +36,12 @@ export const MarqueeStyled = styled.div`
       background: linear-gradient(to left, white 5%, transparent 100%);
     }
   }
-
+  
   .marquee__content {
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
     width: 300% !important;
     display: flex;
     //line-height: 10px;
@@ -51,7 +55,6 @@ export const MarqueeStyled = styled.div`
     display: flex;
     justify-content: space-around;
     width: 50%;
-    
 
     /* reset list */
     list-style: none;
@@ -60,6 +63,10 @@ export const MarqueeStyled = styled.div`
     /* li{
         margin-left: 10px;
     } */
+
+    li{
+      margin: 0 10px;
+    }
   }
   @keyframes marquee {
     0% {
