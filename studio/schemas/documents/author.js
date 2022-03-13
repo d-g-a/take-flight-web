@@ -1,7 +1,7 @@
 export default {
   name: "author",
   type: "document",
-  title: "Author",
+  title: "Teachers",
   fields: [
     {
       name: "name",
@@ -9,32 +9,20 @@ export default {
       title: "Name",
     },
     {
-      name: "slug",
-      type: "slug",
-      title: "Slug",
-      description:
-        "Some frontends will require a slug to be set to be able to show the person",
-      options: {
-        source: "name",
-        maxLength: 96,
-      },
+      name: "handle",
+      type: "string",
+      title: "Instagram handle",
+      description: "Please write the IG handle without @"
+    },
+    {
+      name: "nationality",
+      type: "string",
+      title: "Nationality",
     },
     {
       name: "image",
       type: "mainImage",
       title: "Image",
     },
-    {
-      name: "bio",
-      type: "bioPortableText",
-      title: "Biography",
-    },
   ],
-  preview: {
-    select: {
-      title: "name",
-      subtitle: "slug.current",
-      media: "image",
-    },
-  },
 };

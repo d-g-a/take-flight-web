@@ -13,10 +13,4 @@ export default {
       ],
     },
   ],
-  preview: {
-    select: {
-      title: "author.name",
-      media: "author.image.asset",
-    },
-  },
 };

@@ -1,13 +1,13 @@
 import React from "react";
-import { TeacherGliderStyled } from "./style";
+import { TeacherGliderStyled, CardsWrappwer } from "./style";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import testImage from "../../images/Zacc_Milne_Take_Flight_Teacher.jpg";
+export const TeacherGlider = ({ teachers }) => {
 
-export const TeacherGlider = (props) => {
+ console.log(teachers)
   return (
-    <TeacherGliderStyled >
+    <TeacherGliderStyled>
       <Carousel
         additionalTransfrom={0}
         arrows
@@ -55,40 +55,14 @@ export const TeacherGlider = (props) => {
         slidesToSlide={1}
         swipeable
       >
-        <div className="card">
-          <img src={testImage} alt="test"/>
-          <h3>Zac Milne</h3>
-          <h4>@ig_handle</h4>
-          <h5>Nationality</h5>
-        </div>
-        <div className="card">
-          <img src={testImage} alt="test"/>
-          <h3>Zac Milne</h3>
-          <h4>@ig_handle</h4>
-          <h5>Nationality</h5>
-        </div>
-        <div className="card">
-          <img src={testImage} alt="test"/>
-          <h3>Zac Milne</h3>
-          <h4>@ig_handle</h4>
-          <h5>Nationality</h5>
-        </div>
-        <div className="card">
-          <img src={testImage} alt="test"/>
-          <h3>Zac Milne</h3>
-        </div>
-        <div className="card">
-          <img src={testImage} alt="test"/>
-          <h3>Zac Milne</h3>
-        </div>
-        <div className="card">
-          <img src={testImage} alt="test"/>
-          <h3>Zac Milne</h3>
-        </div>
-        <div className="card">
-          <img src={testImage} alt="test"/>
-          <h3>Zac Milne</h3>
-        </div>
+        {teachers?.map((teacher) => (
+          <CardsWrappwer className="card">
+            <img src={teacher?.author?.image?.asset?.url} alt={teacher?.name} />
+            <h3>{teacher?.author?.name}</h3>
+            <h4>@{teacher?.author?.handle}</h4>
+            <h5>{teacher?.author?.nationality}</h5>
+          </CardsWrappwer>
+        ))}
       </Carousel>
     </TeacherGliderStyled>
   );

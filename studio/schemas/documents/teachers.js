@@ -14,6 +14,16 @@ export default {
         title: "Description",
 
       },
+      {
+        name: "authors",
+        title: "Authors",
+        type: "array",
+        of: [
+          {
+            type: "authorReference",
+          },
+        ],
+      },
     ],
   };
   
