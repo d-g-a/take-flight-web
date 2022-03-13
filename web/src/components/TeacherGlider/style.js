@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 
 export const TeacherGliderStyled = styled.div`
-    @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
-    @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
-
-background-color: red ;
-color: white;
+ .card{
+     border-radius: 20px;
+     img{border-radius: 20px;}
+     text-align: center;
+     color: black;
+ }
 `;

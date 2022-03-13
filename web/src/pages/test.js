@@ -9,7 +9,7 @@ import { ExperiencePage } from '../components/ExperiencePage'
 
 const test = () => {
   return (
-    <div><Landing /></div>
+    <div><TeachersPage /></div>
   )
 }
 

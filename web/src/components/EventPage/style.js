@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const EventPageWrapper = styled.div`
   width: 100vw;
-  height: 150vh;
+  height: 140vh;
   //max-height: 150vh;
-  background-color: #4814cc;
+  background-color: black;
   color: #F2E7D7;
   .EventDetails {
     margin: 25px;
@@ -32,10 +32,11 @@ export const EventPageWrapper = styled.div`
 export const SecondaryContent = styled.div`
   font-family: "Signika Negative", sans-serif; 
   font-weight: 300;
-  height: 150vh;
+  height: 140vh;
   text-align: center;
-  background-color: #4814cc;
+  background-color: black;
   overflow: hidden;
+  padding: 20px;
 
 .delayed-section {
   position: absolute;
