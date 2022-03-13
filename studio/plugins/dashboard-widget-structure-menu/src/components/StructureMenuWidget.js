@@ -3,7 +3,7 @@ import FolderIcon from "part:@sanity/base/folder-icon";
 import FileIcon from "part:@sanity/base/file-icon";
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./StructureMenuWidget.css";
+// import styles from "./StructureMenuWidget.css";
 
 function getIconComponent(item) {
   if (item.icon) return item.icon;

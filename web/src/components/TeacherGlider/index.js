@@ -4,8 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const TeacherGlider = ({ teachers }) => {
-
- console.log(teachers)
+  console.log(teachers);
   return (
     <TeacherGliderStyled>
       <Carousel

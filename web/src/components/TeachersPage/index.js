@@ -53,7 +53,7 @@ console.log(allTeachers)
       >
         {allTeachers?.map( (teachers) => {
           return(
-            <Tab eventKey={teachers.title}  title={teachers.title} tabClassName="individualTab" activeKey="team">
+            <Tab eventKey={teachers.title}  title={teachers.title} tabClassName="individualTab" activeKey={key}>
               <TeachersTemplate teachers={teachers} />
             </Tab>
           )

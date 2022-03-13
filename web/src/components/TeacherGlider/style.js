@@ -12,7 +12,7 @@ export const TeacherGliderStyled = styled.div`
 `;
 
 export const CardsWrappwer = styled.div`
-    border-radius: 20px;
+     border-radius: 20px;
      img{border-radius: 20px;}
      text-align: center;
      color: black;

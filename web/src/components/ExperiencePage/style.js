@@ -13,6 +13,7 @@ export const EventsPageStyled = styled.div`
     font-style: normal;
 color: black;
   text-transform: uppercase;
+  
   //align-items: flex-start;
 
   h2 {

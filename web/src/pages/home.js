@@ -1,11 +1,12 @@
 import React from "react";
 import { GlobalScroll } from "../components/GlobalScroll";
+import { Layout } from "../components/Layout";
 
 const Home = () => {
   return (
-    <div>
+    <Layout>
       <GlobalScroll />
-    </div>
+    </Layout>
   );
 };
 

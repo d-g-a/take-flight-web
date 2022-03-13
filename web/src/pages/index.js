@@ -6,8 +6,6 @@ import {
   mapEdgesToNodes,
 } from "../lib/helpers";
 //import BlogPostPreviewList from "../components/blog-post-preview-list";
-import Container from "../components/container";
-import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 import { AnimationTest } from "../components/AnimationTest";
@@ -68,20 +66,13 @@ export const query = graphql`
 const IndexPage = (props) => {
   const { data, errors } = props;
 
-  if (errors) {
-    return (
-      <Layout>
-        <GraphQLErrorList errors={errors} />
-      </Layout>
-    );
-  }
-
+ 
   const site = (data || {}).site;
-  const postNodes = (data || {}).posts
-    ? mapEdgesToNodes(data.posts)
-        .filter(filterOutDocsWithoutSlugs)
-        .filter(filterOutDocsPublishedInTheFuture)
-    : [];
+  // const postNodes = (data || {}).posts
+  //   ? mapEdgesToNodes(data.posts)
+  //       .filter(filterOutDocsWithoutSlugs)
+  //       .filter(filterOutDocsPublishedInTheFuture)
+  //   : [];
 
   if (!site) {
     throw new Error(
@@ -96,22 +87,8 @@ const IndexPage = (props) => {
         description={site.description}
         keywords={site.keywords}
       />
-      <Container style>
-        {/* <Link to="/animation">AnimationTest Page</Link>
-        <Link to="/teachers">Teachers Scroll</Link>
-        <Link to="/future-events">Future Events</Link>
-        <Link to="marquee">Marquee Test</Link>
-        <Link to="/home">Home</Link> */}
-        {/* <h1 hidden>Welcome to {site.title}</h1>
-        {postNodes && (
-          <BlogPostPreviewList
-            title="Latest blog posts"
-            nodes={postNodes}
-            browseMoreHref="/archive/"
-          />
-        )} */}
+  
         <AnimationTest />
-      </Container>
     </Layout>
   );
 };

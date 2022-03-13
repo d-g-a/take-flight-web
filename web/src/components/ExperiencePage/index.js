@@ -19,12 +19,13 @@ export const ExperiencePage = () => {
           the upcoming events Take Flight Immersive Take Flight Intensive Take
           Flight Tour
         </p> */}
-        <ExperienceTabs />
+        {/* <ExperienceTabs /> */}
+        Experiencie Page
       </div>
 
-      {/* <div className="Vertical">
+      <div className="Vertical">
         <MarqueeVertical className="Marquee" />
-      </div> */}
+      </div>
     </EventsPageStyled>
   );
 };
