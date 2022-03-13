@@ -4,20 +4,18 @@ export const DateMarqueeWrapper = styled.div`
   font-size: 64px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  color: white;
+  color: #f2e7d7;
   margin: 0 10px;
 
-  
   .marquee {
     margin: 0 auto;
     width: 100%; // or 100% inside a container
-    height: 120px;
+    height: 80px;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    
-    
+
     &:before,
     &:after {
       position: relative;
@@ -36,11 +34,14 @@ export const DateMarqueeWrapper = styled.div`
       background: linear-gradient(to left, white 5%, transparent 100%);
     }
   }
-  
+
   .marquee__content {
-    a{
+    a {
       text-decoration: none;
-      color: #fff;
+      color: #f2e7d7;
+    }
+    a:hover{
+      color: #4814cc;
     }
     width: 300% !important;
     display: flex;
@@ -64,7 +65,7 @@ export const DateMarqueeWrapper = styled.div`
         margin-left: 10px;
     } */
 
-    li{
+    li {
       margin: 0 10px;
     }
   }

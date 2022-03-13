@@ -8,7 +8,7 @@ export const FloatingFooter = ({ children }) => {
       {children}
       <footer>
         <button className="events"><Link to="/events">UPCOMING EVENTS</Link></button>
-        <button className="contact">CONTACT</button>
+        {/* <button className="contact">CONTACT</button> */}
       </footer>
     </FloatingFooterStyled>
   );

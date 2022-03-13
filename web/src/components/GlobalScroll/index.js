@@ -9,22 +9,22 @@ import { TeachersPage } from "../TeachersPage";
 import { Footer } from "../Footer"
 
 export const GlobalScroll = () => {
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   gsap.to(".panel:not(:last-child)", {
-  //     yPercent: -100,
-  //     ease: "none",
-  //     stagger: 0.5,
-  //     scrollTrigger: {
-  //       trigger: "#container",
-  //       start: "top top",
-  //       end: "+=500%",
-  //       scrub: true,
-  //       pin: true,
-  //     },
-  //   });
-  //   gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
-  // }, []);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".panel:not(:last-child)", {
+      yPercent: -100,
+      ease: "none",
+      stagger: 0.5,
+      scrollTrigger: {
+        trigger: "#container",
+        start: "top top",
+        end: "+=500%",
+        scrub: true,
+        pin: true,
+      },
+    });
+    gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
+  }, []);
 
   return (
     <FloatingFooter>
@@ -40,7 +40,7 @@ export const GlobalScroll = () => {
             <TeachersPage />
           </section>
           <section>
-          <Footer />
+            <Footer className="panel footer"/>
           </section>
         </div>
       </GlobalScrollStyled>

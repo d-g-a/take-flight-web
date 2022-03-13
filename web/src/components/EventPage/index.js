@@ -5,22 +5,9 @@ import { DateMarquee } from "../DateMarquee";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import sanityClient from "../../client";
-
 gsap.registerPlugin(ScrollTrigger);
 
-export const EventPage = ({ eventInfo, slug }) => {
-  const [eventData, setEventData] = useState(null);
-
-  // useEffect(()=>{
-  //   sanityClient.fetch(
-  //     `*[slug.current == $slug]{
-
-  //     }`
-  //   )
-
-  // },[])
-
+export const EventPage = ({ eventInfo }) => {
   useEffect(() => {
     const delSections = document.querySelectorAll(".delayed-section");
 
@@ -62,14 +49,16 @@ export const EventPage = ({ eventInfo, slug }) => {
     <EventPageWrapper>
       <DateMarquee eventDate={eventInfo.eventDate} ticketUrl={eventInfo.url} />
       <div className="EventDetails">
-        <h2>{eventInfo.title}</h2>
+        <div className="titleButton">
+          <h2>{eventInfo.title}</h2>
+          <button className="GetTicketsButton">
+            <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
+          </button>
+        </div>
         <p>{eventInfo.description}</p>
-        <button className="GetTicketsButton">
-          <a href={`https://${eventInfo.url}`}>Get Tickets</a>
-        </button>
       </div>
       <SecondaryContent
-        heightDel1={`${Math.floor(Math.random() * 50) + 70}vh`}
+        heightDel1={`${Math.floor(Math.random() * 50) + 75}vh`}
         heightDel2={`${Math.floor(Math.random() * 50) + 100}vh`}
         heightDel3={`${Math.floor(Math.random() * 50) + 120}vh`}
         heightDel4={`${Math.floor(Math.random() * 50) + 75}vh`}

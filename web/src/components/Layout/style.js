@@ -11,7 +11,6 @@ export const LayoutStyled = styled.div`
     color: black;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 64px;
   }
   a:hover {
     color: blue;

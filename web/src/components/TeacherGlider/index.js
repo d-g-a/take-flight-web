@@ -56,10 +56,23 @@ export const TeacherGlider = ({ teachers }) => {
       >
         {teachers?.map((teacher) => (
           <CardsWrappwer className="card">
-            <img src={teacher?.author?.image?.asset?.url} alt={teacher?.name} />
-            <h3>{teacher?.author?.name}</h3>
-            <h4>@{teacher?.author?.handle}</h4>
-            <h5>{teacher?.author?.nationality}</h5>
+            <div className="imageContainer">
+              <img
+                src={teacher?.author?.image?.asset?.url}
+                alt={teacher?.name}
+              />
+            </div>
+            <div className="infoContainer">
+              <h3>{teacher?.author?.name}</h3>
+              <h4>
+                <a
+                  href={`https://www.instagram.com/${teacher?.author?.handle}`}
+                >
+                  @{teacher?.author?.handle}
+                </a>
+              </h4>
+              <h5>{teacher?.author?.nationality}</h5>
+            </div>
           </CardsWrappwer>
         ))}
       </Carousel>

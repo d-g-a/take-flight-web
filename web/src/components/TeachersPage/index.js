@@ -10,6 +10,7 @@ import sanityClient from "../../client.js";
 
 export const TeachersPage = () => {
   const [allTeachers, setAllTeachers] = useState(null);
+  const [key, setKey] = useState(allTeachers?.[0]?.title);
 
   useEffect(() => {
     sanityClient
@@ -38,9 +39,8 @@ export const TeachersPage = () => {
       .catch(console.error);
   }, []);
 
-console.log(allTeachers)
+console.log(allTeachers?.[0]?.title)
 
-  const [key, setKey] = useState("home");
   return (
     <TeacherPageStyled>
       <h1>TEACHERS</h1>
@@ -49,11 +49,12 @@ console.log(allTeachers)
         activeKey={key}
         onSelect={(k) => setKey(k)}
         className="mb-3 tabSelector"
-        defaultActiveKey="/home"
+        defaultActiveKey={allTeachers?.[0]?.title}
       >
         {allTeachers?.map( (teachers) => {
+          console.log(teachers.title)
           return(
-            <Tab eventKey={teachers.title}  title={teachers.title} tabClassName="individualTab" activeKey={key}>
+            <Tab eventKey={teachers.title}  title={teachers.title} tabClassName="individualTab" >
               <TeachersTemplate teachers={teachers} />
             </Tab>
           )

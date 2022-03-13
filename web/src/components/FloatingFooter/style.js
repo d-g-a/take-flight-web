@@ -29,6 +29,7 @@ export const FloatingFooterStyled = styled.div`
     .events {
       width: auto;
       background-color: #4814cc;
+      font-size: 16px;
     }
 
     .contact {

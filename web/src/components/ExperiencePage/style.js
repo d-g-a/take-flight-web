@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const EventsPageStyled = styled.div`
   @import url("https://use.typekit.net/plk7yru.css");
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  height: 500vh;
+  padding: 20px 0 20px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,12 +13,14 @@ export const EventsPageStyled = styled.div`
     font-style: normal;
 color: black;
   text-transform: uppercase;
+  overflow: hidden;
   
   //align-items: flex-start;
 
   h2 {
     margin: 25px;
     padding: 0;
+    font-size: 80px;
   }
 
   p {

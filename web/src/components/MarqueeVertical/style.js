@@ -1,26 +1,31 @@
 import styled from "styled-components";
 
 export const MarqueeVerticalStyled = styled.div`
-  font-size: 64px;
+  font-size: 70px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
-  //-webkit-text-stroke: 5px #4814cc;
   color: white;
   transform: rotate(90deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
 
   .marquee {
     margin: 0 auto;
-    width: 120vw; // or 100% inside a container
-    height: 120px;
+    width: 60vw; // or 100% inside a container
+    height: 140px;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:before,
     &:after {
-      position: absolute;
       top: 0;
       width: 50px;
       height: 30px;
@@ -55,10 +60,10 @@ export const MarqueeVerticalStyled = styled.div`
     /* reset list */
     list-style: none;
     //padding: 0 20px;
-    margin: 20px 20px;
-    /* li{
-        margin-left: 10px;
-    } */
+     li{
+        margin: 0 10px;
+     }
+    
   }
   @keyframes marquee {
     0% {

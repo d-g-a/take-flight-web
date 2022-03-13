@@ -12,17 +12,30 @@ export const EventPageWrapper = styled.div`
     h2 {
       text-transform: uppercase;
       font-size: 80px;
+      margin: 0;
+    }
+    p{
+      padding-bottom: 20px;
+    }
+
+    .titleButton{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 20px;
     }
   }
   .GetTicketsButton{
     border-radius: 20px;
-    width: 200px;
+    width: 250px;
+    height: 60px;
     background-color: #04A025;
     border: none;
-    padding: 5px 10px;
+    margin-left: 100px;
     a{
       text-decoration: none;
-        color: white
+      color: #F2E7D7;
+      font-size: 32px;
     }
   }
 

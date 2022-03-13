@@ -5,7 +5,7 @@ import { LayoutStyled } from "./style";
 export const Layout = ({ children}) => (
   <LayoutStyled>
     <div>{children}</div>
-    <Footer />
+    {/* <Footer /> */}
   </LayoutStyled>
 );
 
