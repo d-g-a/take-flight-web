@@ -31,7 +31,7 @@ export const GlobalScrollStyled = styled.div`
     background-color: #f2e7d7;
     color: whitesmoke;
     width: 100vw;
-    height: 100%;
+    height: auto;
 
     img {
       width: 50vw;

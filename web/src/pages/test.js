@@ -6,10 +6,11 @@ import { TeachersPage } from '../components/TeachersPage'
 import { Landing } from '../components/Landing';
 import { HorizontalSlider } from '../components/HorizontalSlider'
 import { ExperiencePage } from '../components/ExperiencePage'
+import { AnimationTestTwo } from '../components/AnimationTestTwo'
 
 const test = () => {
   return (
-    <div><TeachersPage /></div>
+    <div><AnimationTestTwo /></div>
   )
 }
 

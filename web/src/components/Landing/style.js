@@ -51,6 +51,7 @@ align-items: center;
 .delayed-section img {
   max-width: 100%;
   will-change: transform;
+  border-radius: 20px;
 }
 
 #del1 {

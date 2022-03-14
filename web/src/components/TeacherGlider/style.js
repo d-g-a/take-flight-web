@@ -22,7 +22,7 @@ export const CardsWrappwer = styled.div`
     img {
       object-fit: cover;
       width: 100%;
-      height: 600px;
+      height: 650px;
       border-radius: 20px;
     }
 
@@ -32,7 +32,7 @@ export const CardsWrappwer = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: black;
-      width: 100%;
+      width: 101%;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
       margin-bottom: 10px;
