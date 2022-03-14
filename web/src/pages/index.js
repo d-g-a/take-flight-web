@@ -1,6 +1,7 @@
 import React from "react";
 import SEO from "../components/seo";
 import { AnimationTest } from "../components/AnimationTest";
+import { AnimationTestTwo } from "../components/AnimationTestTwo";
 import { Layout } from "../components/Layout";
 
 
@@ -16,7 +17,7 @@ const IndexPage = (props) => {
         //keywords={site.keywords}
       />
   
-        <AnimationTest />
+        <AnimationTestTwo />
     </Layout>
   );
 };
