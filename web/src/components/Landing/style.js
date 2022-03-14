@@ -8,7 +8,6 @@ height: 300vh;
 margin: 0;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
-
 display: flex;
 flex-direction: column;
 justify-content: space-between;

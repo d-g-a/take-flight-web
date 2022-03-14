@@ -26,8 +26,8 @@ export const EventPageWrapper = styled.div`
     }
   }
   .GetTicketsButton{
-    border-radius: 20px;
-    width: 250px;
+    border-radius: 40px;
+    width: 300px;
     height: 60px;
     background-color: #04A025;
     border: none;
@@ -36,6 +36,9 @@ export const EventPageWrapper = styled.div`
       text-decoration: none;
       color: #F2E7D7;
       font-size: 32px;
+    }
+    a:hover{
+      color: black;
     }
   }
 
@@ -68,6 +71,7 @@ export const SecondaryContent = styled.div`
   margin: 0;
   padding: 0;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 #del1 {

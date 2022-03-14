@@ -39,8 +39,6 @@ export const TeachersPage = () => {
       .catch(console.error);
   }, []);
 
-console.log(allTeachers?.[0]?.title)
-
   return (
     <TeacherPageStyled>
       <h1>TEACHERS</h1>
@@ -51,14 +49,18 @@ console.log(allTeachers?.[0]?.title)
         className="mb-3 tabSelector"
         defaultActiveKey={allTeachers?.[0]?.title}
       >
-        {allTeachers?.map( (teachers) => {
-          console.log(teachers.title)
-          return(
-            <Tab eventKey={teachers.title}  title={teachers.title} tabClassName="individualTab" >
+        {allTeachers?.map((teachers) => {
+          console.log(teachers.title);
+          return (
+            <Tab
+              eventKey={teachers.title}
+              title={teachers.title}
+              tabClassName="individualTab"
+            >
               <TeachersTemplate teachers={teachers} />
             </Tab>
-          )
-          })}
+          );
+        })}
       </Tabs>
     </TeacherPageStyled>
   );

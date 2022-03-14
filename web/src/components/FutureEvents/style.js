@@ -3,10 +3,8 @@ import styled from "styled-components";
 export const FutureEventsStyled = styled.div`
   width: 100%;
   height: 100%;
-
   color: white;
   background-color: black;
-  //margin: 20px;
   padding-top: 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
@@ -40,7 +38,6 @@ export const FutureEventsStyled = styled.div`
   }
 
   .nav-link {
-    color: #fff;
     margin: 0 10px;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
@@ -57,8 +54,8 @@ export const FutureEventsStyled = styled.div`
   .nav-link.active {
     color: #4814cc;
     background-color: #f2e7d7;
-    border-color: #dee2e6 #dee2e6 #f2e7d7;
-}
+    border-color: #f2e7d7;
+  } 
 
   ul {
     margin: 0;

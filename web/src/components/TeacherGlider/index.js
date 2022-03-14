@@ -10,9 +10,9 @@ export const TeacherGlider = ({ teachers }) => {
       <Carousel
         additionalTransfrom={0}
         arrows
-        autoPlaySpeed={3000}
+        autoPlaySpeed={2500}
         centerMode={false}
-        className=""
+        className="carousel"
         containerClass="container-with-dots"
         dotListClass=""
         draggable
@@ -61,18 +61,23 @@ export const TeacherGlider = ({ teachers }) => {
                 src={teacher?.author?.image?.asset?.url}
                 alt={teacher?.name}
               />
+              <div className="infoContainer">
+                <h3>{teacher?.author?.name}</h3>
+                <div className="infoRow">
+                  <p className="instagram">
+                    <a
+                      href={`https://www.instagram.com/${teacher?.author?.handle}`}
+                    >
+                      @{teacher?.author?.handle}
+                    </a>
+                  </p>
+                  <p className="nationality">{teacher?.author?.nationality}</p>
+
+                </div>
+
+              </div>
             </div>
-            <div className="infoContainer">
-              <h3>{teacher?.author?.name}</h3>
-              <h4>
-                <a
-                  href={`https://www.instagram.com/${teacher?.author?.handle}`}
-                >
-                  @{teacher?.author?.handle}
-                </a>
-              </h4>
-              <h5>{teacher?.author?.nationality}</h5>
-            </div>
+
           </CardsWrappwer>
         ))}
       </Carousel>
