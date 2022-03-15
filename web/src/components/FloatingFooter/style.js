@@ -5,6 +5,8 @@ export const FloatingFooterStyled = styled.div`
     position: fixed;
     bottom: 30px;
     left: 30px;
+   
+    
 
     button {
       border-radius: 25px;
@@ -23,12 +25,14 @@ export const FloatingFooterStyled = styled.div`
 
     a{ 
       text-decoration: none;
-      color: #f2e7d7;
+      color: #4814cc;
+      font-family: 'baikal', sans-serif;
+      font-weight: normal;
     }
     
     .events {
       width: auto;
-      background-color: #4814cc;
+      background-color: #f2e7d7;
       font-size: 16px;
     }
 

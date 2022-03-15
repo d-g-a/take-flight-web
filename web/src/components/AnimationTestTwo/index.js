@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import { AnimationTestTwoWrpper } from "./style";
 import { useWebPSupportCheck } from "react-use-webp-support-check";
 import TakeFlight from "../../images/Logotipo_SVG_test.svg";
-import takeFlightTexture from "../../images/take_flight_texture.png";
+import takeFlightTexture from "../../images/take_flight_texture_1.png";
+import takeFlightTextureTwo from "../../images/take_flight_texture_2.png";
+import takeFlightTextureThree from "../../images/take_flight_texture_3.png";
 import { navigate } from "gatsby";
 
 export const AnimationTestTwo = () => {
@@ -27,7 +29,7 @@ export const AnimationTestTwo = () => {
         const url = URL.createObjectURL(blob);
         const feImage = document.querySelector("#feimage");
 
-        feImage.setAttribute("href", url);
+        feImage.setAttribute("href", takeFlightTextureThree);
       });
 
     const info = document.getElementById("infotext");

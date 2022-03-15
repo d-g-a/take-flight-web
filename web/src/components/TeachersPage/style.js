@@ -49,4 +49,7 @@ export const TeacherPageStyled = styled.div`
    
   } 
 
+  ul{
+    margin-bottom: 0 !important;
+  }
 `;

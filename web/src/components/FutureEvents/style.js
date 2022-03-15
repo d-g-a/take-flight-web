@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import '../../static/fonts/fonts.css'
 
 export const FutureEventsStyled = styled.div`
   width: 100%;
@@ -6,7 +7,7 @@ export const FutureEventsStyled = styled.div`
   color: white;
   background-color: black;
   padding-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'baikal', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 
@@ -30,6 +31,8 @@ export const FutureEventsStyled = styled.div`
     text-align: center;
     padding-bottom: 20px;
     color: #f2e7d7;
+    font-family: 'baikal', sans-serif;
+    font-weight: bold;
   }
   .tabSelector {
     margin: 0;
@@ -50,6 +53,9 @@ export const FutureEventsStyled = styled.div`
     border-top-right-radius: 1em;
     margin: 0;
     color: #f2e7d7;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
   }
 
   .nav-link.active {
@@ -58,8 +64,8 @@ export const FutureEventsStyled = styled.div`
     border-color: #f2e7d7;
   } 
 
-  ul {
-    margin: 0;
+  ul{
+    margin-bottom: 0 !important;
   }
 
   .mb-3 {

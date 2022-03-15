@@ -11,9 +11,12 @@ export const ErrorPageWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'baikal', sans-serif;
   h1 {
     font-size: 80px;
     margin-bottom: 20px;
+    font-family: 'baikal', sans-serif;
+    font-weight: bold;
   }
   img {
     width: 100px;

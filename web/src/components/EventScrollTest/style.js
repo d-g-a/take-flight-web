@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import '../../static/fonts/fonts.css'
 
 export const EventScrollWrapper = styled.div`
 :root { font-size: 16px }
@@ -17,7 +18,7 @@ export const EventScrollWrapper = styled.div`
 
 body {
   overflow: hidden;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-family: 'baikal', sans-serif;
 }
 
 h1 { font-size: 5rem }
@@ -32,6 +33,7 @@ img {
   width: 100%;
   height: 50vh;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 ul {

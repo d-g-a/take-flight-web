@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import '../../static/fonts/fonts.css'
 
 export const MarqueeVerticalStyled = styled.div`
   font-size: 70px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'baikal', sans-serif;
   font-weight: 800;
   color: white;
   transform: rotate(90deg);

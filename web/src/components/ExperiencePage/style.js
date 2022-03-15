@@ -1,21 +1,25 @@
 import styled from "styled-components";
+import '../../static/fonts/fonts.css'
 
 export const EventsPageStyled = styled.div`
   @import url("https://use.typekit.net/plk7yru.css");
   height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 20px 0 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  font-family: acumin-pro-wide, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: black;
+  justify-content: center;
+
+  font-family: 'baikal', sans-serif;
+  font-weight: bold;
+
+
   text-transform: uppercase;
   overflow: hidden;
-  word-break:break-all;
-  white-space:normal;
+
+  background-color: #4814CC;
+  color: white;
 
 
   .tabSelector {
@@ -35,6 +39,8 @@ export const EventsPageStyled = styled.div`
     border-top-right-radius: 20px;
     margin: 0 10px;
     text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
   }
 
   .nav-link.active {
@@ -43,25 +49,21 @@ export const EventsPageStyled = styled.div`
     border-color:  #4814cc;
   } 
 
-
-
-
-
-
-
-
-
-
-
-
+  ul{
+    margin-bottom: 0 !important;
+  }
 
 
 
   h2 {
     margin: 25px;
     padding: 0;
-    font-size: 80px;
+    font-size: 64px;
     text-align: center;
+    font-family: 'baikal', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
   }
 
   p {

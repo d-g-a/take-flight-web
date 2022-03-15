@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import '../../static/fonts/fonts.css'
 
 export const TeachersScrollStyled = styled.div`
 /* * {
@@ -94,7 +95,7 @@ button {
   -moz-border-radius: 4;
   border-radius: 4px;
   padding: 12px 25px;
-  font-family: "Signika Negative", sans-serif;
+  font-family: 'baikal', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;

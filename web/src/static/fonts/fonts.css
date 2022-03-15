@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'baikal';
+    src: url('./baikal_ultraexpandedbold_1-webfont.woff2') format('woff2'),
+         url('./baikal_ultraexpandedbold_1-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'baikal';
+    src: url('./baikal_variable_1-webfont.woff2') format('woff2'),
+         url('./baikal_variable_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

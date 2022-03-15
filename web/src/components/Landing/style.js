@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import '../../static/fonts/fonts.css'
 
 export const LandingStyled = styled.div`
   background-color: black;
@@ -6,7 +7,7 @@ export const LandingStyled = styled.div`
   height: 300vh;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'baikal', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,7 +36,7 @@ export const LandingStyled = styled.div`
 `;
 
 export const SecondaryContent = styled.div`
-  font-family: "Signika Negative", sans-serif; 
+  font-family: 'baikal', sans-serif;
   font-weight: 300;
   height: 200vh;
   text-align: center;

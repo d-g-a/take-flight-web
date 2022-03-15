@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import '../../static/fonts/fonts.css'
 
 export const MarqueeStyled = styled.div`
-  font-size: 64px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-family: 'baikal', sans-serif;
   font-weight: 800;
   -webkit-text-stroke: 5px #4814CC;
   color: white;

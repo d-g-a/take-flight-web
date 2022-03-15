@@ -8,13 +8,14 @@ export const EventThumnailWrapper = styled.div`
     background-size: cover;
     background-position: center;
     background-color: BLACK;
+    
 
     .EventDetails {
     margin: 25px;
     height: auto;
     h2 {
       text-transform: uppercase;
-      font-size: 80px;
+      font-size: 32px;
       margin: 0;
     }
     p{

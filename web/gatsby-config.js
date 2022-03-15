@@ -3,6 +3,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
 });
 
+
 const clientConfig = require("./client-config");
 
 const isProd = process.env.NODE_ENV === "production";
@@ -19,6 +20,15 @@ module.exports = {
         token: process.env.SANITY_READ_TOKEN,
         watchMode: !isProd,
         overlayDrafts: !isProd,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ['baikal'],
+          urls: ["./src/static/fonts/fonts.css"],
+        },
       },
     },
   ],
