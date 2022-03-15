@@ -33,7 +33,8 @@ export const EventsPageStyled = styled.div`
   .individualTab {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin: 0;
+    margin: 0 10px;
+    text-transform: uppercase;
   }
 
   .nav-link.active {
