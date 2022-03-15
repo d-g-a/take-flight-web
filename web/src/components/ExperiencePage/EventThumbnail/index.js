@@ -9,11 +9,11 @@ export const EventThumbnail = ({backgroundImage, eventInfo}) => {
       <div className="EventDetails">
         <div className="titleButton">
           <h2>{eventInfo.title}</h2>
-          <button className="GetTicketsButton">
+          {/* <button className="GetTicketsButton">
             <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
-          </button>
+          </button> */}
         </div>
-        <p>{eventInfo.description}</p>
+        {/* <p>{eventInfo.description}</p> */}
       </div>
     </EventThumnailWrapper>
   )

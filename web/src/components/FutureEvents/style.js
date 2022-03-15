@@ -36,12 +36,13 @@ export const FutureEventsStyled = styled.div`
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
   }
-
+  
   .nav-link {
     margin: 0 10px;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     color: #f2e7d7;
+    text-transform: uppercase;
   }
 
   .individualTab {

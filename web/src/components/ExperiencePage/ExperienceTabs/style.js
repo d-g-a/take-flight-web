@@ -2,15 +2,20 @@ import styled from "styled-components";
 
 export const EventTabsStyled = styled.div`
   height: auto;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
   width: 100vw;
   text-align: center;
   margin: 0;
-  width: 80vw;
+  background-color: blue;
+  height: 100vh;
+
+
+  p{
+    width: 80vw;
+    
+    text-align: left;
   
-  /* word-break:break-all;
-  white-space:normal; */
-  text-align: left;
+    font-size: 32px;
+    padding: 20px;
+
+  }
 `;

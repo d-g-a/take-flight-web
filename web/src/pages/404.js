@@ -1,13 +1,14 @@
-import Layout from "../components/layout";
 import React from "react";
 import SEO from "../components/seo";
+import { ErrorPage } from "../components/ErrorPage";
+import {FloatingFooter} from '../components/FloatingFooter'
 
-const NotFoundPage = () => (
-  <Layout>
+const NotFoundPage = () => {
+return(
+  <FloatingFooter>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-      
-  </Layout>
-);
+      <ErrorPage />
+  </FloatingFooter>
+)};
 
 export default NotFoundPage;

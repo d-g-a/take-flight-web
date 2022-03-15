@@ -7,10 +7,11 @@ import { Landing } from '../components/Landing';
 import { HorizontalSlider } from '../components/HorizontalSlider'
 import { ExperiencePage } from '../components/ExperiencePage'
 import { AnimationTestTwo } from '../components/AnimationTestTwo'
+import { EventScrollTest } from '../components/EventScrollTest'
 
 const test = () => {
   return (
-    <div><AnimationTestTwo /></div>
+    <div><EventScrollTest /></div>
   )
 }
 

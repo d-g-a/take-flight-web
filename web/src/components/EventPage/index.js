@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { EventPageWrapper, SecondaryContent } from "./style";
+import { EventPageWrapper, LoadingWrapper } from "./style";
 import { MarqueeTest } from "../MarqueeTest";
 import { DateMarquee } from "../DateMarquee";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { EventScrollTest } from "../EventScrollTest";
+
+import isotipo from "../../images/isotipo.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,51 +49,31 @@ export const EventPage = ({ eventInfo }) => {
   }, []);
 
   return (
-    <EventPageWrapper>
-      <DateMarquee eventDate={eventInfo.eventDate} ticketUrl={eventInfo.url} />
-      <div className="EventDetails">
-        <div className="titleButton">
-          <h2>{eventInfo.title}</h2>
-          <button className="GetTicketsButton">
-            <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
-          </button>
-        </div>
-        <p>{eventInfo.description}</p>
-      </div>
-      <SecondaryContent
-        heightDel1={`${Math.floor(Math.random() * 50) + 75}vh`}
-        heightDel2={`${Math.floor(Math.random() * 50) + 100}vh`}
-        heightDel3={`${Math.floor(Math.random() * 50) + 120}vh`}
-        heightDel4={`${Math.floor(Math.random() * 50) + 75}vh`}
-        heightDel5={`${Math.floor(Math.random() * 50) + 110}vh`}
-      >
-        <div id="del1" class="delayed-section" data-scrub="0.4">
-          <div className="innerContainer">
-            <img width="575" src={eventInfo?.image_1.asset.url} alt="hola" />
+    <div>
+      {!eventInfo ? (
+        <LoadingWrapper>
+          <h1>LOADING</h1>
+          <img src={isotipo} alt="Take Flight" />
+        </LoadingWrapper>
+      ) : (
+        <EventPageWrapper>
+          <DateMarquee
+            eventDate={eventInfo.eventDate}
+            ticketUrl={eventInfo.url}
+          />
+          <div className="EventDetails">
+            <div className="titleButton">
+              <h2>{eventInfo.title}</h2>
+              <button className="GetTicketsButton">
+                <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
+              </button>
+            </div>
+            <p>{eventInfo.description}</p>
           </div>
-        </div>
-        <div id="del2" className="delayed-section" data-scrub="0.2">
-          <div className="innerContainer">
-            <img width="575" src={eventInfo?.image_2.asset.url} alt="hola" />
-          </div>
-        </div>
-        <div id="del3" className="delayed-section" data-scrub="0.6">
-          <div className="innerContainer">
-            <img width="575" src={eventInfo?.image_3.asset.url} alt="hola" />
-          </div>
-        </div>
-        <div id="del4" className="delayed-section" data-scrub="0.6">
-          <div className="innerContainer">
-            <img width="575" src={eventInfo?.image_4.asset.url} alt="hola" />
-          </div>
-        </div>
-        <div id="del5" className="delayed-section" data-scrub="0.6">
-          <div className="innerContainer">
-            <img width="575" src={eventInfo?.image_5.asset.url} alt="hola" />
-          </div>
-        </div>
-      </SecondaryContent>
-      <MarqueeTest />
-    </EventPageWrapper>
+          <EventScrollTest eventInfo={eventInfo} />
+          <MarqueeTest />
+        </EventPageWrapper>
+      )}
+    </div>
   );
 };
