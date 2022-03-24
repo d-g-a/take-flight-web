@@ -1,8 +1,7 @@
 
 @font-face {
     font-family: 'baikal';
-    src: url('./baikal_ultraexpandedbold_1-webfont.woff2') format('woff2'),
-         url('./baikal_ultraexpandedbold_1-webfont.woff') format('woff');
+    src: url('./Baikal-UltraExpandedBold.woff2') format('woff2');
     font-weight: bold;
     font-style: bold;
 }

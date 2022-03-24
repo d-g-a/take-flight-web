@@ -26,6 +26,11 @@ export default {
       title: "Date of the event",
     },
     {
+      name: "dates",
+      type: "string",
+      title: "Date of the event",
+    },
+    {
       name: "description",
       type: "text",
       title: "Description",

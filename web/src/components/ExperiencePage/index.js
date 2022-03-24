@@ -22,6 +22,7 @@ export const ExperiencePage = () => {
         `*[_type == "future-events"]{
         title,
         slug,
+        dates,
         eventDate,
         description,
         url,
@@ -61,8 +62,6 @@ export const ExperiencePage = () => {
       .catch(console.error);
   }, []);
 
-  console.log(allEvents)
-
 
   return (
     <EventsPageStyled>
@@ -98,9 +97,9 @@ export const ExperiencePage = () => {
         
         </Tabs>
       </div>
-      <div className="Vertical">
+      {/* <div className="Vertical">
         <MarqueeVertical className="Marquee" />
-      </div>
+      </div> */}
     </EventsPageStyled>
   );
 };

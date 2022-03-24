@@ -5,9 +5,12 @@ export const FloatingFooterStyled = styled.div`
     position: fixed;
     bottom: 30px;
     left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
    
-    
-
+  
     button {
       border-radius: 25px;
       color: #f2e7d7;

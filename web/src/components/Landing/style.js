@@ -1,18 +1,21 @@
 import styled from "styled-components";
-import '../../static/fonts/fonts.css'
+import "../../static/fonts/fonts.css";
+import landingTF from "../../images/tf_landing.jpeg";
 
 export const LandingStyled = styled.div`
   background-color: black;
   color: white;
-  height: 300vh;
+  height: 250vh;
   margin: 0;
   padding: 0;
-  font-family: 'baikal', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  background-image: url(${(props) => props.landingImage});
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
 
   .TakeFlight3D {
     padding-top: 20px;
@@ -30,21 +33,27 @@ export const LandingStyled = styled.div`
       }
     }
     img {
-      width: 90vw;
+      width: 60vw;
     }
   }
 `;
 
 export const SecondaryContent = styled.div`
-  font-family: 'baikal', sans-serif;
-  font-weight: 300;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+
+  font-weight: 900;
+
+  font-style: normal;
+
   height: 200vh;
   text-align: center;
 
+  color: #f2e7d7;
+
   .delayed-section {
-  position: absolute;
-  width: 30vw;
-  height: 38.87vw;
+    position: absolute;
+    width: 30vw;
+    height: 38.87vw;
   }
 
   .delayed-section .inner-container {
@@ -60,16 +69,19 @@ export const SecondaryContent = styled.div`
   #del1 {
     top: 110vh;
     left: 2vw;
+    width: 600px;
   }
 
   #del2 {
-    top: 190vh;
+    top: 130vh;
     left: 35vw;
+    width: 420px;
   }
 
   #del3 {
     top: 100vh;
     left: 60vw;
+    width: 600px;
   }
 
   #del4 {
@@ -78,20 +90,19 @@ export const SecondaryContent = styled.div`
   }
 
   #del5 {
-    top: 140vh;
+    top: 120vh;
     left: 5vw;
     text-align: left;
   }
   #del6 {
     top: 170vh;
-    left: 68vw;
-    text-align: right;
+    left: 58vw;
+    text-align: left;
   }
 
   .sub-title {
     text-transform: uppercase;
-    width: 28vw;
-    font-size: 40px;
+    width: 40vw;
+    font-size: 48px;
   }
-
 `;

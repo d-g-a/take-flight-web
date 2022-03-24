@@ -25,6 +25,7 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "imagesloaded": "^5.0.0",
     "react-images-loaded": "^2.0.0"
   }

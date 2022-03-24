@@ -58,7 +58,7 @@ export const EventPage = ({ eventInfo }) => {
       ) : (
         <EventPageWrapper>
           <DateMarquee
-            eventDate={eventInfo.eventDate}
+            eventDate={eventInfo.dates}
             ticketUrl={eventInfo.url}
           />
           <div className="EventDetails">

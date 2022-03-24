@@ -21,22 +21,22 @@ export const DateMarquee = ({ eventDate, ticketUrl }) => {
     return newDate;
   };
 
+  console.log(eventDate)
+
   return (
     <DateMarqueeWrapper>
       <div className="marquee">
         <div className="marquee__content" id="marquee__content">
           <a href={`https://${ticketUrl}`}>
             <ul className="list-inline">
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
-              <li>{dateFormatter(eventDate)}</li>
+              <li>{eventDate}</li>
+              <li>{eventDate}</li>
+              <li>{eventDate}</li>
+              <li>{eventDate}</li>
+              <li>{eventDate}</li>
+              <li>{eventDate}</li>
+              <li>{eventDate}</li>
+              <li>{eventDate}</li>
             </ul>
           </a>
         </div>

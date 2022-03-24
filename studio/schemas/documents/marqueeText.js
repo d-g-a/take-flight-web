@@ -1,18 +1,19 @@
 export default {
     name: "marquee-text",
     type: "document",
-    title: "Future Events",
+    title: "Marquee Text",
     fields: [
       {
         name: "title",
         type: "string",
         title: "Title",
+        description: "This text will appear on the Marquee"
       },
       {
-        name: "description",
-        type: "text",
-        title: "Description",
-
+        name: "url",
+        type: "string",
+        title: "URL",
+        description: "Enter the url for the ticket page"
       },
     ],
   };

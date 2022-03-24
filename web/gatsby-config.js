@@ -25,6 +25,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
+        typekit: {
+          id: 'plk7yru',
+        },
         custom: {
           families: ['baikal'],
           urls: ["./src/static/fonts/fonts.css"],

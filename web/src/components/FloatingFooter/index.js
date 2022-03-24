@@ -7,7 +7,23 @@ export const FloatingFooter = ({ children }) => {
     <FloatingFooterStyled>
       {children}
       <footer>
-        <button className="events"><Link to="/events">UPCOMING EVENTS</Link></button>
+        <div className="left">
+          <button className="events">
+            <Link to="/events">EXPERIENCE</Link>
+          </button>
+          <button className="events">
+            <Link to="/events">TEACHERS</Link>
+          </button>
+          <button className="events">
+            <Link to="/events">UPCOMING EVENTS</Link>
+          </button>
+
+        </div>
+        <div className="right">
+          <button className="events">
+            <Link to="/events">GET YOUR TICKETS</Link>
+          </button>
+        </div>
         {/* <button className="contact">CONTACT</button> */}
       </footer>
     </FloatingFooterStyled>

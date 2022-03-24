@@ -1,73 +1,55 @@
 import styled from "styled-components";
-import '../../static/fonts/fonts.css'
+import "../../static/fonts/fonts.css";
 
 export const MarqueeStyled = styled.div`
   font-size: 48px;
-  font-family: 'baikal', sans-serif;
+  font-family: "baikal", sans-serif;
   font-weight: 800;
-  -webkit-text-stroke: 5px #4814CC;
   color: white;
 
+  @media (max-width: 500px) {
+    font-size: 32px;
+    -webkit-text-stroke: 3px #4814cc;
+  }
 
   .marquee {
-    margin: 0 auto;
-    width: 100%; // or 100% inside a container
-    height: 120px;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
     position: relative;
-    background-color: black;
-
-    &:before,
-    &:after {
-      position: relative;
-      top: 0;
-      width: 50px;
-      height: 30px;
-      content: "";
-      z-index: 1;
-    }
-    &:before {
-      left: 0;
-      background: linear-gradient(to right, white 5%, transparent 100%);
-    }
-    &:after {
-      right: 0;
-      background: linear-gradient(to left, white 5%, transparent 100%);
-    }
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    a {
+    color: #f2e7d7;
+    display: inline-block;
+    text-decoration: none;
   }
 
-  .marquee__content {
-    width: 300% !important;
-    display: flex;
-    //line-height: 10px;
-    animation: marquee 60s linear infinite forwards;
-    &:hover {
-      animation-play-state: paused;
-    }
+  a:hover {
+    color: #4814cc;
+  }
   }
 
-  .list-inline {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    
-
-    /* reset list */
-    list-style: none;
-    //padding: 0 20px;
-    margin: 0 20px;
-    /* li{
-        margin-left: 10px;
-    } */
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
   }
+
   @keyframes marquee {
-    0% {
+    from {
       transform: translateX(0);
     }
-    100% {
-      transform: translateX(-66.6%);
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  
+  .content {
+
+    span {
+      padding-right: 40px;
     }
   }
 `;

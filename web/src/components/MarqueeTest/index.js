@@ -1,29 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { MarqueeStyled } from "./style";
 
+import sanityClient from "../../client.js";
+
 export const MarqueeTest = () => {
+  const [marqueeText, setMarqueeText] = useState(null);
+
   useEffect(() => {
-    document.getElementsByClassName("marquee", function () {
-      let marqueeClass = "marquee__content";
-      let tickerText = document.getElementsByClassName(marqueeClass).children();
-      tickerText.clone().appendTo(marqueeClass);
-      tickerText.clone().appendTo(marqueeClass);
-    });
-  }, []);
+    sanityClient
+      .fetch(
+        `*[_type == "marquee-text"]{
+          _id,
+          title,
+          url,
+        }`
+      )
+      .then((data) => setMarqueeText(data))
+      .catch(console.error);
+  }, [marqueeText]);
 
   return (
     <MarqueeStyled>
       <div className="marquee">
-        <div className="marquee__content" id="marquee__content">
-          <ul className="list-inline">
-            <li>GET YOUR TICKETS</li>
-            <li>GET YOUR TICKETS</li>
-            <li>GET YOUR TICKETS</li>
-            <li>GET YOUR TICKETS</li>
-            <li>GET YOUR TICKETS</li>
-            <li>GET YOUR TICKETS</li>
-            <li>GET YOUR TICKETS</li>
-          </ul>
+        <div className="track">
+          {marqueeText?.map((marquee) => (
+            <a href={marquee.url}>
+              <div className="content">
+                <span>{marquee.title}</span>
+                <span>{marquee.title}</span>
+                <span>{marquee.title}</span>
+                <span>{marquee.title}</span>
+                <span>{marquee.title}</span>
+                <span>{marquee.title}</span>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </MarqueeStyled>

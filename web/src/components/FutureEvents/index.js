@@ -20,6 +20,7 @@ export const FutureEvents = () => {
         title,
         slug,
         eventDate,
+        dates,
         description,
         url,
         image_1{

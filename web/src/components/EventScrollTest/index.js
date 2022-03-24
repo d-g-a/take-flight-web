@@ -58,9 +58,9 @@ export const EventScrollTest = ({eventInfo}) => {
         </div>
       </div>
       <div className="demo-wrapper">
-        <section className="demo-text">
-          <div className="wrapper text">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-        </section>
+        {/* <section className="demo-text">
+          <div className="wrapper text" style={{display: "inline"}}>WELCOME TO OUR WORLD</div>
+        </section> */}
 
         <section className="demo-gallery">
           <ul className="wrapper">
@@ -152,7 +152,7 @@ export const EventScrollTest = ({eventInfo}) => {
           </ul>
         </section>
         <section className="demo-text">
-          <div className="wrapper text">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+          <div className="wrapper text alias">ABCDEFGH</div>
         </section>
       </div>
     </EventScrollWrapper>

@@ -5,7 +5,7 @@ import { DateMarquee } from '../../DateMarquee'
 export const EventThumbnail = ({backgroundImage, eventInfo}) => {
   return (
     <EventThumnailWrapper backgroundImage={backgroundImage}>
-        <DateMarquee eventDate={eventInfo.eventDate} ticketUrl={eventInfo.url} />
+        <DateMarquee eventDate={eventInfo.dates} ticketUrl={eventInfo.url} />
       <div className="EventDetails">
         <div className="titleButton">
           <h2>{eventInfo.title}</h2>
@@ -13,7 +13,7 @@ export const EventThumbnail = ({backgroundImage, eventInfo}) => {
             <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
           </button> */}
         </div>
-        {/* <p>{eventInfo.description}</p> */}
+        <p>{eventInfo.description}</p>
       </div>
     </EventThumnailWrapper>
   )

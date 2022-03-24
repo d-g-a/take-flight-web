@@ -29,7 +29,7 @@ export const AnimationTestTwo = () => {
         const url = URL.createObjectURL(blob);
         const feImage = document.querySelector("#feimage");
 
-        feImage.setAttribute("href", takeFlightTextureThree);
+        feImage.setAttribute("href", url);
       });
 
     const info = document.getElementById("infotext");

@@ -75,6 +75,7 @@ footer {height: 50vh}
   display: flex;
 }
 
+
 .demo-gallery:not(.last) {
   padding-bottom: 1rem;
 }
