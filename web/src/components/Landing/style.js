@@ -18,7 +18,7 @@ export const LandingStyled = styled.div`
   background-repeat: no-repeat;
 
   .TakeFlight3D {
-    padding-top: 20px;
+    margin-top: 100px;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

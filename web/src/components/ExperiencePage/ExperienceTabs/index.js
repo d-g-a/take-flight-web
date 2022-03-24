@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { EventTabsStyled } from "./style";
 
+import sanityClient from "../../../client.js";
 export const ExperienceTabs = () => {
+  const [aboutText, setAboutText] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "experience-text"]{
+        title,
+        description,
+      }`
+      )
+      .then((data) => setAboutText(data))
+      .catch(console.error);
+  }, []);
+
+  console.log(aboutText);
   return (
     <EventTabsStyled>
-      <p>
-        Take Flight in an immersive dance experience like no other. Dancers
-        gather from all over the world, under one roof, and immerse themselves
-        in an intensive training program, with the world’s leading, and most
-        influencial movement artists, choreographers, and educators.
-      </p>
+      <p>{aboutText?.[0].description}</p>
     </EventTabsStyled>
   );
 };
