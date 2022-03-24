@@ -11,6 +11,7 @@ export const DateMarquee = ({ eventDate }) => {
             <span>{eventDate}</span>
             <span>{eventDate}</span>
             <span>{eventDate}</span>
+            
           </div>
         </div>
       </div>
