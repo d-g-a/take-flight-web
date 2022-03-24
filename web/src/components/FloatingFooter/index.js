@@ -9,7 +9,7 @@ export const FloatingFooter = ({ children }) => {
       <footer>
         <div className="left">
           <button className="events">
-            <Link to="/events">EXPERIENCE</Link>
+            <a href="#experience_page">EXPERIENCE</a>
           </button>
           <button className="events">
             <Link to="/events">TEACHERS</Link>
@@ -17,7 +17,6 @@ export const FloatingFooter = ({ children }) => {
           <button className="events">
             <Link to="/events">UPCOMING EVENTS</Link>
           </button>
-
         </div>
         <div className="right">
           <button className="events">

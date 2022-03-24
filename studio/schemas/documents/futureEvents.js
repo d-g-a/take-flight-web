@@ -10,25 +10,30 @@ export default {
       description: "e.g. TAKE FLIGHT TOUR",
     },
     {
-      name: "slug",
-      type: "slug",
-      title: "Slug",
-      description:
-        "Some frontends will require a slug to be set to be able to show the person",
-      options: {
-        source: "name",
-        maxLength: 96,
-      },
+      name: "eventAlias",
+      type: "string",
+      title: "Event Alias",
+      description: "For the marquee text",
     },
     {
-      name: "eventDate",
-      type: "date",
-      title: "Date of the event",
+      name: "location",
+      type: "string",
+      title: "Location",
+    },
+    {
+      name: "city",
+      type: "string",
+      title: "City",
     },
     {
       name: "dates",
       type: "string",
       title: "Date of the event",
+    },
+    {
+      name: "thumbnail",
+      type: "text",
+      title: "Thumbnail Text",
     },
     {
       name: "description",
@@ -45,6 +50,7 @@ export default {
       name: "image_1",
       type: "mainImage",
       title: "Image 1",
+      description: "First image also works as the thumbnail image",
     },
     {
       name: "image_2",
@@ -65,6 +71,11 @@ export default {
       name: "image_5",
       type: "mainImage",
       title: "Image 5",
+    },
+    {
+      name: "image_6",
+      type: "mainImage",
+      title: "Image 6",
     },
   ],
 };

@@ -40,7 +40,7 @@ export const TeachersPage = () => {
   }, []);
 
   return (
-    <TeacherPageStyled>
+    <TeacherPageStyled id="teachers">
       <h1>TEACHERS</h1>
       <Tabs
         id="controlled-tab-example"

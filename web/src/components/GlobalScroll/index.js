@@ -33,7 +33,7 @@ export const GlobalScroll = () => {
           <section className="panel landing">
             <Landing />
           </section>
-          <section className="panel experience">
+          <section className="panel experience" id="experience_page">
             <ExperiencePage />
           </section>
           <section className="panel teachers">

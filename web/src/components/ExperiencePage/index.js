@@ -64,7 +64,7 @@ export const ExperiencePage = () => {
 
 
   return (
-    <EventsPageStyled>
+    <EventsPageStyled id="experience" >
       <div className="Content">
         <h2>EXPERIENCE</h2>
         <Tabs

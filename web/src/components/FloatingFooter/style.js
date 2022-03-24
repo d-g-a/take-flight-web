@@ -9,7 +9,7 @@ export const FloatingFooterStyled = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-   
+    width: 97vw;
   
     button {
       border-radius: 25px;

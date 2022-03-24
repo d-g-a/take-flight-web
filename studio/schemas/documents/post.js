@@ -42,7 +42,7 @@ export default {
     },
     {
       name: "authors",
-      title: "Authors",
+      title: "Past Teachers",
       type: "array",
       of: [
         {
@@ -50,19 +50,19 @@ export default {
         },
       ],
     },
-    {
-      name: "categories",
-      type: "array",
-      title: "Categories",
-      of: [
-        {
-          type: "reference",
-          to: {
-            type: "category",
-          },
-        },
-      ],
-    },
+    // {
+    //   name: "categories",
+    //   type: "array",
+    //   title: "Categories",
+    //   of: [
+    //     {
+    //       type: "reference",
+    //       to: {
+    //         type: "category",
+    //       },
+    //     },
+    //   ],
+    // },
     {
       name: "body",
       type: "bodyPortableText",

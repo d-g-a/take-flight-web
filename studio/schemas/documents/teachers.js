@@ -16,7 +16,7 @@ export default {
       },
       {
         name: "authors",
-        title: "Authors",
+        title: "Past Teachers",
         type: "array",
         of: [
           {
