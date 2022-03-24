@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
+import { graphql, useStaticQuery } from "gatsby";
 import { imageUrlFor } from "../lib/image-url";
 import { buildImageObj } from "../lib/helpers";
 
-function SEO({ description, lang, meta, keywords, title, image }) {;
+function SEO({ description, lang, meta, keywords, title, image }) {
+  const { site } = useStaticQuery(detailsQuery) || {};
 
   const metaDescription = description || site.description || "";
   const siteTitle = site.title || "";
@@ -85,4 +87,15 @@ SEO.propTypes = {
 
 export default SEO;
 
-
+const detailsQuery = graphql`
+  query DefaultSEOQuery {
+    site: sanitySiteSettings(_id: { eq: "siteSettings" }) {
+      title
+      description
+      keywords
+      author {
+        name
+      }
+    }
+  }
+`;
