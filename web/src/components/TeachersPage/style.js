@@ -17,6 +17,15 @@ export const TeacherPageStyled = styled.div`
     text-align: center;
   }
 
+  .nav-tabs {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f2e7d7;
+  }
+
   .tabSelector {
     margin: 0;
     border-top-left-radius: 1em;

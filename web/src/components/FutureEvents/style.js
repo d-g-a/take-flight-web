@@ -8,7 +8,7 @@ export const FutureEventsStyled = styled.div`
   background-color: black;
   padding-top: 40px;
   font-family: 'baikal', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase;
 
   a:hover {
@@ -27,7 +27,7 @@ export const FutureEventsStyled = styled.div`
   }
 
   h1 {
-    font-size: 72px;
+    font-size: 64px;
     text-align: center;
     padding-bottom: 20px;
     color: #f2e7d7;
@@ -39,7 +39,7 @@ export const FutureEventsStyled = styled.div`
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
   }
-  
+
   .nav-link {
     margin: 0 10px;
     border-top-left-radius: 1em;

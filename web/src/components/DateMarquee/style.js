@@ -1,81 +1,40 @@
 import styled from "styled-components";
-import '../../static/fonts/fonts.css'
+import "../../static/fonts/fonts.css";
 
 export const DateMarqueeWrapper = styled.div`
   font-size: 64px;
-  font-family: 'baikal', sans-serif;
-  font-weight: 400;
+  font-family: "baikal", sans-serif;
+  font-weight: bold;
   color: #f2e7d7;
   margin: 0 10px;
 
   .marquee {
-    margin: 0 auto;
-    width: 100%; // or 100% inside a container
-    height: 80px;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
     position: relative;
-
-    &:before,
-    &:after {
-      position: relative;
-      top: 0;
-      width: 50px;
-      height: 30px;
-      content: "";
-      z-index: 1;
-    }
-    &:before {
-      left: 0;
-      background: linear-gradient(to right, white 5%, transparent 100%);
-    }
-    &:after {
-      right: 0;
-      background: linear-gradient(to left, white 5%, transparent 100%);
-    }
+    width: 100vw;
+    max-width: 100%;
+    height: 100px;
+    overflow-x: hidden;
   }
 
-  .marquee__content {
-    a {
-      text-decoration: none;
-      color: #f2e7d7;
-    }
-    a:hover{
-      color: #4814cc;
-    }
-    width: 300% !important;
-    display: flex;
-    //line-height: 10px;
-    animation: marquee 60s linear infinite forwards;
-    &:hover {
-      animation-play-state: paused;
-    }
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
   }
 
-  .list-inline {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-
-    /* reset list */
-    list-style: none;
-    //padding: 0 20px;
-    margin: 0 20px;
-    /* li{
-        margin-left: 10px;
-    } */
-
-    li {
-      margin: 0 10px;
-    }
-  }
   @keyframes marquee {
-    0% {
+    from {
       transform: translateX(0);
     }
-    100% {
-      transform: translateX(-66.6%);
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .content {
+    span {
+      padding-right: 40px;
     }
   }
 `;

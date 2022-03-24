@@ -1,56 +1,31 @@
 import React, { useState, useEffect } from "react";
-import { MarqueeVertical } from "../MarqueeVertical";
 import { EventsPageStyled } from "./style";
 import { ExperienceTabs } from "./ExperienceTabs";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { EventPage } from "../EventPage";
-
 import { EventThumbnail } from "./EventThumbnail";
 
-import sanityClient from '../../client.js'
+import sanityClient from "../../client.js";
 
 export const ExperiencePage = () => {
   const [key, setKey] = useState("home");
-  const [allEvents, setAllEvents] = useState(null)
+  const [allEvents, setAllEvents] = useState(null);
 
   useEffect(() => {
     sanityClient
       .fetch(
         `*[_type == "future-events"]{
         title,
-        slug,
+        eventAlias,
+        location,
+        city,
         dates,
-        eventDate,
+        thumbnail,
         description,
         url,
         image_1{
-          asset ->{
-            _id,
-            url
-          }
-        },
-        image_2{
-          asset ->{
-            _id,
-            url
-          }
-        },
-        image_3{
-          asset ->{
-            _id,
-            url
-          }
-        },
-        image_4{
-          asset ->{
-            _id,
-            url
-          }
-        },
-        image_5{
           asset ->{
             _id,
             url
@@ -62,9 +37,8 @@ export const ExperiencePage = () => {
       .catch(console.error);
   }, []);
 
-
   return (
-    <EventsPageStyled id="experience" >
+    <EventsPageStyled id="experience">
       <div className="Content">
         <h2>EXPERIENCE</h2>
         <Tabs
@@ -85,21 +59,19 @@ export const ExperiencePage = () => {
 
           {allEvents?.map((event) => (
             <Tab
-            eventKey={event?.title}
-            title={event?.title}
-            tabClassName="individualTab"
-            activeKey={event?.title}
-          >
-              <EventThumbnail backgroundImage={event?.image_1.asset.url} eventInfo={event}/>
-              
-          </Tab>
+              eventKey={event?.title}
+              title={event?.title}
+              tabClassName="individualTab"
+              activeKey={event?.title}
+            >
+              <EventThumbnail
+                backgroundImage={event?.image_1.asset.url}
+                eventInfo={event}
+              />
+            </Tab>
           ))}
-        
         </Tabs>
       </div>
-      {/* <div className="Vertical">
-        <MarqueeVertical className="Marquee" />
-      </div> */}
     </EventsPageStyled>
   );
 };

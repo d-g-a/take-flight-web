@@ -18,8 +18,9 @@ export const FutureEvents = () => {
       .fetch(
         `*[_type == "future-events"]{
         title,
-        slug,
-        eventDate,
+        eventAlias,
+        location,
+        city,
         dates,
         description,
         url,
@@ -48,6 +49,12 @@ export const FutureEvents = () => {
           }
         },
         image_5{
+          asset ->{
+            _id,
+            url
+          }
+        },
+        image_6{
           asset ->{
             _id,
             url
@@ -88,7 +95,7 @@ export const FutureEvents = () => {
                   tabClassName="individualTab"
                   activeKey={event.title}
                 >
-                  <EventPage eventInfo={event} slug={event.slug.current} />
+                  <EventPage eventInfo={event} />
                 </Tab>
               );
             })}

@@ -4,11 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import imagesLoaded from "imagesloaded";
 
-
-
-export const EventScrollTest = ({eventInfo}) => {
-
-
+export const EventScrollTest = ({ eventInfo }) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -44,13 +40,12 @@ export const EventScrollTest = ({eventInfo}) => {
       });
     };
 
-     imagesLoaded(images).on("progress", updateProgress).on("always", showDemo);
-
+    imagesLoaded(images).on("progress", updateProgress).on("always", showDemo);
   }, []);
 
   return (
     <EventScrollWrapper>
-        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+      <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
       <div className="loader df aic jcc">
         <div>
           <h1>Loading</h1>
@@ -64,7 +59,7 @@ export const EventScrollTest = ({eventInfo}) => {
 
         <section className="demo-gallery">
           <ul className="wrapper">
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_1.asset.url}
@@ -72,7 +67,7 @@ export const EventScrollTest = ({eventInfo}) => {
                 className="image_1"
               />
             </li>
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_2.asset.url}
@@ -80,7 +75,7 @@ export const EventScrollTest = ({eventInfo}) => {
                 className="image_1"
               />
             </li>
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_3.asset.url}
@@ -88,7 +83,7 @@ export const EventScrollTest = ({eventInfo}) => {
                 className="image_1"
               />
             </li>
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_4.asset.url}
@@ -106,10 +101,10 @@ export const EventScrollTest = ({eventInfo}) => {
             </li>
           </ul>
         </section>
-        
-            <section className="demo-gallery">
+
+        <section className="demo-gallery">
           <ul className="wrapper">
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_1.asset.url}
@@ -117,7 +112,7 @@ export const EventScrollTest = ({eventInfo}) => {
                 className="image_1"
               />
             </li>
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_2.asset.url}
@@ -125,7 +120,7 @@ export const EventScrollTest = ({eventInfo}) => {
                 className="image_1"
               />
             </li>
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_3.asset.url}
@@ -133,7 +128,7 @@ export const EventScrollTest = ({eventInfo}) => {
                 className="image_1"
               />
             </li>
-            <li className="image-container" >
+            <li className="image-container">
               <img
                 height="120px"
                 src={eventInfo?.image_4.asset.url}
@@ -151,9 +146,9 @@ export const EventScrollTest = ({eventInfo}) => {
             </li>
           </ul>
         </section>
-        <section className="demo-text">
+        {/* <section className="demo-text">
           <div className="wrapper text alias">ABCDEFGH</div>
-        </section>
+        </section> */}
       </div>
     </EventScrollWrapper>
   );

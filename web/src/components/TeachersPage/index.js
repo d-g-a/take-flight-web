@@ -50,7 +50,6 @@ export const TeachersPage = () => {
         defaultActiveKey={allTeachers?.[0]?.title}
       >
         {allTeachers?.map((teachers) => {
-          console.log(teachers.title);
           return (
             <Tab
               eventKey={teachers.title}

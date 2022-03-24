@@ -5,12 +5,14 @@ import { DateMarquee } from "../DateMarquee";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { EventScrollTest } from "../EventScrollTest";
+import { EventAliasMarquee } from "../EventAliasMarquee";
 
 import isotipo from "../../images/isotipo.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const EventPage = ({ eventInfo }) => {
+
   useEffect(() => {
     const delSections = document.querySelectorAll(".delayed-section");
 
@@ -70,6 +72,7 @@ export const EventPage = ({ eventInfo }) => {
             </div>
             <p>{eventInfo.description}</p>
           </div>
+          <EventAliasMarquee eventAlias={eventInfo.eventAlias} />
           <EventScrollTest eventInfo={eventInfo} />
           <MarqueeTest />
         </EventPageWrapper>

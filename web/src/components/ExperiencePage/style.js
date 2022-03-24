@@ -1,26 +1,32 @@
 import styled from "styled-components";
-import '../../static/fonts/fonts.css'
+import "../../static/fonts/fonts.css";
 
 export const EventsPageStyled = styled.div`
-  @import url("https://use.typekit.net/plk7yru.css");
   height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 20px 0 20px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  font-family: 'baikal', sans-serif;
+  font-family: "baikal", sans-serif;
   font-weight: bold;
-
+  color: #f2e7d7;
 
   text-transform: uppercase;
   overflow: hidden;
 
-  background-color: #4814CC;
+  background-color: #4814cc;
   color: white;
 
+  .nav-tabs {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f2e7d7;
+  }
 
   .tabSelector {
     margin: 0;
@@ -41,49 +47,33 @@ export const EventsPageStyled = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    color: #f2e7d7;
   }
 
-  .nav-link.active {
-    color: #f2e7d7;
-    background-color:  #4814cc;
-    border-color:  #4814cc;
-  } 
+  .nav-link.active{
+    background-color: #f2e7d7;
+  }
 
-  ul{
+
+
+  ul {
     margin-bottom: 0 !important;
   }
-
-
 
   h2 {
     margin: 25px;
     padding: 0;
     font-size: 64px;
     text-align: center;
-    font-family: 'baikal', sans-serif;
+    font-family: "baikal", sans-serif;
     font-weight: bold;
-    text-align: center;
-    
+    color: #f2e7d7;
   }
 
-  p {
-    margin: 25px;
-    font-size: 24px;
-    text-align: left;
-  }
   .Content {
-    width: 90vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .Vertical {
-    //transform: rotate(90deg);
-    width: 10vw;
-
-    .Marquee {
-      position: absolute;
-      left: 0;
-    }
+    align-items: center;
   }
 `;

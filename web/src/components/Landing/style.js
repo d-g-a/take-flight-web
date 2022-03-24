@@ -5,7 +5,7 @@ import landingTF from "../../images/tf_landing.jpeg";
 export const LandingStyled = styled.div`
   background-color: black;
   color: white;
-  height: 250vh;
+  height: 280vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -39,11 +39,11 @@ export const LandingStyled = styled.div`
 `;
 
 export const SecondaryContent = styled.div`
-  font-family: acumin-pro-extra-condensed, sans-serif;
-
-  font-weight: 900;
-
-  font-style: normal;
+  h2 {
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
   height: 200vh;
   text-align: center;
@@ -86,7 +86,7 @@ export const SecondaryContent = styled.div`
 
   #del4 {
     top: 120vh;
-    left: 65vw;
+    left: 30vw;
   }
 
   #del5 {
@@ -95,7 +95,7 @@ export const SecondaryContent = styled.div`
     text-align: left;
   }
   #del6 {
-    top: 170vh;
+    top: 150vh;
     left: 58vw;
     text-align: left;
   }

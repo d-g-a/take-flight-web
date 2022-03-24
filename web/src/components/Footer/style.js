@@ -13,13 +13,14 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #f2e7d7;
 
   ul {
     margin-top: 20px;
     li {
       font-family: "baikal", sans-serif;
       font-weight: bold;
-      font-size: 54px;
+      font-size: 50px;
       list-style: none;
       margin-bottom: 60px;
       img {

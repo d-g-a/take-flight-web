@@ -3,18 +3,27 @@ import styled from "styled-components";
 export const EventThumnailWrapper = styled.div`
   width: 100vw;
   height: 80vh;
-  background-image: url(${(props) => props.backgroundImage});
+  /* background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-color: BLACK;
+  background-position: center; */
+  background-color: #000;
+  color: #f2e7d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center ;
 
   .EventDetails {
     margin: 25px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h2 {
       text-transform: uppercase;
-      font-size: 32px;
+      font-size: 48px;
       margin: 0;
     }
     p {
@@ -22,7 +31,9 @@ export const EventThumnailWrapper = styled.div`
       font-family: acumin-pro-extra-condensed, sans-serif;
       font-weight: 700;
       font-style: normal;
-      font-size: 20px;
+      font-size: 40px;
+      text-align: center;
+      width: 80vw;
     }
 
     .titleButton {

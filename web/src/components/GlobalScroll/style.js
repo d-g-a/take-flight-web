@@ -21,10 +21,6 @@ export const GlobalScrollStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    img {
-      width: 90vw;
-      color: white;
-    }
   }
 
   .experience {
@@ -32,10 +28,6 @@ export const GlobalScrollStyled = styled.div`
     color: whitesmoke;
     width: 100vw;
     height: auto;
-
-    img {
-      width: 50vw;
-    }
   }
 
   .teachers {

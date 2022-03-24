@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { LandingStyled, SecondaryContent } from "./style";
 import Logotipo3D from "../../images/Logo_3D2.png";
 import { MarqueeTest } from "../MarqueeTest";
@@ -12,9 +12,31 @@ import tfTwo from '../../images/tf_landing_2.jpeg'
 import tfThree from '../../images/tf_landing_3.jpeg'
 import tfFour from '../../images/tf_landing_4.jpeg'
 
+import sanityClient from '../../client.js'
+
 gsap.registerPlugin(ScrollTrigger);
 
 export const Landing = () => {
+  const [backgroundImage, setBackgroundImage] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "background-image"]{
+          title,
+          background_image{
+                alt,
+                caption,
+                asset->{
+                  url
+            }
+          },
+        }`
+      )
+      .then((data) => setBackgroundImage(data))
+      .catch(console.error);
+  }, []);
+
   useEffect(() => {
     const delSections = document.querySelectorAll(".delayed-section");
 
@@ -53,7 +75,7 @@ export const Landing = () => {
   }, []);
 
   return (
-    <LandingStyled landingImage={landingTF}>
+    <LandingStyled landingImage={backgroundImage?.[0].background_image.asset.url}>
       <MarqueeTest />
       <div className="TakeFlight3D">
         <img src={Logotipo3D} />
@@ -92,13 +114,13 @@ export const Landing = () => {
             <h2 className="sub-title">Escape the ordinary, <br /> Experience More</h2>
           </div>
         </div>
-        {/* <div id="del6" className="delayed-section" data-scrub="0.1">
+        <div id="del6" className="delayed-section" data-scrub="0.1">
           <div className="innerContainer">
             <h2 className="sub-title">
               A unique and immersive dance training experience like no other.
             </h2>
           </div>
-        </div> */}
+        </div>
       </SecondaryContent>
     </LandingStyled>
   );

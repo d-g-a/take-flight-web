@@ -12,6 +12,8 @@ import siteSettings from "./documents/siteSettings";
 import futureEvents from "./documents/futureEvents";
 import marqueeText from "./documents/marqueeText";
 import teachers from "./documents/teachers";
+import backgroundImage from "./documents/backgroundImage";
+import experienceText from "./documents/experienceText";
 
 // Object types
 import bodyPortableText from "./objects/bodyPortableText";
@@ -42,6 +44,8 @@ export default createSchema({
     futureEvents,
     teachers,
     marqueeText,
+    backgroundImage,
+    experienceText,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
