@@ -81,14 +81,7 @@ export const Landing = () => {
         <img src={Logotipo3D} />
       </div>
     
-      <SecondaryContent 
-      heightDel1={`${Math.floor(Math.random() * 100) + 100}vh`}
-      heightDel2={`${Math.floor(Math.random() * 100) + 100}vh`}
-      heightDel3={`${Math.floor(Math.random() * 100) + 120}vh`}
-      heightDel4={`${Math.floor(Math.random() * 100) + 100}vh`}
-      heightDel5={`${Math.floor(Math.random() * 100) + 110}vh`}
-      heightDel6={`${Math.floor(Math.random() * 100) + 100}vh`}
-      >
+      <SecondaryContent >
         <div id="del1" class="delayed-section" data-scrub="0.4">
           <div className="innerContainer">
             <img width="575" src={tfTwo} alt="hola" />
