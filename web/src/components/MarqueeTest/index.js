@@ -17,7 +17,7 @@ export const MarqueeTest = () => {
       )
       .then((data) => setMarqueeText(data))
       .catch(console.error);
-  }, [marqueeText]);
+  }, []);
 
   return (
     <MarqueeStyled>
