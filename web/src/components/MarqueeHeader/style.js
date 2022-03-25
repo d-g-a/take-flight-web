@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
 
-export const DateMarqueeWrapper = styled.div`
+export const MarqueeHeaderWrapper = styled.div`
   font-size: 64px;
   font-family: "baikal", sans-serif;
   font-weight: bold;

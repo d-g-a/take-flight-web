@@ -12,13 +12,30 @@ import tfTwo from '../../images/tf_landing_2.jpeg'
 import tfThree from '../../images/tf_landing_3.jpeg'
 import tfFour from '../../images/tf_landing_4.jpeg'
 
+import { MarqueeHeader } from "../MarqueeHeader";
+
 import sanityClient from '../../client.js'
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const Landing = () => {
+  
+  const [marqueeText, setMarqueeText] = useState(null);
   const [backgroundImage, setBackgroundImage] = useState(null);
-
+  
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "marquee-text"]{
+          _id,
+          title,
+          url,
+        }`
+      )
+      .then((data) => setMarqueeText(data))
+      .catch(console.error);
+  }, []);
+  console.log(marqueeText)
   useEffect(() => {
     sanityClient
       .fetch(
@@ -36,6 +53,9 @@ export const Landing = () => {
       .then((data) => setBackgroundImage(data))
       .catch(console.error);
   }, []);
+
+
+
 
   useEffect(() => {
     const delSections = document.querySelectorAll(".delayed-section");
@@ -76,7 +96,8 @@ export const Landing = () => {
 
   return (
     <LandingStyled landingImage={backgroundImage?.[0].background_image.asset.url}>
-      <MarqueeTest />
+      {/* <MarqueeTest /> */}
+      <MarqueeHeader marqueeText={marqueeText?.[0].title}/>
       <div className="TakeFlight3D">
         <img src={Logotipo3D} />
       </div>
