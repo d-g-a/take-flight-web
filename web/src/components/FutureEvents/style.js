@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import '../../static/fonts/fonts.css'
-import { SM, MD, LG } from '../../constants/mediaQueries'
+import "../../static/fonts/fonts.css";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const FutureEventsStyled = styled.div`
   width: 100%;
@@ -8,9 +8,10 @@ export const FutureEventsStyled = styled.div`
   color: white;
   background-color: black;
   padding-top: 40px;
-  font-family: 'baikal', sans-serif;
+  font-family: "baikal", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+  overflow: hidden;
 
   a:hover {
     color: #4814cc;
@@ -22,8 +23,8 @@ export const FutureEventsStyled = styled.div`
       color: #f2e7d7;
       padding-left: 20px;
       @media (max-width: ${SM}) {
-      font-size: 12px;
-    }
+        font-size: 12px;
+      }
     }
     a:hover {
       color: #4814cc;
@@ -35,27 +36,27 @@ export const FutureEventsStyled = styled.div`
     text-align: center;
     padding-bottom: 20px;
     color: #f2e7d7;
-    font-family: 'baikal', sans-serif;
+    font-family: "baikal", sans-serif;
     font-weight: bold;
     @media (max-width: ${SM}) {
       margin-top: 16px;
-      font-size: 24px;
+      font-size: 32px;
     }
   }
   .tabSelector {
     margin: 0;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
-    
   }
 
-  .nav-tabs{
+  .nav-tabs {
     display: flex;
     flex-direction: row;
     @media (max-width: ${SM}) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      font-size: 12px;
     }
   }
 
@@ -65,6 +66,16 @@ export const FutureEventsStyled = styled.div`
     border-top-right-radius: 1em;
     color: #f2e7d7;
     text-transform: uppercase;
+    @media (max-width: ${SM}) {
+      font-size: 12px;
+    }
+  }
+
+  .nav-tabs .nav-link.active {
+    background-color: #f2e7d7;
+    @media (max-width: ${SM}) {
+      font-size: 12px;
+    }
   }
 
   .individualTab {
@@ -75,15 +86,18 @@ export const FutureEventsStyled = styled.div`
     font-weight: bold;
     text-align: center;
     font-size: 16px;
+    @media (max-width: ${SM}) {
+      font-size: 12px;
+    }
   }
 
   .nav-link.active {
     color: #4814cc;
     background-color: #f2e7d7;
     border-color: #f2e7d7;
-  } 
+  }
 
-  ul{
+  ul {
     margin-bottom: 0 !important;
   }
 
@@ -106,9 +120,14 @@ export const LoadingWrapper = styled.div`
   h1 {
     font-size: 80px;
     margin-bottom: 20px;
+    @media (max-width: ${SM}) {
+      font-size: 40px;
+    }
   }
   img {
     width: 100px;
-    color: #f2e7d7;
+    @media (max-width: ${SM}) {
+      width: 60px;
+    }
   }
 `;

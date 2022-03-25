@@ -27,14 +27,11 @@ export const FooterWrapper = styled.div`
       img {
         width: 160px;
       }
+      a{
+        color:#f2e7d7;
+      }
       @media (max-width:${SM}) {
         font-size: 24px;
-
-        .email{
-          font-size: 16px;
-          color:#f2e7d7;
-        }
-
         img {
         width: 80px;
       }
