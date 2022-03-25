@@ -24,6 +24,9 @@ export const EventPageWrapper = styled.div`
       font-family: "baikal";
       font-weight: bold;
       text-align: center;
+      @media (max-width: 640px) {
+        font-size: 32px;
+      }
     }
 
     p {
@@ -34,6 +37,10 @@ export const EventPageWrapper = styled.div`
       font-style: normal;
       font-size: 40px;
       text-align: center;
+      @media (max-width: 640px) {
+        width: 90vw;
+        font-size: 32px;
+      }
     }
 
     .titleButton {

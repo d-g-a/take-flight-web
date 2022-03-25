@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import '../../static/fonts/fonts.css'
+import { SM, MD, LG } from '../../constants/mediaQueries'
 
 export const FutureEventsStyled = styled.div`
   width: 100%;
@@ -33,11 +34,26 @@ export const FutureEventsStyled = styled.div`
     color: #f2e7d7;
     font-family: 'baikal', sans-serif;
     font-weight: bold;
+    @media (max-width: ${SM}) {
+      margin-top: 16px;
+      font-size: 24px;
+    }
   }
   .tabSelector {
     margin: 0;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+    
+  }
+
+  .nav-tabs{
+    display: flex;
+    flex-direction: row;
+    @media (max-width: ${SM}) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .nav-link {

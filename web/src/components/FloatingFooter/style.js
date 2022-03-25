@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {SM, MD, LG} from '../../constants/mediaQueries'
 
 export const FloatingFooterStyled = styled.div`
   footer {

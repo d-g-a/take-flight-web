@@ -13,7 +13,7 @@ export const Footer = () => {
           <a>INSTAGRAM</a>
         </li>
         <li>
-          <a>HELLO@TAKEFLIGHT.WORLD</a>
+          <a className="email">HELLO@TAKEFLIGHT.WORLD</a>
         </li>
         <li>
           <img src={isotipo} alt="Isotipo" />

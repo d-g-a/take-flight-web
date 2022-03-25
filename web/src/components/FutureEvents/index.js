@@ -6,12 +6,13 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MarqueeTest } from "../MarqueeTest";
-import isotipo from '../../images/isotipo.svg'
+import isotipo from "../../images/isotipo.svg";
 
 import sanityClient from "../../client.js";
 
 export const FutureEvents = () => {
   const [allEvents, setAllEvents] = useState(null);
+  const [key, setKey] = useState(allEvents?.[0]?.title);
 
   useEffect(() => {
     sanityClient
@@ -66,20 +67,21 @@ export const FutureEvents = () => {
       .catch(console.error);
   }, []);
 
-  const [key, setKey] = useState(allEvents?.[0]?.title);
+  console.log(allEvents);
+
   return (
     <div>
       {!allEvents ? (
         <LoadingWrapper>
-         <h1>LOADING</h1>
-         <img src={isotipo} alt="Take Flight"/>
-          </LoadingWrapper>
+          <h1>LOADING</h1>
+          <img src={isotipo} alt="Take Flight" />
+        </LoadingWrapper>
       ) : (
         <FutureEventsStyled>
           <div className="header">
             <Link to="/home">BACK</Link>
           </div>
-            <h1>FUTURE EVENTS</h1>
+          <h1>FUTURE EVENTS</h1>
           <Tabs
             id="controlled-tab-example"
             activeKey={key}
@@ -95,7 +97,7 @@ export const FutureEvents = () => {
                   tabClassName="individualTab"
                   activeKey={event.title}
                 >
-                  <EventPage eventInfo={event} />
+                  <EventPage eventInfo={event} key={key }/>
                 </Tab>
               );
             })}

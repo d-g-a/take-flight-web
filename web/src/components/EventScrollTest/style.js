@@ -62,9 +62,13 @@ footer {height: 50vh}
   left: 0;
   right: 0;
   bottom: 0;
-  background: black;
+  background: transparent;
   color: white;
-  display: hide;
+  display: none;
+}
+
+.visible{
+  display: none;
 }
 
 .demo-wrapper {

@@ -11,7 +11,8 @@ import isotipo from "../../images/isotipo.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const EventPage = ({ eventInfo }) => {
+export const EventPage = ({ eventInfo, key }) => {
+
 
   useEffect(() => {
     const delSections = document.querySelectorAll(".delayed-section");
@@ -73,7 +74,7 @@ export const EventPage = ({ eventInfo }) => {
             <p>{eventInfo.description}</p>
           </div>
           <EventAliasMarquee eventAlias={eventInfo.eventAlias} />
-          <EventScrollTest eventInfo={eventInfo} />
+          <EventScrollTest eventInfo={eventInfo} key={key} />
           <MarqueeTest />
         </EventPageWrapper>
       )}

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
+import {SM, MD, LG} from '../../constants/mediaQueries'
 
 export const MarqueeStyled = styled.div`
   font-size: 48px;
@@ -7,7 +8,7 @@ export const MarqueeStyled = styled.div`
   font-weight: 800;
   color: white;
 
-  @media (max-width: 500px) {
+  @media (max-width: ${SM}) {
     font-size: 32px;
   }
 

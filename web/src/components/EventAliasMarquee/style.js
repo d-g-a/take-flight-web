@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const EventAliasMarqueeWrapper = styled.div`
   font-size: 64px;
@@ -8,6 +9,10 @@ export const EventAliasMarqueeWrapper = styled.div`
   color: #f2e7d7;
   margin: 0 10px;
   text-transform: uppercase;
+
+  @media (max-width: ${SM}) {
+    font-size: 32px;
+  }
 
   .marquee {
     position: relative;

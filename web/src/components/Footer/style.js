@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const FooterWrapper = styled.div`
   width: 100vw;
@@ -25,6 +26,17 @@ export const FooterWrapper = styled.div`
       margin-bottom: 60px;
       img {
         width: 160px;
+      }
+      @media (max-width:${SM}) {
+        font-size: 24px;
+
+        .email{
+          font-size: 16px;
+        }
+
+        img {
+        width: 80px;
+      }
       }
     }
   }

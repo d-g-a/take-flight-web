@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
-import landingTF from "../../images/tf_landing.jpeg";
+import {SM, MD, LG} from '../../constants/mediaQueries'
 
 export const LandingStyled = styled.div`
   background-color: black;
@@ -16,6 +16,10 @@ export const LandingStyled = styled.div`
   background-image: url(${(props) => props.landingImage});
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
+
+  @media (max-width: ${SM}) {
+        background-size: auto 100vh;
+      }
 
   .TakeFlight3D {
     margin-top: 100px;
@@ -34,6 +38,10 @@ export const LandingStyled = styled.div`
     }
     img {
       width: 60vw;
+
+      @media (max-width: ${SM}) {
+        width: 90vw;
+      }
     }
   }
 `;

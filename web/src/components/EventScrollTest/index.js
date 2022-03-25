@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import imagesLoaded from "imagesloaded";
 
-export const EventScrollTest = ({ eventInfo }) => {
+export const EventScrollTest = ({ eventInfo, key }) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -41,15 +41,15 @@ export const EventScrollTest = ({ eventInfo }) => {
     };
 
     imagesLoaded(images).on("progress", updateProgress).on("always", showDemo);
-  }, []);
+  }, [eventInfo.slug]);
 
   return (
     <EventScrollWrapper>
       <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
       <div className="loader df aic jcc">
         <div>
-          <h1>Loading</h1>
-          <h2 className="loader--text">0%</h2>
+          <h1 className="visible">Loading</h1>
+          <h2 className="loader--text visible">0%</h2>
         </div>
       </div>
       <div className="demo-wrapper">
