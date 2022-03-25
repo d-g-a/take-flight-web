@@ -1,16 +1,21 @@
 import styled from "styled-components";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const TeacherPageStyled = styled.div`
   background-color: black;
-  color:  #f2e7d7;
+  color: #f2e7d7;
   padding-top: 50px;
   height: 110vh;
   width: 100vw;
-  
+
   h1 {
     text-align: center;
     font-size: 72px;
     font-weight: bold;
+    @media (max-width: ${SM}) {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
   }
 
   P {
@@ -24,6 +29,11 @@ export const TeacherPageStyled = styled.div`
     justify-content: flex-start;
     align-items: center;
     color: #f2e7d7;
+
+    @media (max-width: ${SM}) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   .tabSelector {
@@ -32,12 +42,6 @@ export const TeacherPageStyled = styled.div`
     border-top-right-radius: 1em;
   }
 
-  .nav-link {
-    margin: 0 10px;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    color: #f2e7d7;
-  }
 
   .individualTab {
     border-top-left-radius: 1em;
@@ -46,19 +50,25 @@ export const TeacherPageStyled = styled.div`
     color: #f2e7d7;
   }
 
-  .nav-link{
+  .nav-link {
+    margin: 0 10px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    color: #f2e7d7
     font-size: 24px;
     padding: 0 20px;
+    @media (max-width: ${SM}) {
+      font-size: 18px;;
+    }
   }
 
   .nav-link.active {
     color: #4814cc;
     background-color: #f2e7d7;
     border-color: #f2e7d7;
-   
-  } 
+  }
 
-  ul{
+  ul {
     margin-bottom: 0 !important;
   }
 `;

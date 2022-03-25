@@ -57,10 +57,16 @@ export const EventPageWrapper = styled.div`
     height: 60px;
     background-color: #04a025;
     border: none;
+    @media (max-width: 640px) {
+      width: 200px;
+      height: 60px;
+    }
     a {
       text-decoration: none;
       color: #f2e7d7;
       font-size: 24px;
+      @media (max-width: 640px) {
+        font-size: 16px;
     }
     a:hover {
       color: black;

@@ -21,6 +21,9 @@ export const FutureEventsStyled = styled.div`
     a {
       color: #f2e7d7;
       padding-left: 20px;
+      @media (max-width: ${SM}) {
+      font-size: 12px;
+    }
     }
     a:hover {
       color: #4814cc;

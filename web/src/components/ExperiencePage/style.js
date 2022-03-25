@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const EventsPageStyled = styled.div`
   height: 100vh;
@@ -26,6 +27,10 @@ export const EventsPageStyled = styled.div`
     justify-content: flex-start;
     align-items: center;
     color: #f2e7d7;
+    @media (max-width: ${SM}) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   .tabSelector {
@@ -34,12 +39,9 @@ export const EventsPageStyled = styled.div`
     border-top-right-radius: 1em;
   }
 
-  .nav-link {
-    margin: 0 10px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+  .nav-link.active {
+    background-color: #f2e7d7;
   }
-
   .individualTab {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -50,11 +52,14 @@ export const EventsPageStyled = styled.div`
     color: #f2e7d7;
   }
 
-  .nav-link.active{
-    background-color: #f2e7d7;
+  .nav-link {
+    margin: 0 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    @media (max-width: ${SM}) {
+      font-size: 14px;
+    }
   }
-
-
 
   ul {
     margin-bottom: 0 !important;
@@ -68,6 +73,9 @@ export const EventsPageStyled = styled.div`
     font-family: "baikal", sans-serif;
     font-weight: bold;
     color: #f2e7d7;
+    @media (max-width: ${SM}) {
+      font-size: 32px;
+    }
   }
 
   .Content {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GlobalScrollStyled = styled.div`
-  #container {
+  /* #container {
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -28,7 +28,7 @@ export const GlobalScrollStyled = styled.div`
     color: whitesmoke;
     width: 100vw;
     height: auto;
-  }
+  } */
 
   .teachers {
     /* background-color: #000;

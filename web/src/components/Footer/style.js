@@ -32,6 +32,7 @@ export const FooterWrapper = styled.div`
 
         .email{
           font-size: 16px;
+          color:#f2e7d7;
         }
 
         img {

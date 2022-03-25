@@ -5,7 +5,7 @@ import {SM, MD, LG} from '../../constants/mediaQueries'
 export const LandingStyled = styled.div`
   background-color: black;
   color: white;
-  height: 280vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;

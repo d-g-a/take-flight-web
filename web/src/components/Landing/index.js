@@ -81,7 +81,7 @@ export const Landing = () => {
         <img src={Logotipo3D} />
       </div>
     
-      <SecondaryContent >
+      {/* <SecondaryContent >
         <div id="del1" class="delayed-section" data-scrub="0.4">
           <div className="innerContainer">
             <img width="575" src={tfTwo} alt="hola" />
@@ -114,7 +114,7 @@ export const Landing = () => {
             </h2>
           </div>
         </div>
-      </SecondaryContent>
+      </SecondaryContent> */}
     </LandingStyled>
   );
 };
