@@ -24,7 +24,7 @@ export const MarqueeTest = () => {
       <div className="marquee">
         <div className="track">
           {marqueeText?.map((marquee) => (
-            <a href={marquee.url}>
+            // <a href={marquee.url}>
               <div className="content">
                 <span>{marquee.title}</span>
                 <span>{marquee.title}</span>
@@ -33,7 +33,7 @@ export const MarqueeTest = () => {
                 <span>{marquee.title}</span>
                 <span>{marquee.title}</span>
               </div>
-            </a>
+            // </a>
           ))}
         </div>
       </div>
