@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { EventScrollTest } from "../EventScrollTest";
 import { EventAliasMarquee } from "../EventAliasMarquee";
 
+
 import isotipo from "../../images/isotipo.svg";
 
 gsap.registerPlugin(ScrollTrigger);

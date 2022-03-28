@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "../../../static/fonts/fonts.css";
-import { SM, MD, LG} from '../../../constants/mediaQueries'
+import { SM, MD, LG } from "../../../constants/mediaQueries";
 
 export const EventTabsStyled = styled.div`
   display: flex;
@@ -16,9 +16,16 @@ export const EventTabsStyled = styled.div`
     font-size: 60px;
     padding: 20px;
     color: #f2e7d7;
+    @media (max-width: ${LG}) {
+      font-size: 50px;
+      width: 95vw;
+      margin-bottom: 20px;
+    }
+    @media (max-width: ${MD}) {
+      font-size: 44px;
+    }
     @media (max-width: ${SM}) {
       font-size: 32px;
-      width: 95vw;
     }
   }
 `;

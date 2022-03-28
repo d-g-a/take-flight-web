@@ -3,7 +3,7 @@ import "../../static/fonts/fonts.css";
 import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const EventsPageStyled = styled.div`
-  height: 100vh;
+  height: auto;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ export const EventsPageStyled = styled.div`
     justify-content: flex-start;
     align-items: center;
     color: #f2e7d7;
-    @media (max-width: ${SM}) {
+    @media (max-width: ${LG}) {
       flex-direction: column;
       justify-content: center;
     }

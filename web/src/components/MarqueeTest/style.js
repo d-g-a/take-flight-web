@@ -1,13 +1,19 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
-import {SM, MD, LG} from '../../constants/mediaQueries'
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const MarqueeStyled = styled.div`
   font-size: 48px;
   font-family: "baikal", sans-serif;
   font-weight: 800;
-  color: white;
+  color: #f2e7d7;
 
+  @media (max-width: ${LG}) {
+    font-size: 54px;
+  }
+  @media (max-width: ${MD}) {
+    font-size: 40px;
+  }
   @media (max-width: ${SM}) {
     font-size: 32px;
   }
@@ -19,14 +25,14 @@ export const MarqueeStyled = styled.div`
     height: 100px;
     overflow-x: hidden;
     a {
-    color: #f2e7d7;
-    display: inline-block;
-    text-decoration: none;
-  }
+      color: #f2e7d7;
+      display: inline-block;
+      text-decoration: none;
+    }
 
-  a:hover {
-    color: #4814cc;
-  }
+    a:hover {
+      color: #4814cc;
+    }
   }
 
   .track {
@@ -45,9 +51,7 @@ export const MarqueeStyled = styled.div`
     }
   }
 
-  
   .content {
-
     span {
       padding-right: 40px;
     }

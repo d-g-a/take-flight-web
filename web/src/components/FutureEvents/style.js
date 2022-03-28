@@ -38,8 +38,14 @@ export const FutureEventsStyled = styled.div`
     color: #f2e7d7;
     font-family: "baikal", sans-serif;
     font-weight: bold;
-    @media (max-width: ${SM}) {
+    @media (max-width: ${LG}) {
       margin-top: 16px;
+      font-size: 54px;
+    }
+    @media (max-width: ${MD}) {
+      font-size: 48px;
+    }
+    @media (max-width: ${SM}) {
       font-size: 32px;
     }
   }
@@ -52,7 +58,7 @@ export const FutureEventsStyled = styled.div`
   .nav-tabs {
     display: flex;
     flex-direction: row;
-    @media (max-width: ${SM}) {
+    @media (max-width: ${LG}) {
       flex-direction: column;
       justify-content: center;
       align-items: center;

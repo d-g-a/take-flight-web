@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
-import {SM, MD, LG} from '../../constants/mediaQueries'
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const LandingStyled = styled.div`
   background-color: black;
@@ -14,12 +14,9 @@ export const LandingStyled = styled.div`
   align-items: center;
   overflow: hidden;
   background-image: url(${(props) => props.landingImage});
-  background-size: 100vw 100vh;
+  background-size: auto 100vh;
   background-repeat: no-repeat;
-
-  @media (max-width: ${SM}) {
-        background-size: auto 100vh;
-      }
+  background-position: center;
 
   .TakeFlight3D {
     margin-top: 100px;

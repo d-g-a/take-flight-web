@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const MarqueeHeaderWrapper = styled.div`
   font-size: 64px;
@@ -8,7 +9,13 @@ export const MarqueeHeaderWrapper = styled.div`
   color: #f2e7d7;
   margin: 0 10px;
 
-  @media (max-width: 640px) {
+  @media (max-width: ${LG}) {
+    font-size: 54px;
+  }
+  @media (max-width: ${MD}) {
+    font-size: 40px;
+  }
+  @media (max-width: ${SM}) {
     font-size: 32px;
   }
 
@@ -19,8 +26,8 @@ export const MarqueeHeaderWrapper = styled.div`
     height: 100px;
     overflow-x: hidden;
     @media (max-width: 640px) {
-    height: 50px;
-  }
+      height: 50px;
+    }
   }
 
   .track {

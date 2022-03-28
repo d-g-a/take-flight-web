@@ -17,7 +17,6 @@ export const ExperienceTabs = () => {
       .catch(console.error);
   }, []);
 
-  console.log(aboutText);
   return (
     <EventTabsStyled>
       <p>{aboutText?.[0].description}</p>

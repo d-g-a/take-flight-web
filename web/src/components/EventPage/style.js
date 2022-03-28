@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const EventPageWrapper = styled.div`
   width: 100vw;
@@ -27,19 +28,20 @@ export const EventPageWrapper = styled.div`
       @media (max-width: 640px) {
         font-size: 32px;
       }
+      
     }
 
     p {
-      width: 80vw;
+      width: 85vw;
       padding-bottom: 20px;
       font-family: acumin-pro-extra-condensed, sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 40px;
       text-align: center;
-      @media (max-width: 640px) {
-        width: 90vw;
+      @media (max-width: ${LG}) {
         font-size: 32px;
+        width: 90vw;
       }
     }
 
@@ -57,17 +59,27 @@ export const EventPageWrapper = styled.div`
     height: 60px;
     background-color: #04a025;
     border: none;
-    @media (max-width: 640px) {
-      width: 200px;
+    @media (max-width: ${MD}) {
+      width: 220px;
       height: 60px;
+    }
+    @media (max-width: ${SM}) {
+      width: 200px;
+      height: 50px;
     }
     a {
       text-decoration: none;
       color: #f2e7d7;
       font-size: 24px;
-      @media (max-width: 640px) {
+      @media (max-width: ${LG}) {
+        font-size: 20px;
+      }
+      @media (max-width: ${MD}) {
+        font-size: 18px;
+      }
+      @media (max-width: ${SM}) {
         font-size: 16px;
-    }
+      }
     a:hover {
       color: black;
     }

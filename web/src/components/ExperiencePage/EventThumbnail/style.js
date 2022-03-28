@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SM, MD, LG } from "../../../constants/mediaQueries";
 
 export const EventThumnailWrapper = styled.div`
   width: 100vw;
@@ -12,7 +13,7 @@ export const EventThumnailWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items:center ;
+  align-items: center;
 
   .EventDetails {
     margin: 25px;
@@ -25,6 +26,15 @@ export const EventThumnailWrapper = styled.div`
       text-transform: uppercase;
       font-size: 48px;
       margin: 0;
+      @media (max-width: ${LG}) {
+        font-size: 40px;
+      }
+      @media (max-width: ${MD}) {
+        font-size: 32px;
+      }
+      @media (max-width: ${SM}) {
+        font-size: 24px;
+      }
     }
     p {
       padding-bottom: 20px;
@@ -34,6 +44,17 @@ export const EventThumnailWrapper = styled.div`
       font-size: 40px;
       text-align: center;
       width: 80vw;
+      @media (max-width: ${LG}) {
+        font-size: 32px;
+        width: 90vw;
+      }
+      @media (max-width: ${MD}) {
+        font-size: 24px;
+        width: 95vw;
+      }
+      @media (max-width: ${SM}) {
+        font-size: 22px;
+      }
     }
 
     .titleButton {

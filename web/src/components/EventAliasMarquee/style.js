@@ -10,6 +10,12 @@ export const EventAliasMarqueeWrapper = styled.div`
   margin: 0 10px;
   text-transform: uppercase;
 
+  @media (max-width: ${LG}) {
+    font-size: 54px;
+  }
+  @media (max-width: ${MD}) {
+    font-size: 40px;
+  }
   @media (max-width: ${SM}) {
     font-size: 32px;
   }

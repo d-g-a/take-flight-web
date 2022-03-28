@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SM, MD, LG } from "../../constants/mediaQueries";
+import { SM, MD  } from "../../constants/mediaQueries";
 
 export const TeacherPageStyled = styled.div`
   background-color: black;
@@ -12,6 +12,10 @@ export const TeacherPageStyled = styled.div`
     text-align: center;
     font-size: 72px;
     font-weight: bold;
+    @media (max-width: ${MD}) {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
     @media (max-width: ${SM}) {
       font-size: 32px;
       margin-bottom: 10px;

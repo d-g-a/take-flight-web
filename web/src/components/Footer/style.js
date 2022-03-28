@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "../../static/fonts/fonts.css";
-import { SM, MD, LG } from "../../constants/mediaQueries";
+import { SM, MD } from "../../constants/mediaQueries";
 
 export const FooterWrapper = styled.div`
   width: 100vw;
@@ -27,14 +27,22 @@ export const FooterWrapper = styled.div`
       img {
         width: 160px;
       }
-      a{
-        color:#f2e7d7;
+      a {
+        color: #f2e7d7;
       }
-      @media (max-width:${SM}) {
+      a:hover {
+        color: #4814cc;
+      }
+      @media (max-width: ${MD}) {
+        font-size: 40px;
+        img {
+          width: 100px;
+        }
+      @media (max-width: ${SM}) {
         font-size: 24px;
         img {
-        width: 80px;
-      }
+          width: 80px;
+        }
       }
     }
   }

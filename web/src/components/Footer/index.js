@@ -7,10 +7,10 @@ export const Footer = () => {
     <FooterWrapper>
       <ul>
         <li>
-          <a>YOUTUBE</a>
+          <a href="">YOUTUBE</a>
         </li>
         <li>
-          <a>INSTAGRAM</a>
+          <a href="">INSTAGRAM</a>
         </li>
         <li>
           <a href="mailto:hello@takeflight.world">CONTACT</a>

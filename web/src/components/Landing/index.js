@@ -7,22 +7,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ZaccMilne from "../../images/Zacc_Milne_Take_Flight_Teacher.jpg";
 import KarrieMilne from "../../images/Kerrie_Milne_Take_Flight_Teacher.jpg";
 import CaetlynWatson from "../../images/Caetlyn_Watson_Take_Flight_Teacher.jpg";
-import landingTF from '../../images/tf_landing.jpeg'
-import tfTwo from '../../images/tf_landing_2.jpeg'
-import tfThree from '../../images/tf_landing_3.jpeg'
-import tfFour from '../../images/tf_landing_4.jpeg'
+import landingTF from "../../images/tf_landing.jpeg";
+import tfTwo from "../../images/tf_landing_2.jpeg";
+import tfThree from "../../images/tf_landing_3.jpeg";
+import tfFour from "../../images/tf_landing_4.jpeg";
 
 import { MarqueeHeader } from "../MarqueeHeader";
 
-import sanityClient from '../../client.js'
+import sanityClient from "../../client.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const Landing = () => {
-  
   const [marqueeText, setMarqueeText] = useState(null);
   const [backgroundImage, setBackgroundImage] = useState(null);
-  
+
   useEffect(() => {
     sanityClient
       .fetch(
@@ -35,7 +34,7 @@ export const Landing = () => {
       .then((data) => setMarqueeText(data))
       .catch(console.error);
   }, []);
-  console.log(marqueeText)
+
   useEffect(() => {
     sanityClient
       .fetch(
@@ -53,9 +52,6 @@ export const Landing = () => {
       .then((data) => setBackgroundImage(data))
       .catch(console.error);
   }, []);
-
-
-
 
   useEffect(() => {
     const delSections = document.querySelectorAll(".delayed-section");
@@ -95,13 +91,15 @@ export const Landing = () => {
   }, []);
 
   return (
-    <LandingStyled landingImage={backgroundImage?.[0].background_image.asset.url}>
+    <LandingStyled
+      landingImage={backgroundImage?.[0].background_image.asset.url}
+    >
       {/* <MarqueeTest /> */}
-      <MarqueeHeader marqueeText={marqueeText?.[0].title}/>
+      <MarqueeHeader marqueeText={marqueeText?.[0].title} />
       <div className="TakeFlight3D">
         <img src={Logotipo3D} />
       </div>
-    
+
       {/* <SecondaryContent >
         <div id="del1" class="delayed-section" data-scrub="0.4">
           <div className="innerContainer">

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {SM, MD, LG} from '../../constants/mediaQueries'
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const FloatingFooterStyled = styled.div`
   footer {
@@ -11,7 +11,20 @@ export const FloatingFooterStyled = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 97vw;
-  
+
+    .mobile {
+      display: none;
+      @media (max-width: ${MD}) {
+        display: flex;
+      }
+    }
+
+    .display {
+      @media (max-width: ${MD}) {
+        display: none;
+      }
+    }
+
     button {
       border-radius: 25px;
       color: #f2e7d7;
@@ -27,13 +40,13 @@ export const FloatingFooterStyled = styled.div`
       cursor: pointer;
     }
 
-    a{ 
+    a {
       text-decoration: none;
       color: #4814cc;
-      font-family: 'baikal', sans-serif;
+      font-family: "baikal", sans-serif;
       font-weight: normal;
     }
-    
+
     .events {
       width: auto;
       background-color: #f2e7d7;
@@ -44,8 +57,8 @@ export const FloatingFooterStyled = styled.div`
       width: auto;
       background-color: #04a025;
     }
-    .contact:hover{
-        width: 60vw;
+    .contact:hover {
+      width: 60vw;
     }
   }
 `;
