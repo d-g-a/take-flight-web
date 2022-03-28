@@ -14,9 +14,9 @@ export const LandingStyled = styled.div`
   align-items: center;
   overflow: hidden;
   background-image: url(${(props) => props.landingImage});
-  background-size: auto 100vh;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: cover;
 
   .TakeFlight3D {
     margin-top: 100px;

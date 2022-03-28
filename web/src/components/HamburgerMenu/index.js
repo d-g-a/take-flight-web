@@ -1,27 +1,30 @@
-import React from 'react';
-import { HamburgerMenuWrapper, Menu, LogoWrapper } from './style';
-import { Link } from 'gatsby';
+import React from "react";
+import { HamburgerMenuWrapper, Menu, LogoWrapper } from "./style";
+import { Link } from "gatsby";
+import isotipo from "../../images/isotipo.svg";
 
 export const HamburgerMenu = ({ close, eventUrl }) => {
   return (
     <HamburgerMenuWrapper>
-        <LogoWrapper>
-        <Link to="/" > LOGO</Link>
-        </LogoWrapper>
-        <Menu>
-          <button className="events">
-            <a href="#experience">EXPERIENCE</a>
-          </button>
-          <button className="events">
-            <Link to="#teachers">TEACHERS</Link>
-          </button>
-          <button className="events">
-            <Link to="/events">UPCOMING EVENTS</Link>
-          </button>
-          <button className="events">
-            <Link to={eventUrl}>GET YOUR TICKETS</Link>
-          </button>
-        </Menu>
+      <Menu>
+        <Link to="#experience" onClick={close}>
+          <div>EXPERIENCE</div>
+        </Link>
+        <Link to="#teachers" onClick={close}>
+          <div>TEACHERS</div>
+        </Link>
+        <Link to="/events" onClick={close}>
+          <div>UPCOMING EVENTS</div>
+        </Link>
+        <Link to={eventUrl} onClick={close}>
+          <div>GET YOUR TICKETS</div>
+        </Link>
+      </Menu>
+      <LogoWrapper>
+        <Link to="/home">
+          <img src={isotipo} alt="logo" />
+        </Link>
+      </LogoWrapper>
     </HamburgerMenuWrapper>
   );
 };

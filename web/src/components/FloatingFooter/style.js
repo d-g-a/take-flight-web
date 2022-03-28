@@ -2,6 +2,18 @@ import styled from "styled-components";
 import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const FloatingFooterStyled = styled.div`
+ .display {
+      @media (max-width: ${MD}) {
+        display: none;
+      }
+    }
+
+    .mobile {
+      display: none;
+      @media (max-width: ${MD}) {
+        display: flex;
+      }
+    }
   footer {
     position: fixed;
     bottom: 30px;
@@ -12,18 +24,7 @@ export const FloatingFooterStyled = styled.div`
     align-items: center;
     width: 97vw;
 
-    .mobile {
-      display: none;
-      @media (max-width: ${MD}) {
-        display: flex;
-      }
-    }
-
-    .display {
-      @media (max-width: ${MD}) {
-        display: none;
-      }
-    }
+  
 
     button {
       border-radius: 25px;

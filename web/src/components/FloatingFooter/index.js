@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FloatingFooterStyled } from "./style";
 import { Link } from "gatsby";
-//import { HamburgerMenu } from "../HamburgerMenu";
-//import { HamburgerIcon } from "../HamburgerIcon";
-//import Popup from 'reactjs-popup';
+import { HamburgerMenu } from "../HamburgerMenu";
+import { HamburgerIcon } from "../HamburgerIcon";
+import Popup from "reactjs-popup";
 
 import sanityClient from "../../client.js";
 
@@ -25,7 +25,7 @@ export const FloatingFooter = ({ children }) => {
 
   const contentStyle = {
     background: "rgba(255,255,255,0)",
-    border: "none"
+    border: "none",
   };
 
   return (
@@ -50,15 +50,17 @@ export const FloatingFooter = ({ children }) => {
         </div>
       </footer>
       <footer className="mobile">
-        {/* <Popup 
-            modal
-            overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-            contentStyle={contentStyle}
-            closeOnDocumentClick={false}
-            trigger={open => <HamburgerIcon open={open} />}
-            >
-          { close => <HamburgerMenu close={close} eventUrl={marqueeText?.[0].url} />}
-        </Popup> */}
+        <Popup
+          modal
+          overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+          contentStyle={contentStyle}
+          closeOnDocumentClick={false}
+          trigger={(open) => <HamburgerIcon open={open} />}
+        >
+          {(close) => (
+            <HamburgerMenu close={close} eventUrl={marqueeText?.[0].url} />
+          )}
+        </Popup>
       </footer>
     </FloatingFooterStyled>
   );

@@ -8,12 +8,13 @@ export const HamburgerIconWrapper = styled.div`
   cursor: pointer;
   position: absolute;
   right: 20px;
-  top: 20px;
+  bottom: 8px;
   z-index: 9999;
-  background: #fff;
+  background: #f2e7d7;;
   padding: 10px;
   border-radius: 25px;
   //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  
 }
 
 .burger-menu .bar1,
@@ -21,9 +22,11 @@ export const HamburgerIconWrapper = styled.div`
 .bar3 {
   width: 25px;
   height: 3px;
-  background-color: #333;
   margin: 4px 0;
   transition: 0.4s;
+  background-color: #4814cc;
+  color: white;
+  
 }
 
 .burger-menu.open .bar1 {
