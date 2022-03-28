@@ -18,6 +18,7 @@ export const FooterWrapper = styled.div`
 
   ul {
     margin-top: 20px;
+    padding: 0;
     li {
       font-family: "baikal", sans-serif;
       font-weight: bold;

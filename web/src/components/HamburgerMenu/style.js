@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SM } from '../../constants/mediaQueries'   
 
 export const HamburgerMenuWrapper = styled.div`
   height: 100vh;
@@ -24,12 +25,16 @@ export const Menu = styled.div`
   justify-content: center;
   align-items: center;
   font-family: "baikal", sans-serif;
-  font-weight: 800;;
+  font-weight: 800;
+  text-align: center;
   a {
     color:  #f2e7d7;
     text-decoration: none;
     font-size: 26px;
     margin-bottom: 20px ;
+    @media (max-width: ${SM}) {
+      font-size: 26px;
+    }
   }
   a:hover {
     color: #4814cc;

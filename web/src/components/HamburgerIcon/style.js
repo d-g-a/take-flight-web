@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SM } from '../../constants/mediaQueries'  
 
 export const HamburgerIconWrapper = styled.div`
 
@@ -14,6 +15,10 @@ export const HamburgerIconWrapper = styled.div`
   padding: 10px;
   border-radius: 25px;
   //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  @media (max-width: ${SM}) {
+    right: 30px;
+    bottom: 5px;
+  }
   
 }
 
@@ -25,7 +30,6 @@ export const HamburgerIconWrapper = styled.div`
   margin: 4px 0;
   transition: 0.4s;
   background-color: #4814cc;
-  color: white;
   
 }
 

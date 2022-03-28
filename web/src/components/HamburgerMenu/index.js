@@ -8,16 +8,16 @@ export const HamburgerMenu = ({ close, eventUrl }) => {
     <HamburgerMenuWrapper>
       <Menu>
         <Link to="#experience" onClick={close}>
-          <div>EXPERIENCE</div>
+          EXPERIENCE
         </Link>
         <Link to="#teachers" onClick={close}>
-          <div>TEACHERS</div>
+          TEACHERS
         </Link>
         <Link to="/events" onClick={close}>
-          <div>UPCOMING EVENTS</div>
+          UPCOMING EVENTS
         </Link>
         <Link to={eventUrl} onClick={close}>
-          <div>GET YOUR TICKETS</div>
+          GET YOUR TICKETS
         </Link>
       </Menu>
       <LogoWrapper>
