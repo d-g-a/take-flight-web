@@ -7,6 +7,8 @@ export const TeacherPageStyled = styled.div`
   padding-top: 50px;
   height: 110vh;
   width: 100vw;
+  font-family: "baikal", sans-serif;
+  font-weight: bold;
 
   h1 {
     text-align: center;
@@ -30,9 +32,10 @@ export const TeacherPageStyled = styled.div`
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     color: #f2e7d7;
+    
 
     @media (max-width: ${SM}) {
       flex-direction: column;
@@ -58,9 +61,11 @@ export const TeacherPageStyled = styled.div`
     margin: 0 10px;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
-    color: #f2e7d7
-    font-size: 24px;
+    color: #f2e7d7;
+    font-size: 18px;
     padding: 0 20px;
+    font-family: "baikal", sans-serif;
+  font-weight: bold;
     @media (max-width: ${SM}) {
       font-size: 18px;;
     }

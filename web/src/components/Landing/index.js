@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { LandingStyled, SecondaryContent } from "./style";
+import { LandingStyled } from "./style";
 import Logotipo3D from "../../images/Logo_3D2.png";
 import { MarqueeTest } from "../MarqueeTest";
 import { gsap } from "gsap";
@@ -11,6 +11,7 @@ import landingTF from "../../images/tf_landing.jpeg";
 import tfTwo from "../../images/tf_landing_2.jpeg";
 import tfThree from "../../images/tf_landing_3.jpeg";
 import tfFour from "../../images/tf_landing_4.jpeg";
+import { SecondaryContent } from "../SecondaryContent";   
 
 import { MarqueeHeader } from "../MarqueeHeader";
 
@@ -53,42 +54,6 @@ export const Landing = () => {
       .catch(console.error);
   }, []);
 
-  useEffect(() => {
-    const delSections = document.querySelectorAll(".delayed-section");
-
-    delSections.forEach((section) => {
-      const containerAnim = gsap.to(section.querySelector(".innerContainer"), {
-        y: "100vh",
-        ease: "none",
-      });
-
-      const imageAnim = gsap.to(section.querySelector("img"), {
-        y: "-100vh",
-        ease: "none",
-        paused: true,
-      });
-
-      const scrub = gsap.to(imageAnim, {
-        progress: 1,
-        paused: true,
-        ease: "power3",
-        duration: parseFloat(section.dataset.scrub) || 0.1,
-        overwrite: true,
-      });
-
-      ScrollTrigger.create({
-        animation: containerAnim,
-        scrub: true,
-        trigger: section,
-        start: "top bottom",
-        end: "bottom top",
-        onUpdate: (self) => {
-          scrub.vars.progress = self.progress;
-          scrub.invalidate().restart();
-        },
-      });
-    });
-  }, []);
 
   return (
     <LandingStyled

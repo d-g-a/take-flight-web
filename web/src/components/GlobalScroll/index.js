@@ -7,6 +7,7 @@ import { ExperiencePage } from "../ExperiencePage";
 import { FloatingFooter } from "../FloatingFooter";
 import { TeachersPage } from "../TeachersPage";
 import { Footer } from "../Footer"
+import { SecondaryContent } from "../SecondaryContent"; 
 
 export const GlobalScroll = () => {
   // useEffect(() => {
@@ -32,6 +33,9 @@ export const GlobalScroll = () => {
         {/* <div id="container"> */}
           <section className="panel landing">
             <Landing />
+          </section>
+          <section className="panel landing">
+            <SecondaryContent />
           </section>
           <section className="panel experience" id="experience_page">
             <ExperiencePage />

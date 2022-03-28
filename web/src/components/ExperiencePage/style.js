@@ -4,6 +4,7 @@ import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const EventsPageStyled = styled.div`
   height: auto;
+  min-height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ export const EventsPageStyled = styled.div`
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     color: #f2e7d7;
     @media (max-width: ${LG}) {

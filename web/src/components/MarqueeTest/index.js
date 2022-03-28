@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { MarqueeStyled } from "./style";
 
+
+
 import sanityClient from "../../client.js";
 
 export const MarqueeTest = () => {

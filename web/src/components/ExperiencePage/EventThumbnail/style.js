@@ -3,7 +3,7 @@ import { SM, MD, LG } from "../../../constants/mediaQueries";
 
 export const EventThumnailWrapper = styled.div`
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   /* background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;

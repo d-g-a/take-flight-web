@@ -42,7 +42,8 @@ export const EventScrollTest = ({ eventInfo, key }) => {
 
     imagesLoaded(images).on("progress", updateProgress).on("always", showDemo);
   }, [eventInfo.slug]);
-
+  
+  console.log(eventInfo)
   return (
     <EventScrollWrapper>
       <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
@@ -99,6 +100,14 @@ export const EventScrollTest = ({ eventInfo, key }) => {
                 className="image_1"
               />
             </li>
+            <li className="image-container">
+              <img
+                height="120px"
+                src={eventInfo?.image_6.asset.url}
+                width="120px"
+                className="image_1"
+              />
+            </li>
           </ul>
         </section>
 
@@ -140,6 +149,14 @@ export const EventScrollTest = ({ eventInfo, key }) => {
               <img
                 height="120px"
                 src={eventInfo?.image_5.asset.url}
+                width="120px"
+                className="image_1"
+              />
+            </li>
+            <li className="image-container">
+              <img
+                height="120px"
+                src={eventInfo?.image_6.asset.url}
                 width="120px"
                 className="image_1"
               />

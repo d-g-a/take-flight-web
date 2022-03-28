@@ -58,6 +58,7 @@ export const FutureEventsStyled = styled.div`
   .nav-tabs {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     @media (max-width: ${LG}) {
       flex-direction: column;
       justify-content: center;

@@ -67,6 +67,7 @@ export const EventPageWrapper = styled.div`
       width: 200px;
       height: 50px;
     }
+
     a {
       text-decoration: none;
       color: #f2e7d7;
@@ -80,8 +81,9 @@ export const EventPageWrapper = styled.div`
       @media (max-width: ${SM}) {
         font-size: 16px;
       }
+    }
     a:hover {
-      color: black;
+      color: #4814cc;
     }
   }
 `;
