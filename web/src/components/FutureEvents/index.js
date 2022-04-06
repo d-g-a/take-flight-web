@@ -79,7 +79,7 @@ export const FutureEvents = () => {
       ) : (
         <FutureEventsStyled>
           <div className="header">
-            <Link to="/home">BACK</Link>
+            <Link to="/">BACK</Link>
           </div>
           <h1>UPCOMING EVENTS</h1>
           <Tabs
