@@ -14,6 +14,7 @@ import marqueeText from "./documents/marqueeText";
 import teachers from "./documents/teachers";
 import backgroundImage from "./documents/backgroundImage";
 import experienceText from "./documents/experienceText";
+import thumnbnailImages from "./documents/thumnbnailImages";
 
 // Object types
 import bodyPortableText from "./objects/bodyPortableText";
@@ -46,6 +47,7 @@ export default createSchema({
     marqueeText,
     backgroundImage,
     experienceText,
+    thumnbnailImages,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

@@ -81,7 +81,7 @@ export const FutureEvents = () => {
           <div className="header">
             <Link to="/home">BACK</Link>
           </div>
-          <h1>FUTURE EVENTS</h1>
+          <h1>UPCOMING EVENTS</h1>
           <Tabs
             id="controlled-tab-example"
             activeKey={key}

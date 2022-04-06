@@ -5,8 +5,8 @@ export const SecondaryContentWrapper = styled.div`
   height: 120vh;
   width: 100vw;
   text-align: center;
-  color: #f2e7d7;
-  background-color: #000;
+  color: #000;
+  background-color: #f2e7d7;
   overflow: hidden;
 
   @media (max-width: ${MD}) {

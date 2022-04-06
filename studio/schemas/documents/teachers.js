@@ -25,5 +25,35 @@ export default {
         ],
       },
     ],
+    orderings: [
+      {
+        title: 'Title, New',
+        name: 'titleDesc',
+        by: [
+          {field: 'title', direction: 'desc'}
+        ]
+      },
+      {
+        title: 'Title, Old',
+        name: 'titleAsc',
+        by: [
+          {field: 'title', direction: 'asc'}
+        ]
+      },
+      // {
+      //   title: 'Release Date, Old',
+      //   name: 'releaseDateAsc',
+      //   by: [
+      //     {field: 'releaseDate', direction: 'asc'}
+      //   ]
+      // },
+      // {
+      //   title: 'Popularity',
+      //   name: 'popularityDesc',
+      //   by: [
+      //     {field: 'popularity', direction: 'desc'}
+      //   ]
+      // }
+    ]
   };
   

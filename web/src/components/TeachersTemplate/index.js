@@ -3,6 +3,7 @@ import { TeacherGlider } from '../TeacherGlider'
 import {TeachersTemplateWrapper} from './style'
 
 export const TeachersTemplate = ({teachers}) => {
+  console.log("teachers template",teachers)
   return (
     <TeachersTemplateWrapper>
         <TeacherGlider teachers={teachers?.authors} />

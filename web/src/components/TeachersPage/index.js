@@ -9,14 +9,13 @@ import { TeachersTemplate } from "../TeachersTemplate";
 import sanityClient from "../../client.js";
 
 export const TeachersPage = () => {
-  const [allTeachers, setAllTeachers] = useState(null);
+  const [allTeachers, setAllTeachers] = useState([]);
   const [key, setKey] = useState(allTeachers?.[0]?.title);
 
   useEffect(() => {
     sanityClient
       .fetch(
         `*[_type == "teachers"]{
-          _id,
           title,
           description,
           authors[]{
@@ -38,6 +37,8 @@ export const TeachersPage = () => {
       .then((data) => setAllTeachers(data))
       .catch(console.error);
   }, []);
+
+  console.log(allTeachers?.title?.sort())
 
   return (
     <TeacherPageStyled id="teachers">

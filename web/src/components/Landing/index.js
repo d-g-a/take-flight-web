@@ -58,6 +58,7 @@ export const Landing = () => {
   return (
     <LandingStyled
       landingImage={backgroundImage?.[0].background_image.asset.url}
+      id="landing"
     >
       {/* <MarqueeTest /> */}
       <MarqueeHeader marqueeText={marqueeText?.[0].title} />
@@ -65,40 +66,6 @@ export const Landing = () => {
         <img src={Logotipo3D} />
       </div>
 
-      {/* <SecondaryContent >
-        <div id="del1" class="delayed-section" data-scrub="0.4">
-          <div className="innerContainer">
-            <img width="575" src={tfTwo} alt="hola" />
-          </div>
-        </div>
-        <div id="del2" className="delayed-section" data-scrub="0.2">
-          <div className="innerContainer">
-            <img width="575" src={tfThree} alt="hola" />
-          </div>
-        </div>
-        <div id="del3" className="delayed-section" data-scrub="0.6">
-          <div className="innerContainer">
-            <img width="800" src={tfFour} alt="hola" />
-          </div>
-        </div>
-        <div id="del4" className="delayed-section" data-scrub="0.4">
-          <div className="innerContainer">
-            <h2 className="sub-title">Powered by love</h2>
-          </div>
-        </div>
-        <div id="del5" className="delayed-section" data-scrub="0.3">
-          <div className="innerContainer">
-            <h2 className="sub-title">Escape the ordinary, <br /> Experience More</h2>
-          </div>
-        </div>
-        <div id="del6" className="delayed-section" data-scrub="0.1">
-          <div className="innerContainer">
-            <h2 className="sub-title">
-              A unique and immersive dance training experience like no other.
-            </h2>
-          </div>
-        </div>
-      </SecondaryContent> */}
     </LandingStyled>
   );
 };
