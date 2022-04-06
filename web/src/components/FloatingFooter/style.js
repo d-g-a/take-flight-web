@@ -23,9 +23,6 @@ export const FloatingFooterStyled = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 97vw;
-
-  
-
     button {
       border-radius: 25px;
       color: #f2e7d7;
@@ -46,12 +43,17 @@ export const FloatingFooterStyled = styled.div`
       color: #4814cc;
       font-family: "baikal", sans-serif;
       font-weight: normal;
+      margin: 0;
+    }
+    a:hover {
+      color: #000;
     }
 
     .events {
       width: auto;
       background-color: #f2e7d7;
       font-size: 16px;
+      border: 1.5px solid black;
     }
 
     .contact {

@@ -18,6 +18,16 @@ export const LandingStyled = styled.div`
   background-repeat: no-repeat;
   background-position: center;
 
+  video {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+
   .TakeFlight3D {
     margin-top: 100px;
     animation: fadeInAnimation ease 3s;
@@ -42,4 +52,3 @@ export const LandingStyled = styled.div`
     }
   }
 `;
-

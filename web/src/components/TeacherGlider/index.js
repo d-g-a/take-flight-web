@@ -9,7 +9,6 @@ export const TeacherGlider = ({ teachers }) => {
     <TeacherGliderStyled>
       <Carousel
         additionalTransfrom={0}
-        arrows
         autoPlaySpeed={2500}
         centerMode={false}
         className="carousel"

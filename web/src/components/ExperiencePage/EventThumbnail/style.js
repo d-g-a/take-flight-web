@@ -8,7 +8,7 @@ export const EventThumnailWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
-  background-color: #000;
+  background-color: #4814cc;
   color: #f2e7d7;
   display: flex;
   flex-direction: column;

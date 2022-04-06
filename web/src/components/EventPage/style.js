@@ -12,7 +12,7 @@ export const EventPageWrapper = styled.div`
   align-items: center;
 
   .EventDetails {
-    margin: 25px;
+    margin: 15px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ export const EventPageWrapper = styled.div`
     }
 
     p {
-      width: 85vw;
+      width: 90vw;
       padding-bottom: 20px;
       font-family: acumin-pro-extra-condensed, sans-serif;
       font-weight: 700;
@@ -59,6 +59,7 @@ export const EventPageWrapper = styled.div`
     height: 60px;
     background-color: #04a025;
     border: none;
+    margin-bottom: 50px;
     @media (max-width: ${MD}) {
       width: 220px;
       height: 60px;

@@ -3,14 +3,14 @@ import "../../static/fonts/fonts.css";
 import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const MarqueeHeaderWrapper = styled.div`
-  font-size: 64px;
+  font-size: 54px;
   font-family: "baikal", sans-serif;
   font-weight: bold;
   color: #f2e7d7;
   margin: 0 10px;
 
   @media (max-width: ${LG}) {
-    font-size: 54px;
+    font-size: 48px;
   }
   @media (max-width: ${MD}) {
     font-size: 40px;

@@ -65,17 +65,17 @@ export const EventPage = ({ eventInfo, key }) => {
             eventDate={eventInfo.dates}
             ticketUrl={eventInfo.url}
           />
+          <EventScrollTest eventInfo={eventInfo} key={key} />
+          <EventAliasMarquee eventAlias={eventInfo.eventAlias} />
           <div className="EventDetails">
             <div className="titleButton">
-              <h2>{eventInfo.title}</h2>
+              {/* <h2>{eventInfo.title}</h2> */}
+            </div>
+            <p>{eventInfo.description}</p>
               <button className="GetTicketsButton">
                 <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
               </button>
-            </div>
-            <p>{eventInfo.description}</p>
           </div>
-          <EventAliasMarquee eventAlias={eventInfo.eventAlias} />
-          <EventScrollTest eventInfo={eventInfo} key={key} />
           <MarqueeTest />
         </EventPageWrapper>
       )}
