@@ -11,10 +11,10 @@ export const SecondaryContentWrapper = styled.div`
  
 
   @media (max-width: ${MD}) {
-    height: 110vh;
+    height: 140vh;
   }
   @media (max-width: ${SM}) {
-    height: 100vh;
+    height: 120vh;
   }
 
   h2 {
@@ -93,59 +93,56 @@ export const SecondaryContentWrapper = styled.div`
 
   @media (max-width: ${MD}) {
     #del1 {
-    top: 120vh;
-    left: 35vw;
-    width: 400px;
-  }
+      top: 110vh;
+      left: 20vw;
+      width: 60vw;
+    }
 
-  #del2 {
-    top: 180vh;
-    left: 22vw;
-    width: 400px;
-  }
+    #del2 {
+      top: 210vh;
+      left: 20vw;
+      width: 60vw;
+    }
 
-  #del3 {
-    top: 145vh;
-    left: 10vw;
-    width: 250px;
-    right: 5vw;
-  }
+    #del3 {
+      top: 150vh;
+      left: 30vw;
+      width: 40vw;
+    }
 
-  #del4 {
-    top: 115vh;
-    left: 10%;
-    right: 10%;
-  }
+    #del4 {
+      top: 120vh;
+      left: 10vw;
+      right: 10vw;
+    }
 
-text-align: left;
-  }
-  }
+  } 
 
   @media (max-width: ${SM}) {
-        #del1 {
-    top: 120vh;
-      left: 30vw;
-      width: 200px;
-  }
+    #del1 {
+      top: 110vh;
+      left: 10vw;
+      width: 80vw;
+    }
 
-  #del2 {
-    top: 180vh;
-    left: 22vw;
-    width: 220px;
-  }
+    #del2 {
+      top: 190vh;
+      left: 10vw;
+      width: 80vw;
+    }
 
-  #del3 {
-    top: 150vh;
-    left: 20vw;
-    width: 150px;
-    right: 5vw;
-  }
+    #del3 {
+      top: 140vh;
+      left: 20vw;
+      width: 60vw;
+      right: 5vw;
+    }
 
-  #del4 {
-    top: 115vh;
-    left: 10%;
-    right: 10%;
-  }
+    #del4 {
+      top: 120vh;
+      left: 10vw;
+      right: 10vw;
+    }
 
   }
 

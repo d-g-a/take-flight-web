@@ -5,7 +5,7 @@ import { SM, MD, LG } from "../../constants/mediaQueries";
 export const LandingStyled = styled.div`
   background-color: black;
   color: white;
-  height: 100vh;
+  height: 90vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -20,10 +20,10 @@ export const LandingStyled = styled.div`
 
   video {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     left: 50%;
     top: 50%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
   }
