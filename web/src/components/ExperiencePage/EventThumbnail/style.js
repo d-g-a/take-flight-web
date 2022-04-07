@@ -45,10 +45,12 @@ export const EventThumnailWrapper = styled.div`
       font-family: acumin-pro-extra-condensed, sans-serif;
       font-weight: 700;
       font-style: normal;
-      font-size: 48px;
+      font-size: 64px;
       text-align: center;
       width: 80vw;
       position: absolute;
+      -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
       @media (max-width: 1260px ) {
       position: relative
     }

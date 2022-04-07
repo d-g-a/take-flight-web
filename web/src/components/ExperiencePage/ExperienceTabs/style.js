@@ -20,6 +20,8 @@ export const EventTabsStyled = styled.div`
     font-size: 64px;
     padding: 20px;
     color: #f2e7d7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     @media (max-width: 1260px ) {
       position: relative
     }
