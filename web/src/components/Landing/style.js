@@ -28,6 +28,28 @@ export const LandingStyled = styled.div`
     transform: translate(-50%, -50%);
   }
 
+  .delayed-section {
+    position: absolute;
+    width: 30vw;
+    height: 38.87vw;
+  }
+
+  .delayed-section .inner-container {
+    will-change: transform;
+  }
+
+  .delayed-section img {
+    max-width: 100%;
+    will-change: transform;
+    border-radius: 20px;
+  }
+
+  #del1 {
+    top: 25vh;
+    left: 20vw;
+    width: 60vw;
+  }
+
   .TakeFlight3D {
     margin-top: 100px;
     animation: fadeInAnimation ease 3s;
@@ -44,7 +66,7 @@ export const LandingStyled = styled.div`
       }
     }
     img {
-      width: 60vw;
+      width: 80vw;
 
       @media (max-width: ${SM}) {
         width: 90vw;

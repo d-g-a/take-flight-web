@@ -14,6 +14,25 @@ export const EventThumnailWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow: hidden;
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65vw;
+
+    .thumbnailImage {
+      width: 25vw;
+      img {
+        height: 500px;
+        width: auto;
+        object-fit: contain;
+        border-radius: 20px;
+      }
+    }
+  }
 
   .EventDetails {
     margin: 25px;
@@ -37,7 +56,7 @@ export const EventThumnailWrapper = styled.div`
       }
     }
     p {
-      padding-bottom: 20px;
+      padding-bottom: 40px;
       font-family: acumin-pro-extra-condensed, sans-serif;
       font-weight: 700;
       font-style: normal;

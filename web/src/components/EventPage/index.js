@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { EventPageWrapper, LoadingWrapper } from "./style";
-import { MarqueeTest } from "../MarqueeTest";
 import { DateMarquee } from "../DateMarquee";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { EventScrollTest } from "../EventScrollTest";
 import { EventAliasMarquee } from "../EventAliasMarquee";
+import { Footer } from '../Footer' 
 
 
 import isotipo from "../../images/isotipo.svg";
@@ -51,7 +51,7 @@ export const EventPage = ({ eventInfo, key }) => {
       });
     });
   }, []);
-
+  
   return (
     <div>
       {!eventInfo ? (
@@ -69,14 +69,15 @@ export const EventPage = ({ eventInfo, key }) => {
           <EventAliasMarquee eventAlias={eventInfo.eventAlias} />
           <div className="EventDetails">
             <div className="titleButton">
-              {/* <h2>{eventInfo.title}</h2> */}
+              <h4>{eventInfo.city}</h4>
+              <h4>{eventInfo.location}</h4>
             </div>
             <p>{eventInfo.description}</p>
               <button className="GetTicketsButton">
                 <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
               </button>
           </div>
-          <MarqueeTest />
+          <Footer /> 
         </EventPageWrapper>
       )}
     </div>

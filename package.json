@@ -26,6 +26,7 @@
   "dependencies": {
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "imagesloaded": "^5.0.0",
+    "kute.js": "^2.2.2",
     "react-images-loaded": "^2.0.0"
   }
 }

@@ -29,6 +29,43 @@ export const Landing = () => {
   }, []);
 
   useEffect(() => {
+    const delSections = document.querySelectorAll(".delayed-section");
+
+    delSections.forEach((section) => {
+      const containerAnim = gsap.to(section.querySelector(".innerContainer"), {
+        y: "30vh",
+        ease: "none",
+      });
+
+      const imageAnim = gsap.to(section.querySelector("img"), {
+        y: "-30vh",
+        ease: "none",
+        paused: true,
+      });
+
+      const scrub = gsap.to(imageAnim, {
+        progress: 1,
+        paused: true,
+        ease: "power3",
+        duration: parseFloat(section.dataset.scrub) || 0.1,
+        overwrite: true,
+      });
+
+      ScrollTrigger.create({
+        animation: containerAnim,
+        scrub: true,
+        trigger: section,
+        start: "top bottom",
+        end: "bottom top",
+        onUpdate: (self) => {
+          scrub.vars.progress = self.progress;
+          scrub.invalidate().restart();
+        },
+      });
+    });
+  }, []);
+
+  useEffect(() => {
     sanityClient
       .fetch(
         `*[_type == "background-image"]{
@@ -55,8 +92,10 @@ export const Landing = () => {
         <source src={testLoop} type="video/mp4" />
       </video>
       <MarqueeHeader marqueeText={marqueeText?.[0].title} />
-      <div className="TakeFlight3D">
-        <img src={Logotipo3D} />
+      <div id="del1" class="delayed-section" data-scrub="0.4">
+        <div className="innerContainer">
+          <img src={Logotipo3D} />
+        </div>
       </div>
     </LandingStyled>
   );

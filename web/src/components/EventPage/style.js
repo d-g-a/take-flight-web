@@ -25,10 +25,11 @@ export const EventPageWrapper = styled.div`
       font-family: "baikal";
       font-weight: bold;
       text-align: center;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
       @media (max-width: 640px) {
         font-size: 32px;
       }
-      
     }
 
     p {
@@ -47,10 +48,16 @@ export const EventPageWrapper = styled.div`
 
     .titleButton {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
+      h4 {
+        margin-left: 50px;
+        font-family: "baikal";
+        font-weight: bold;
+        font-size: 24px;
+      }
     }
   }
   .GetTicketsButton {

@@ -14,6 +14,8 @@ export const TeacherPageStyled = styled.div`
     text-align: center;
     font-size: 72px;
     font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     @media (max-width: ${MD}) {
       font-size: 48px;
       margin-bottom: 10px;

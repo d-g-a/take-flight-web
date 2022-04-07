@@ -74,6 +74,8 @@ export const EventsPageStyled = styled.div`
     font-family: "baikal", sans-serif;
     font-weight: bold;
     color: #f2e7d7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     @media (max-width: ${SM}) {
       font-size: 32px;
     }

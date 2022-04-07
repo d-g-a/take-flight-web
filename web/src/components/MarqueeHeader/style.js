@@ -42,7 +42,7 @@ export const MarqueeHeaderWrapper = styled.div`
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-30%);
     }
   }
 

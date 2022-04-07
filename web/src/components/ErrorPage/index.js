@@ -8,6 +8,7 @@ export const ErrorPage = () => {
     <ErrorPageWrapper>
       <Link to="/home">
         <h1>NOT FOUND</h1>
+        <h3>GO BACK HOME</h3>
         <img src={isotipo} alt="Take Flight" />
       </Link>
     </ErrorPageWrapper>

@@ -34,7 +34,7 @@ export const DateMarqueeWrapper = styled.div`
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 32s linear infinite;
+    animation: marquee 40s linear infinite;
   }
 
   @keyframes marquee {
@@ -42,7 +42,7 @@ export const DateMarqueeWrapper = styled.div`
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-30%);
     }
   }
 

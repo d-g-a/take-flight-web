@@ -43,7 +43,6 @@ export const EventScrollTest = ({ eventInfo, key }) => {
     imagesLoaded(images).on("progress", updateProgress).on("always", showDemo);
   }, [eventInfo.slug]);
   
-  console.log(eventInfo)
   return (
     <EventScrollWrapper>
       <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>

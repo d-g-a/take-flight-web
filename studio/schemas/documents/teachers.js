@@ -9,12 +9,6 @@ export default {
         title: "Title",
       },
       {
-        name: "description",
-        type: "text",
-        title: "Description",
-
-      },
-      {
         name: "authors",
         title: "Past Teachers",
         type: "array",

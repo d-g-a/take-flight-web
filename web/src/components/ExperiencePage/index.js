@@ -31,6 +31,12 @@ export const ExperiencePage = () => {
             url
           }
         },
+        image_2{
+          asset ->{
+            _id,
+            url
+          }
+        },
       }`
       )
       .then((data) => setAllEvents(data))

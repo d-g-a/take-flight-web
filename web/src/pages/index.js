@@ -1,8 +1,8 @@
 import React from "react";
 import SEO from "../components/seo";
-import { AnimationTestTwo } from "../components/AnimationTestTwo";
 import { Layout } from "../components/Layout";
 import { Link } from "gatsby";
+import { IntroAnimation } from "../components/IntroAnimation"  
 
 const IndexPage = (props) => {
   return (
@@ -12,7 +12,7 @@ const IndexPage = (props) => {
       //description={site.description}
       //keywords={site.keywords}
       />
-      <Link to="/home">HOME</Link>
+     <IntroAnimation />
     </Layout>
   );
 };

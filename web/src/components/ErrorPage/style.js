@@ -18,6 +18,11 @@ export const ErrorPageWrapper = styled.div`
     font-family: 'baikal', sans-serif;
     font-weight: bold;
   }
+  h3{
+    margin-bottom: 20px;
+    font-family: 'baikal', sans-serif;
+    font-weight: bold;
+  }
   img {
     width: 100px;
     color: #f2e7d7;

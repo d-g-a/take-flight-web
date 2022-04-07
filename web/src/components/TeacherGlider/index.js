@@ -4,12 +4,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const TeacherGlider = ({ teachers }) => {
-  console.log("teachers glider",teachers)
   return (
     <TeacherGliderStyled>
       <Carousel
         additionalTransfrom={0}
-        autoPlaySpeed={2500}
+        autoPlaySpeed={2200}
         centerMode={false}
         className="carousel"
         containerClass="container-with-dots"
@@ -52,6 +51,7 @@ export const TeacherGlider = ({ teachers }) => {
         sliderClass=""
         slidesToSlide={1}
         swipeable
+        arrows={false}
       >
         {teachers?.map((teacher) => (
           <CardsWrappwer className="card">
@@ -71,12 +71,9 @@ export const TeacherGlider = ({ teachers }) => {
                     </a>
                   </p>
                   <p className="nationality">{teacher?.author?.nationality}</p>
-
                 </div>
-
               </div>
             </div>
-
           </CardsWrappwer>
         ))}
       </Carousel>

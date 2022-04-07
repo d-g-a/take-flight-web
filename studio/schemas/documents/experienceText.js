@@ -14,6 +14,12 @@ export default {
         type: "text",
         title: "Description",
       },
+      {
+        name: "image_1",
+        type: "mainImage",
+        title: "Image 1",
+        description: "Images for the intro",
+      },
     ],
   };
   

@@ -36,39 +36,40 @@ export const CardsWrappwer = styled.div`
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
       margin-bottom: 10px;
-    
-      
-          h3,
-          h4,
-          p,
-          a {
-            color: #f2e7d7;
-          }
 
-          h3{
-            font-size: 32px;
-            margin: 10px 0;
-          }
-          .nationality>p{
-           margin: 0;
-           margin-bottom: 10px;
-          }
-          .instagram>p>a{
-            margin: 0;
-            margin-bottom: 10px;
-          }
-          a:hover{
-            text-decoration: underline;
-            color: #4814CC;
-          }
-        }
+      h3,
+      h4,
+      p,
+      a {
+        color: #f2e7d7;
+      }
 
-        .infoRow{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+      h3 {
+        font-size: 48px;
+        margin: 10px 0;
+        font-family: acumin-pro-extra-condensed, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .nationality > p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .instagram > p > a {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #4814cc;
+      }
     }
-    
+
+    .infoRow {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `;

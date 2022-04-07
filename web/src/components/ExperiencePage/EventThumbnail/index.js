@@ -7,13 +7,16 @@ export const EventThumbnail = ({ backgroundImage, eventInfo }) => {
     <EventThumnailWrapper backgroundImage={backgroundImage}>
       <DateMarquee eventDate={eventInfo.dates} ticketUrl={eventInfo.url} />
       <div className="EventDetails">
-        <div className="titleButton">
-          <h2>{eventInfo.title}</h2>
-          {/* <button className="GetTicketsButton">
-            <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
-          </button> */}
-        </div>
+        <div className="titleButton"></div>
         <p>{eventInfo.thumbnail}</p>
+        <div className="gallery">
+          <div className="thumbnailImage first">
+            <img src={eventInfo?.image_1.asset.url} alt="" />
+          </div>
+          <div className="thumbnailImage">
+            <img src={eventInfo?.image_2.asset.url} alt="" />
+          </div>
+        </div>
       </div>
     </EventThumnailWrapper>
   );

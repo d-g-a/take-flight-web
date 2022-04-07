@@ -15,7 +15,7 @@ export const TeachersPage = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "teachers"]{
+        `*[_type == "teachers"] | order( title desc){
           title,
           description,
           authors[]{
@@ -37,8 +37,6 @@ export const TeachersPage = () => {
       .then((data) => setAllTeachers(data))
       .catch(console.error);
   }, []);
-
-  console.log(allTeachers?.title?.sort())
 
   return (
     <TeacherPageStyled id="teachers">

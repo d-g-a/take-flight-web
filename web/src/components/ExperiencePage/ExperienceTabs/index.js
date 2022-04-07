@@ -11,6 +11,13 @@ export const ExperienceTabs = () => {
         `*[_type == "experience-text"]{
         title,
         description,
+        image_1{
+          asset ->{
+            _id,
+            url
+          }
+        },
+        
       }`
       )
       .then((data) => setAboutText(data))
@@ -20,6 +27,9 @@ export const ExperienceTabs = () => {
   return (
     <EventTabsStyled>
       <p>{aboutText?.[0].description}</p>
+      <div className="left">
+        <img src={aboutText?.[0].image_1.asset.url} alt="About page" />
+      </div>
     </EventTabsStyled>
   );
 };

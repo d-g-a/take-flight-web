@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { SM, MD,LG } from "../../constants/mediaQueries";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const SecondaryContentWrapper = styled.div`
   height: 120vh;
   width: 100vw;
   text-align: center;
-  color: #000;
-  background-color: #f2e7d7;
+  color: #f2e7d7;
+  background-color: #000;
   overflow: hidden;
 
   @media (max-width: ${MD}) {
@@ -17,9 +17,8 @@ export const SecondaryContentWrapper = styled.div`
   }
 
   h2 {
-    font-family: acumin-pro-extra-condensed, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "baikal", sans-serif;
+    font-weight: bold;
   }
 
   .delayed-section {
@@ -39,38 +38,30 @@ export const SecondaryContentWrapper = styled.div`
   }
 
   #del1 {
-    top: 110vh;
-    left: 2vw;
-    width: 600px;
+    top: 120vh;
+    left: 6vw;
+    width: 550px;
   }
 
   #del2 {
-    top: 130vh;
+    top: 150vh;
     left: 35vw;
-    width: 420px;
+    width: 660px;
   }
 
   #del3 {
-    top: 100vh;
-    left: 60vw;
-    width: 600px;
+    top: 112vh;
+    left: 67vw;
+    width: 400px;
+    right: 5vw;
   }
 
   #del4 {
-    top: 110vh;
-    left: 30vw;
+    top: 115vh;
+    left: 10%;
+    right: 10%;
   }
 
-  #del5 {
-    top: 150vh;
-    left: 5vw;
-    text-align: left;
-  }
-  #del6 {
-    top: 150vh;
-    left: 58vw;
-    text-align: left;
-  }
 
   @media (max-width: ${LG}) {
     #del1 {
@@ -94,17 +85,6 @@ export const SecondaryContentWrapper = styled.div`
   #del4 {
     top: 110vh;
     left: 30vw;
-  }
-
-  #del5 {
-    top: 150vh;
-    left: 5vw;
-    text-align: left;
-  }
-  #del6 {
-    top: 150vh;
-    left: 58vw;
-    text-align: left;
   }
   }
 
@@ -132,15 +112,7 @@ export const SecondaryContentWrapper = styled.div`
     left: 30vw;
   }
 
-  #del5 {
-    top: 150vh;
-    left: 5vw;
-    text-align: left;
-  }
-  #del6 {
-    top: 150vh;
-    left: 58vw;
-    text-align: left;
+text-align: left;
   }
   }
 
@@ -165,27 +137,23 @@ export const SecondaryContentWrapper = styled.div`
 
   #del4 {
     top: 130vh;
-    left: 6vw;
+    left: 30vw;
+    text-align: right;
   }
 
-  #del5 {
-    top: 180vh;
-    left: 8vw;
-    text-align: left;
-  }
-  #del6 {
-    top: 230vh;
-    left: 5vw;
-    text-align: left;
-  }
   }
 
 
 
   .sub-title {
     text-transform: uppercase;
-    width: 40vw;
-    font-size: 48px;
+    width: 80vw;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    line-height: 1.5em;
+
+    
     @media (max-width: ${MD}) {
       font-size: 40px;
     }

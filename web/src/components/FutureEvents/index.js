@@ -67,7 +67,6 @@ export const FutureEvents = () => {
       .catch(console.error);
   }, []);
 
-  console.log(allEvents);
 
   return (
     <div>
@@ -79,7 +78,7 @@ export const FutureEvents = () => {
       ) : (
         <FutureEventsStyled>
           <div className="header">
-            <Link to="/">BACK</Link>
+            <Link to="/home">BACK</Link>
           </div>
           <h1>UPCOMING EVENTS</h1>
           <Tabs

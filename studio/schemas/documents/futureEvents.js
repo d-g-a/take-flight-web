@@ -10,17 +10,6 @@ export default {
       description: "e.g. TAKE FLIGHT TOUR",
     },
     {
-      name: "slug",
-      type: "slug",
-      title: "Slug",
-      description:
-        "Some frontends will require a slug to be set to be able to show the post",
-      options: {
-        source: "title",
-        maxLength: 96,
-      },
-    },
-    {
       name: "eventAlias",
       type: "string",
       title: "Event Alias",
@@ -45,11 +34,13 @@ export default {
       name: "thumbnail",
       type: "text",
       title: "Thumbnail Text",
+      description: "Event short description for the experience page",
     },
     {
       name: "description",
       type: "text",
       title: "Description",
+      description: "Event full description for the events page",
     },
     {
       name: "url",
