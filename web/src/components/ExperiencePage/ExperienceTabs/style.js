@@ -22,8 +22,8 @@ export const EventTabsStyled = styled.div`
     color: #f2e7d7;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    @media (max-width: 1260px ) {
-      position: relative
+    @media (max-width: 1260px) {
+      position: relative;
     }
     @media (max-width: ${LG}) {
       font-size: 50px;
@@ -38,25 +38,23 @@ export const EventTabsStyled = styled.div`
     }
   }
 
-  .left{
+  .left {
     width: 25vw;
     overflow: hidden;
     margin-top: 100px;
-    @media (max-width: 1260px ) {
+    @media (max-width: 1260px) {
       width: 60vw;
       margin: 20px;
     }
-    img{
+    img {
       width: 100%;
       height: 60%;
       object-fit: contain;
       border-radius: 20px;
-      @media (max-width: 1260px ) {
+      @media (max-width: 1260px) {
         height: 40%;
         margin-bottom: 50px;
+      }
     }
-
-    }
-
   }
 `;
