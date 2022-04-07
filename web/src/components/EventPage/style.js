@@ -64,6 +64,7 @@ export const EventPageWrapper = styled.div`
           text-align: center;
           font-size: 20px;
           margin-bottom: 20px;
+          margin-left: 0;
       }
       }
     }
