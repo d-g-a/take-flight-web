@@ -11,10 +11,10 @@ export const EventThumbnail = ({ backgroundImage, eventInfo }) => {
         <p>{eventInfo.thumbnail}</p>
         <div className="gallery">
           <div className="thumbnailImage first">
-            <img src={eventInfo?.image_1.asset.url} alt="" />
+            <img src={eventInfo?.image_1.asset.url} alt="thumbnail" />
           </div>
           <div className="thumbnailImage">
-            <img src={eventInfo?.image_2.asset.url} alt="" />
+            <img src={eventInfo?.image_2.asset.url} alt="thumbnail" />
           </div>
         </div>
       </div>
