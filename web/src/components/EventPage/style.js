@@ -52,11 +52,19 @@ export const EventPageWrapper = styled.div`
       justify-content: center;
       align-items: center;
       margin-bottom: 20px;
+      @media (max-width: ${LG}) {
+        flex-direction:  column;
+      }
       h4 {
         margin-left: 50px;
         font-family: "baikal";
         font-weight: bold;
         font-size: 24px;
+        @media (max-width: ${LG}) {
+          text-align: center;
+          font-size: 20px;
+          margin-bottom: 20px;
+      }
       }
     }
   }

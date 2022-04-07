@@ -7,6 +7,7 @@ export const TeacherGlider = ({ teachers }) => {
   return (
     <TeacherGliderStyled>
       <Carousel
+        autoPlay
         additionalTransfrom={0}
         autoPlaySpeed={2200}
         centerMode={false}

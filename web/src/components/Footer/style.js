@@ -43,7 +43,7 @@ export const FooterWrapper = styled.div`
           width: 100px;
         }
       @media (max-width: ${SM}) {
-        font-size: 24px;
+        font-size: 32px;
         img {
           width: 80px;
         }

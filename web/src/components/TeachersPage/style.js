@@ -5,7 +5,7 @@ export const TeacherPageStyled = styled.div`
   background-color: black;
   color: #f2e7d7;
   padding-top: 50px;
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   font-family: "baikal", sans-serif;
   font-weight: bold;

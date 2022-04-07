@@ -8,12 +8,13 @@ export const SecondaryContentWrapper = styled.div`
   color: #f2e7d7;
   background-color: #000;
   overflow: hidden;
+ 
 
   @media (max-width: ${MD}) {
     height: 110vh;
   }
   @media (max-width: ${SM}) {
-    height: 180vh;
+    height: 100vh;
   }
 
   h2 {
@@ -65,51 +66,55 @@ export const SecondaryContentWrapper = styled.div`
 
   @media (max-width: ${LG}) {
     #del1 {
-    top: 110vh;
-    left: 2vw;
+    top: 120vh;
+    left: 6vw;
     width: 400px;
   }
 
   #del2 {
-    top: 130vh;
+    top: 150vh;
     left: 35vw;
-    width: 320px;
-  }
-
-  #del3 {
-    top: 100vh;
-    left: 60vw;
     width: 400px;
   }
 
+  #del3 {
+    top: 112vh;
+    left: 67vw;
+    width: 200px;
+    right: 5vw;
+  }
+
   #del4 {
-    top: 110vh;
-    left: 30vw;
+    top: 115vh;
+    left: 10%;
+    right: 10%;
   }
   }
 
   @media (max-width: ${MD}) {
     #del1 {
-    top: 110vh;
-    left: 2vw;
-    width: 300px;
+    top: 120vh;
+    left: 35vw;
+    width: 400px;
   }
 
   #del2 {
-    top: 130vh;
-    left: 35vw;
-    width: 220px;
+    top: 180vh;
+    left: 22vw;
+    width: 400px;
   }
 
   #del3 {
-    top: 100vh;
-    left: 60vw;
-    width: 300px;
+    top: 145vh;
+    left: 10vw;
+    width: 250px;
+    right: 5vw;
   }
 
   #del4 {
-    top: 110vh;
-    left: 30vw;
+    top: 115vh;
+    left: 10%;
+    right: 10%;
   }
 
 text-align: left;
@@ -117,28 +122,29 @@ text-align: left;
   }
 
   @media (max-width: ${SM}) {
-    #del1 {
-    top: 210vh;
-    left: 10vw;
-    width: 350px;
+        #del1 {
+    top: 120vh;
+      left: 30vw;
+      width: 200px;
   }
 
   #del2 {
-    top: 150vh;
-    left:20vw;
-    width: 300px;
+    top: 180vh;
+    left: 22vw;
+    width: 220px;
   }
 
   #del3 {
-    top: 105vh;
-    left: 10vw;
-    width: 350px;
+    top: 150vh;
+    left: 20vw;
+    width: 150px;
+    right: 5vw;
   }
 
   #del4 {
-    top: 130vh;
-    left: 30vw;
-    text-align: right;
+    top: 115vh;
+    left: 10%;
+    right: 10%;
   }
 
   }
@@ -152,14 +158,20 @@ text-align: left;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
     line-height: 1.5em;
+    text-align: center;
 
+    @media (max-width: ${LG}) {
+      font-size: 48px;
+      width: 90vw;
+    }
     
     @media (max-width: ${MD}) {
       font-size: 40px;
     }
     @media (max-width: ${SM}) {
-      width: 90vw;
-      text-align: center;
-    }
+      width: 85vw;
+      font-size: 24px;
+      -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
   }
 `;

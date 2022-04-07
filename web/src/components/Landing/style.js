@@ -48,6 +48,20 @@ export const LandingStyled = styled.div`
     top: 25vh;
     left: 20vw;
     width: 60vw;
+    @media (max-width: ${LG}) {
+      width: 70vw;
+      left: 10vw;
+    }
+    @media (max-width: ${MD}) {
+      width: 80vw;
+      left: 5vw;
+    }
+    @media (max-width: ${SM}) {
+      width: 90vw;
+      left: 1vw;
+    }
+    
+
   }
 
   .TakeFlight3D {
@@ -65,12 +79,6 @@ export const LandingStyled = styled.div`
         opacity: 1;
       }
     }
-    img {
-      width: 80vw;
-
-      @media (max-width: ${SM}) {
-        width: 90vw;
-      }
-    }
+   
   }
 `;

@@ -3,7 +3,8 @@ import { SM, MD, LG } from "../../../constants/mediaQueries";
 
 export const EventThumnailWrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   /* background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,31 +16,15 @@ export const EventThumnailWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
+  position: relative;
 
-  .gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 65vw;
-
-    .thumbnailImage {
-      width: 25vw;
-      img {
-        height: 500px;
-        width: auto;
-        object-fit: contain;
-        border-radius: 20px;
-      }
-    }
-  }
 
   .EventDetails {
     margin: 25px;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     h2 {
       text-transform: uppercase;
@@ -60,19 +45,64 @@ export const EventThumnailWrapper = styled.div`
       font-family: acumin-pro-extra-condensed, sans-serif;
       font-weight: 700;
       font-style: normal;
-      font-size: 40px;
+      font-size: 48px;
       text-align: center;
       width: 80vw;
+      position: absolute;
+      @media (max-width: 1260px ) {
+      position: relative
+    }
       @media (max-width: ${LG}) {
-        font-size: 32px;
+        font-size: 40px;
         width: 90vw;
       }
       @media (max-width: ${MD}) {
-        font-size: 24px;
+        font-size: 32px;
         width: 95vw;
       }
       @media (max-width: ${SM}) {
-        font-size: 22px;
+      }
+    }
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+
+      .second {
+        display: none;
+        @media (max-width: ${LG}) {
+          display: none;
+        }
+      }
+
+      .thumbnailImage {
+        width: auto;
+        margin-top: 100px;
+        @media (max-width: ${LG}) {
+          width: 90vw;
+          margin-top: 20px;
+        }
+        @media (max-width: ${SM}) {
+          width: auto;
+        }
+        img {
+          height: 500px;
+          width: auto;
+          object-fit: contain;
+          border-radius: 20px;
+          @media (max-width: ${LG}) {
+            height: 400px;
+            margin-bottom: 20px;
+          }
+          @media (max-width: ${MD}) {
+            height: 300px;
+        }
+          @media (max-width: ${SM}) {
+            height: 200px;
+        }
+        }
       }
     }
 

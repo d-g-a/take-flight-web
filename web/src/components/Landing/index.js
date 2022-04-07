@@ -94,7 +94,7 @@ export const Landing = () => {
       <MarqueeHeader marqueeText={marqueeText?.[0].title} />
       <div id="del1" class="delayed-section" data-scrub="0.4">
         <div className="innerContainer">
-          <img src={Logotipo3D} />
+          <img src={Logotipo3D} className="logo" />
         </div>
       </div>
     </LandingStyled>
