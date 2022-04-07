@@ -14,7 +14,7 @@ export const SecondaryContentWrapper = styled.div`
     height: 140vh;
   }
   @media (max-width: ${SM}) {
-    height: 120vh;
+    height: 140vh;
   }
 
   h2 {

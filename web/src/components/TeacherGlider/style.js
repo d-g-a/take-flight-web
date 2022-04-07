@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components";  
 
 export const TeacherGliderStyled = styled.div`
   .card {
@@ -35,7 +35,8 @@ export const CardsWrappwer = styled.div`
       width: 101%;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
-      margin-bottom: 10px;
+      padding-bottom: 25px;
+      margin-bottom: 20px;
 
       h3,
       h4,
