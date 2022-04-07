@@ -39,9 +39,15 @@ export const MarqueeHeaderWrapper = styled.div`
 
   @keyframes marquee {
     from {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -moz-transform: translateX(0);
       transform: translateX(0);
     }
     to {
+      -webkit-transform: translateX(-30%);
+      -moz-transform: translateX(-30%);
+      -moz-transform: translateX(-30%);
       transform: translateX(-30%);
     }
   }
