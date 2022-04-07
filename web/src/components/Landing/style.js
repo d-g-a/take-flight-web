@@ -50,15 +50,15 @@ export const LandingStyled = styled.div`
     width: 60vw;
     @media (max-width: ${LG}) {
       width: 70vw;
-      left: 10vw;
+      left: 15vw;
     }
     @media (max-width: ${MD}) {
       width: 80vw;
-      left: 5vw;
+      left: 10vw;
     }
     @media (max-width: ${SM}) {
       width: 90vw;
-      left: 1vw;
+      left: 5vw;
     }
     
 
