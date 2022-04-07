@@ -171,4 +171,5 @@ export const SecondaryContentWrapper = styled.div`
       -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
+  } 
 `;

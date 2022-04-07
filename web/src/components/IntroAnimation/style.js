@@ -4,11 +4,14 @@ export const IntroWrapper = styled.div`
   width: 100vw;
   height: 100vh;
 
-  .st0{fill:url('#img1');}
+  .st0{
+    //fill:url('#img1')
+    fill: #fff;
+  }
 
-  
-    background: url("https://4.bp.blogspot.com/-24y91W-nPOI/V4ugJsZ6eQI/AAAAAAAAUb8/EWAFXebHEbQwF2n_u_VQOquOdcoAhQVVgCLcB/s1600/CROM%2BMAG.jpg");
-    background-position: center center;
+    /* background: url("https://4.bp.blogspot.com/-24y91W-nPOI/V4ugJsZ6eQI/AAAAAAAAUb8/EWAFXebHEbQwF2n_u_VQOquOdcoAhQVVgCLcB/s1600/CROM%2BMAG.jpg");
+    background-position: center center; */
+    background-color: #000;
     overflow-x: hidden;
     box-sizing: border-box;
     scroll-behavior: smooth;
