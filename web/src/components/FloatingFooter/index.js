@@ -24,8 +24,8 @@ export const FloatingFooter = ({ children }) => {
   }, []);
 
   const contentStyle = {
-    background: "rgba(255,255,255,0)",
     border: "none",
+    background: "black"
   };
 
   return (
@@ -52,7 +52,7 @@ export const FloatingFooter = ({ children }) => {
       <footer className="mobile">
         <Popup
           modal
-          overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+          // overlayStyle={{ background: "black" }}
           contentStyle={contentStyle}
           closeOnDocumentClick={false}
           trigger={(open) => <HamburgerIcon open={open} />}

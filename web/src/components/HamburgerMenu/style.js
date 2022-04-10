@@ -5,7 +5,6 @@ export const HamburgerMenuWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,4 +38,9 @@ export const Menu = styled.div`
   a:hover {
     color: #4814cc;
   }
+
+  /* .openButton{
+    top: 5px;
+    right: 20px;
+  } */
 `;

@@ -2,6 +2,7 @@ import React from "react";
 import { HamburgerMenuWrapper, Menu, LogoWrapper } from "./style";
 import { Link } from "gatsby";
 import isotipo from "../../images/isotipo.svg";
+import { HamburgerIcon } from "../HamburgerIcon"; 
 
 export const HamburgerMenu = ({ close, eventUrl }) => {
   return (
@@ -25,6 +26,7 @@ export const HamburgerMenu = ({ close, eventUrl }) => {
           <img src={isotipo} alt="logo" />
         </Link>
       </LogoWrapper>
+      <HamburgerIcon open={true} onClick={close} />
     </HamburgerMenuWrapper>
   );
 };
