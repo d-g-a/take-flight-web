@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { LandingStyled } from "./style";
 import Logotipo3D from "../../images/Logo_3D2.png";
+import Logotipo3DMobile from "../../images/isotope_mobile.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -41,7 +42,6 @@ export const Landing = () => {
         ease: "none",
         paused: true,
       });
-
       const scrub = gsap.to(imageAnim, {
         progress: 1,
         paused: true,
@@ -49,7 +49,6 @@ export const Landing = () => {
         duration: parseFloat(section.dataset.scrub) || 0.1,
         overwrite: true,
       });
-
       ScrollTrigger.create({
         animation: containerAnim,
         scrub: true,
@@ -87,35 +86,13 @@ export const Landing = () => {
       landingImage={backgroundImage?.[0].background_image.asset.url}
       id="landing"
     >
-      <video autoPlay loop muted>
+      <video autoPlay loop muted className="video">
         <source src={testLoop} type="video/mp4" />
       </video>
-
-      {/* <div id="bg_container">
-        <iframe
-        id="bg"
-          width="1920"
-          height="1080"
-          src="https://www.youtube.com/embed/k0r59oZgerc?controls=1?autoplay=1?loop=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div> */}
-
-      {/* <iframe
-        src="https://player.vimeo.com/video/697190262?h=1cd6dd5353?background=1"
-        width="640"
-        height="360"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
-      ></iframe> */}
-
       <div id="del1" class="delayed-section" data-scrub="0.4">
         <div className="innerContainer">
-          <img src={Logotipo3D} className="logo" />
+          <img src={Logotipo3D} className="logo Desktop" />
+          <img src={Logotipo3DMobile} className="logo Mobile" />
         </div>
       </div>
     </LandingStyled>

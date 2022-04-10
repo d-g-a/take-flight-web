@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const IntroWrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 200vw;
+  height: 200vh;
 
   .st0 {
-    //fill:url('#img1')
+    width: 100vw;
+    height: 100vw;
+    fill: url("#img1");
     fill: #fff;
   }
 

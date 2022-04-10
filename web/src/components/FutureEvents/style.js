@@ -19,6 +19,9 @@ export const FutureEventsStyled = styled.div`
   .header {
     display: flex;
     flex-direction: row;
+    border: 1px solid #f2e7d7;
+    width: 150px;
+    border-radius: 20px;
     a {
       color: #f2e7d7;
       padding-left: 20px;
@@ -53,6 +56,10 @@ export const FutureEventsStyled = styled.div`
     margin: 0;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+    @media (max-width: ${LG}) {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+    }
   }
 
   .nav-tabs {
@@ -73,6 +80,10 @@ export const FutureEventsStyled = styled.div`
     border-top-right-radius: 1em;
     color: #f2e7d7;
     text-transform: uppercase;
+    @media (max-width: ${LG}) {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+    }
     @media (max-width: ${SM}) {
       font-size: 12px;
     }
@@ -93,6 +104,10 @@ export const FutureEventsStyled = styled.div`
     font-weight: bold;
     text-align: center;
     font-size: 16px;
+    @media (max-width: ${LG}) {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+    }
     @media (max-width: ${SM}) {
       font-size: 12px;
     }

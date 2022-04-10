@@ -27,9 +27,6 @@ export const ExperienceTabs = () => {
   return (
     <EventTabsStyled>
       <p>{aboutText?.[0].description}</p>
-      <div className="left">
-        <img src={aboutText?.[0].image_1.asset.url} alt="About page" />
-      </div>
     </EventTabsStyled>
   );
 };

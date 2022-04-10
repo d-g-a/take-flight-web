@@ -154,6 +154,7 @@ export const SecondaryContentWrapper = styled.div`
     font-size: 50px;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
     line-height: 1.5em;
     text-align: center;
 
@@ -170,6 +171,7 @@ export const SecondaryContentWrapper = styled.div`
       font-size: 24px;
       -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
   }
   } 
 `;

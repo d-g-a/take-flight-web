@@ -18,7 +18,7 @@ export const EventsPageStyled = styled.div`
   text-transform: uppercase;
   overflow: hidden;
 
-  background-color: #4814cc;
+  background-color: #f2e7d7;
   color: white;
 
   .nav-tabs {
@@ -73,11 +73,50 @@ export const EventsPageStyled = styled.div`
     text-align: center;
     font-family: "baikal", sans-serif;
     font-weight: bold;
-    color: #f2e7d7;
-    -webkit-text-stroke-width: 1px;
+    color: #04a025;
+    -webkit-text-stroke-width: px;
     -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
     @media (max-width: ${SM}) {
       font-size: 32px;
+    }
+  }
+
+  .events{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+  .eventButton {
+    border: 1.5px solid black;
+    background-color: transparent;
+    border-radius: 40px;
+    padding: 20px 30px;
+    position: relative;
+    width: auto;
+    min-width: 600px;
+    margin: 20px 20px 40px;
+    h4 {
+      font-family: "baikal";
+      font-style: bold;
+      font-weight: bold;
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+      position: absolute;
+      right: 10px;
+      bottom: -20px;
+    }
+
+    h4:hover {
+      color: #04a025;
     }
   }
 

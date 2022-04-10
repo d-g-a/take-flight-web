@@ -4,6 +4,8 @@ import { ExperienceTabs } from "./ExperienceTabs";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "gatsby";
+import wtow from "../../images/wtow_green.png";
 
 import { EventThumbnail } from "./EventThumbnail";
 
@@ -25,7 +27,7 @@ export const ExperiencePage = () => {
         thumbnail,
         description,
         url,
-        image_1{
+        graffiti{
           asset ->{
             _id,
             url
@@ -46,7 +48,7 @@ export const ExperiencePage = () => {
   return (
     <EventsPageStyled id="experience">
       <div className="Content">
-        <h2>EXPERIENCE</h2>
+        <h2>ABOUT THE EXPERIENCE</h2>
         <Tabs
           id="controlled-tab-example"
           activeKey={key}
@@ -54,16 +56,17 @@ export const ExperiencePage = () => {
           className="mb-3 tabSelector"
           defaultActiveKey="home"
         >
-          <Tab
+          {/* <Tab
             eventKey="home"
             title="ABOUT"
             tabClassName="individualTab"
             activeKey="home"
           >
             <ExperienceTabs />
-          </Tab>
+          </Tab> */}
+          <ExperienceTabs />
 
-          {allEvents?.map((event) => (
+          {/* {allEvents?.map((event) => (
             <Tab
               eventKey={event?.title}
               title={event?.title}
@@ -75,8 +78,19 @@ export const ExperiencePage = () => {
                 eventInfo={event}
               />
             </Tab>
-          ))}
+          ))} */}
         </Tabs>
+        <ExperienceTabs />
+        <div className="events">
+          {allEvents?.map((event) => (
+            <Link to="/events">
+              <button className="eventButton">
+                <img src={event.graffiti.asset.url} alt="test" />
+                <h4>{event.title}</h4>
+              </button>
+            </Link>
+          ))}
+        </div>
       </div>
     </EventsPageStyled>
   );

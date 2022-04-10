@@ -13,10 +13,12 @@ export const LandingStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  /* background-image: url(${(props) => props.landingImage});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
+  @media (max-width: ${MD}) {
+    background-image: url(${(props) => props.landingImage});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   video {
     position: absolute;
@@ -26,6 +28,9 @@ export const LandingStyled = styled.div`
     height: 100vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
+    @media (max-width: ${MD}) {
+      display: none;
+    }
   }
 
   #bg_container {
@@ -68,12 +73,26 @@ export const LandingStyled = styled.div`
       left: 15vw;
     }
     @media (max-width: ${MD}) {
-      width: 80vw;
-      left: 10vw;
+      top: 10vh;
+      width: 60vw;
+      left: 20vw;
     }
     @media (max-width: ${SM}) {
-      width: 90vw;
-      left: 5vw;
+      top: 10vh;
+      width: 60vw;
+      left: 20vw;
+  }
+
+  .Mobile {
+    display: none;
+    @media (max-width: ${MD}) {
+      display: flex;
+    }
+  }
+
+  .Desktop {
+    @media (max-width: ${MD}) {
+      display: none;
     }
   }
 

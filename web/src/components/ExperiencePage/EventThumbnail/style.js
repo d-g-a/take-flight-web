@@ -18,7 +18,6 @@ export const EventThumnailWrapper = styled.div`
   overflow: hidden;
   position: relative;
 
-
   .EventDetails {
     margin: 25px;
     height: auto;
@@ -50,10 +49,11 @@ export const EventThumnailWrapper = styled.div`
       width: 80vw;
       position: absolute;
       -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-      @media (max-width: 1260px ) {
-      position: relative
-    }
+      -webkit-text-stroke-color: black;
+      -webkit-font-smoothing: antialiased;
+      @media (max-width: 1260px) {
+        position: relative;
+      }
       @media (max-width: ${LG}) {
         font-size: 40px;
         width: 90vw;
@@ -100,10 +100,10 @@ export const EventThumnailWrapper = styled.div`
           }
           @media (max-width: ${MD}) {
             height: 300px;
-        }
+          }
           @media (max-width: ${SM}) {
             height: 200px;
-        }
+          }
         }
       }
     }

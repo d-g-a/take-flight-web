@@ -27,6 +27,7 @@ export const EventPageWrapper = styled.div`
       text-align: center;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;
+      -webkit-font-smoothing: antialiased;
       @media (max-width: 640px) {
         font-size: 32px;
       }
@@ -35,10 +36,10 @@ export const EventPageWrapper = styled.div`
     p {
       width: 90vw;
       padding-bottom: 20px;
-      font-family: acumin-pro-extra-condensed, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 40px;
+      font-family: 'baikal';
+      font-weight: lighter;
+      font-style: lighter;
+      font-size: 24px;
       text-align: center;
       @media (max-width: ${LG}) {
         font-size: 32px;
@@ -48,24 +49,27 @@ export const EventPageWrapper = styled.div`
 
     .titleButton {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-bottom: 20px;
       @media (max-width: ${LG}) {
-        flex-direction:  column;
+        flex-direction: column;
       }
       h4 {
         margin-left: 50px;
         font-family: "baikal";
         font-weight: bold;
         font-size: 24px;
+        span{
+          color: #04a025
+        }
         @media (max-width: ${LG}) {
           text-align: center;
           font-size: 20px;
           margin-bottom: 20px;
           margin-left: 0;
-      }
+        }
       }
     }
   }

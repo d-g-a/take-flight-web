@@ -7,21 +7,20 @@ export const EventTabsStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: acumin-pro-extra-condensed, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  position: relative;
+  font-family: 'baikal';
+  font-style: lighter;
+  font-weight: lighter;
+  margin-bottom: 50px;
+
 
   p {
     margin-top: 10px;
-    position: absolute;
+
     width: 80vw;
     text-align: center;
-    font-size: 64px;
+    font-size: 24px;
     padding: 20px;
-    color: #f2e7d7;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    color: #000;
     @media (max-width: 1260px) {
       position: relative;
     }

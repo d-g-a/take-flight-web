@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import KUTE from "kute.js";
 import psychTest from "../../images/psychTest.png";
 
+
 export const IntroAnimation = () => {
   // useEffect(() => {
   //   var triggerDiv = document.getElementById("wrapper");
@@ -75,15 +76,16 @@ export const IntroAnimation = () => {
   // }, []);
 
   const clicked = (e) => {
+    console.log(clicked)
     let tween1 = KUTE.to(
       ".ta-i",
       { path: ".t-f" },
-      { easing: "easingCubicInOut", duration: 1800 }
+      { easing: "easingCubicInOut", duration: 2500 }
     ).start();
     let tween2 = KUTE.to(
       ".ak-i",
       { path: ".ake-f" },
-      { easing: "easingCubicInOut", duration: 1800 }
+      { easing: "easingCubicInOut", duration: 2500 }
     ).start();
     // let tween3 = KUTE.to(
     //   ".fli-i",
@@ -103,13 +105,15 @@ export const IntroAnimation = () => {
 
     !tween1.playing && tween1.start();
     !tween2.playing && tween2.start();
-    //!tween3.playing && tween3.start();
-     //!tween4.playing && tween4.start();
+    // !tween3.playing && tween3.start();
+    // !tween4.playing && tween4.start();
     // !tween5.playing && tween5.start();
+    
   };
 
   return (
-    <IntroWrapper onClick={(e) => clicked(e)}>
+    <IntroWrapper onMouseEnter={(e) => clicked(e)}>
+      <button onClick={clicked}>ENTER</button>
       <Link to="/home">HOME</Link>
       <div className="container" id="wrapper">
         <div className="first-box">
@@ -128,15 +132,12 @@ export const IntroAnimation = () => {
             <pattern
               id="img1"
               patternUnits="userSpaceOnUse"
-              x="0"
-              y="0"
+            
               width="100vw"
               height="100vh"
             >
               <image
                 href={psychTest}
-                x="0"
-                y="0"
                 width="100vw"
                 height="100vh"
               />

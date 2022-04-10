@@ -37,6 +37,12 @@ export default {
       description: "Event short description for the experience page",
     },
     {
+      name: "graffiti",
+      type: "mainImage",
+      title: "Graffiti Event Name",
+      description: "Graffiti png for experiencie page",
+    },
+    {
       name: "description",
       type: "text",
       title: "Description",

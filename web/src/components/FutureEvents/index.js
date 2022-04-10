@@ -7,6 +7,7 @@ import Tab from "react-bootstrap/Tab";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MarqueeTest } from "../MarqueeTest";
 import isotipo from "../../images/isotipo.svg";
+import { FloatingFooterBack } from "../FloatingFooterBack";
 
 import sanityClient from "../../client.js";
 
@@ -67,7 +68,6 @@ export const FutureEvents = () => {
       .catch(console.error);
   }, []);
 
-
   return (
     <div>
       {!allEvents ? (
@@ -77,30 +77,29 @@ export const FutureEvents = () => {
         </LoadingWrapper>
       ) : (
         <FutureEventsStyled>
-          <div className="header">
-            <Link to="/home">BACK</Link>
-          </div>
-          <h1>UPCOMING EVENTS</h1>
-          <Tabs
-            id="controlled-tab-example"
-            activeKey={key}
-            onSelect={(k) => setKey(k)}
-            className="mb-3 tabSelector"
-            defaultActiveKey={allEvents?.[0]?.title}
-          >
-            {allEvents?.map((event, index) => {
-              return (
-                <Tab
-                  eventKey={event.title}
-                  title={event.title}
-                  tabClassName="individualTab"
-                  activeKey={event.title}
-                >
-                  <EventPage eventInfo={event} key={key }/>
-                </Tab>
-              );
-            })}
-          </Tabs>
+          <FloatingFooterBack>
+            <h1>UPCOMING EVENTS</h1>
+            <Tabs
+              id="controlled-tab-example"
+              activeKey={key}
+              onSelect={(k) => setKey(k)}
+              className="mb-3 tabSelector"
+              defaultActiveKey={allEvents?.[0]?.title}
+            >
+              {allEvents?.map((event, index) => {
+                return (
+                  <Tab
+                    eventKey={event.title}
+                    title={event.title}
+                    tabClassName="individualTab"
+                    activeKey={event.title}
+                  >
+                    <EventPage eventInfo={event} key={key} />
+                  </Tab>
+                );
+              })}
+            </Tabs>
+          </FloatingFooterBack>
         </FutureEventsStyled>
       )}
     </div>
