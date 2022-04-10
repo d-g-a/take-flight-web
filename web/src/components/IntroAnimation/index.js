@@ -1,82 +1,115 @@
 import React, { useEffect } from "react";
 import { IntroWrapper } from "./style";
 import { Link } from "gatsby";
-import  KUTE  from "kute.js";
-import psychTest from '../../images/psychTest.png'
+import KUTE from "kute.js";
+import psychTest from "../../images/psychTest.png";
 
 export const IntroAnimation = () => {
-  
-  useEffect(() => {
-    var triggerDiv = document.getElementById("wrapper");
-    var firstBox = document.querySelector(".first-box");
-    var middleBox = document.querySelector(".middle-box");
-    var secondBox = document.querySelector(".second-box");
-    var thirdBox = document.querySelector(".third-box");
+  // useEffect(() => {
+  //   var triggerDiv = document.getElementById("wrapper");
+  //   var firstBox = document.querySelector(".first-box");
+  //   var middleBox = document.querySelector(".middle-box");
+  //   var secondBox = document.querySelector(".second-box");
+  //   var thirdBox = document.querySelector(".third-box");
 
-    firstBox.addEventListener(
-      "mouseenter",
-      function (event) {
-        var tween1 = KUTE.to(
-          ".ta-i",
-          { path: ".t-f" },
-          { easing: "easingCubicInOut", yoyo: true, duration: 3000 }
-        ).start();
+  //   firstBox.addEventListener(
+  //     "mouseenter",
+  //     function (event) {
+  //       var tween1 = KUTE.to(
+  //         ".ta-i",
+  //         { path: ".t-f" },
+  //         { easing: "easingCubicInOut", yoyo: true, duration: 3000 }
+  //       ).start();
 
-        !tween1.playing && tween1.start();
-      },
-      false
-    );
+  //       !tween1.playing && tween1.start();
+  //     },
+  //     false
+  //   );
 
-    middleBox.addEventListener(
-      "mouseenter",
-      function (event) {
-        var tween2 = KUTE.to(
-          ".ak-i",
-          { path: ".ake-f" },
-          { easing: "easingCubicInOut", duration: 3000 }
-        ).start();
+  //   middleBox.addEventListener(
+  //     "mouseenter",
+  //     function (event) {
+  //       var tween2 = KUTE.to(
+  //         ".ak-i",
+  //         { path: ".ake-f" },
+  //         { easing: "easingCubicInOut", duration: 3000 }
+  //       ).start();
 
-        !tween2.playing && tween2.start();
-      },
-      false
-    );
-    secondBox.addEventListener(
-      "mouseenter",
-      function (event) {
-        var tween3 = KUTE.to(
-          ".fli-i",
-          { path: ".f-f" },
-          { easing: "easingCubicInOut", duration: 3000 }
-        ).start();
-        var tween4 = KUTE.to(
-          ".gh-i",
-          { path: ".lig-f" },
-          { easing: "easingCubicInOut", duration: 3000 }
-        ).start();
+  //       !tween2.playing && tween2.start();
+  //     },
+  //     false
+  //   );
+  //   secondBox.addEventListener(
+  //     "mouseenter",
+  //     function (event) {
+  //       var tween3 = KUTE.to(
+  //         ".fli-i",
+  //         { path: ".f-f" },
+  //         { easing: "easingCubicInOut", duration: 3000 }
+  //       ).start();
+  //       var tween4 = KUTE.to(
+  //         ".gh-i",
+  //         { path: ".lig-f" },
+  //         { easing: "easingCubicInOut", duration: 3000 }
+  //       ).start();
 
-        !tween3.playing && tween3.start();
-        !tween4.playing && tween4.start();
-      },
-      false
-    );
+  //       !tween3.playing && tween3.start();
+  //       !tween4.playing && tween4.start();
+  //     },
+  //     false
+  //   );
 
-    thirdBox.addEventListener(
-      "mouseenter",
-      function (event) {
-        var tween5 = KUTE.to(
-          ".tt-i",
-          { path: ".tf-f" },
-          { easing: "easingCubicInOut", duration: 3000 }
-        ).start();
+  //   thirdBox.addEventListener(
+  //     "mouseenter",
+  //     function (event) {
+  //       var tween5 = KUTE.to(
+  //         ".tt-i",
+  //         { path: ".tf-f" },
+  //         { easing: "easingCubicInOut", duration: 3000 }
+  //       ).start();
 
-        !tween5.playing && tween5.start();
-      },
-      false
-    );
-  }, []);
+  //       !tween5.playing && tween5.start();
+  //     },
+  //     false
+  //   );
+  // }, []);
+
+  const clicked = (e) => {
+    let tween1 = KUTE.to(
+      ".ta-i",
+      { path: ".t-f" },
+      { easing: "easingCubicInOut", duration: 1800 }
+    ).start();
+    let tween2 = KUTE.to(
+      ".ak-i",
+      { path: ".ake-f" },
+      { easing: "easingCubicInOut", duration: 1800 }
+    ).start();
+    // let tween3 = KUTE.to(
+    //   ".fli-i",
+    //   { path: ".f-f" },
+    //   { easing: "easingCubicInOut", duration: 3000 }
+    // ).start();
+    // let tween4 = KUTE.to(
+    //   ".gh-i",
+    //   { path: ".lig-f" },
+    //   { easing: "easingCubicInOut", duration: 3000 }
+    // ).start();
+    // let tween5 = KUTE.to(
+    //   ".tt-i",
+    //   { path: ".tf-f" },
+    //   { easing: "easingCubicInOut", duration: 3000 }
+    // ).start();
+
+    !tween1.playing && tween1.start();
+    !tween2.playing && tween2.start();
+    //!tween3.playing && tween3.start();
+     //!tween4.playing && tween4.start();
+    // !tween5.playing && tween5.start();
+  };
 
   return (
-    <IntroWrapper>
+    <IntroWrapper onClick={(e) => clicked(e)}>
       <Link to="/home">HOME</Link>
       <div className="container" id="wrapper">
         <div className="first-box">

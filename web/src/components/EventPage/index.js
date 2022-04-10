@@ -77,7 +77,7 @@ export const EventPage = ({ eventInfo, key }) => {
                 <a href={`https://${eventInfo.url}`}>GET TICKETS</a>
               </button>
           </div>
-          <Footer /> 
+          <Footer linkTo="/home" /> 
         </EventPageWrapper>
       )}
     </div>

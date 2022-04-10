@@ -44,7 +44,7 @@ export const GlobalScroll = () => {
             <TeachersPage />
           </section>
           <section>
-            <Footer className="panel footer"/>
+            <Footer linkTo="#landing" className="panel footer"/>
           </section>
         {/* </div> */}
       </GlobalScrollStyled>

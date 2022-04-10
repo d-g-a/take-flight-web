@@ -5,7 +5,7 @@ import { SM, MD, LG } from "../../constants/mediaQueries";
 export const LandingStyled = styled.div`
   background-color: black;
   color: white;
-  height: 90vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -13,10 +13,10 @@ export const LandingStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-image: url(${(props) => props.landingImage});
+  /* background-image: url(${(props) => props.landingImage});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 
   video {
     position: absolute;
@@ -26,6 +26,21 @@ export const LandingStyled = styled.div`
     height: 100vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
+  }
+
+  #bg_container {
+    height: 100vh;
+    overflow: hidden;
+  }
+  #bg {
+    width: 100vw;
+    height: 100vh;
+  }
+  #content {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    text-shadow: #000 2px 2px;
   }
 
   .delayed-section {
@@ -60,8 +75,6 @@ export const LandingStyled = styled.div`
       width: 90vw;
       left: 5vw;
     }
-    
-
   }
 
   .TakeFlight3D {
@@ -79,6 +92,5 @@ export const LandingStyled = styled.div`
         opacity: 1;
       }
     }
-   
   }
 `;

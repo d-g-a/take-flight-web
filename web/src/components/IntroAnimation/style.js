@@ -4,25 +4,24 @@ export const IntroWrapper = styled.div`
   width: 100vw;
   height: 100vh;
 
-  .st0{
+  .st0 {
     //fill:url('#img1')
     fill: #fff;
   }
 
-    /* background: url("https://4.bp.blogspot.com/-24y91W-nPOI/V4ugJsZ6eQI/AAAAAAAAUb8/EWAFXebHEbQwF2n_u_VQOquOdcoAhQVVgCLcB/s1600/CROM%2BMAG.jpg");
+  /* background: url("https://4.bp.blogspot.com/-24y91W-nPOI/V4ugJsZ6eQI/AAAAAAAAUb8/EWAFXebHEbQwF2n_u_VQOquOdcoAhQVVgCLcB/s1600/CROM%2BMAG.jpg");
     background-position: center center; */
-    background-color: #000;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-
+  background-color: #000;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 
   .container {
     position: relative;
@@ -32,8 +31,8 @@ export const IntroWrapper = styled.div`
     justify-content: center;
     align-items: center;
     .first-box {
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
       background-color: transparent;
       display: flex;
       justify-content: center;

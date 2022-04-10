@@ -4,8 +4,7 @@ import Logotipo3D from "../../images/Logo_3D2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import testLoop from "../Video/test_loop.mp4";
-import { MarqueeHeader } from "../MarqueeHeader";
+import testLoop from "../Video/take_loop.mp4";
 
 import sanityClient from "../../client.js";
 
@@ -91,7 +90,29 @@ export const Landing = () => {
       <video autoPlay loop muted>
         <source src={testLoop} type="video/mp4" />
       </video>
-      <MarqueeHeader marqueeText={marqueeText?.[0].title} />
+
+      {/* <div id="bg_container">
+        <iframe
+        id="bg"
+          width="1920"
+          height="1080"
+          src="https://www.youtube.com/embed/k0r59oZgerc?controls=1?autoplay=1?loop=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div> */}
+
+      {/* <iframe
+        src="https://player.vimeo.com/video/697190262?h=1cd6dd5353?background=1"
+        width="640"
+        height="360"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe> */}
+
       <div id="del1" class="delayed-section" data-scrub="0.4">
         <div className="innerContainer">
           <img src={Logotipo3D} className="logo" />
