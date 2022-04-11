@@ -114,7 +114,7 @@ export const EventsPageStyled = styled.div`
       width: 100%;
       position: absolute;
       right: 10px;
-      bottom: -20px;
+      bottom: 20px;
     }
 
     a:hover {

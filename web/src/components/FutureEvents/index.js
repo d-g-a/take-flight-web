@@ -68,10 +68,7 @@ export const FutureEvents = () => {
       .catch(console.error);
   }, []);
 
-  let locationEvent = window.location.hash
-    .replace(/#/g, "")
-    .replaceAll(/%20/g, " ")
-    .trim();
+  const isBrowser = () => typeof window !== "undefined";
 
   return (
     <div>
@@ -91,7 +88,17 @@ export const FutureEvents = () => {
               className="mb-3 tabSelector"
               //defaultActiveKey={allEvents?.[0]?.title}
               defaultActiveKey={
-                locationEvent === "" ? allEvents?.[0]?.title : locationEvent
+                isBrowser() &&
+                window.location.hash
+                  .replace(/#/g, "")
+                  .replaceAll(/%20/g, " ")
+                  .trim() === ""
+                  ? allEvents?.[0]?.title
+                  : isBrowser() &&
+                    window.location.hash
+                      .replace(/#/g, "")
+                      .replaceAll(/%20/g, " ")
+                      .trim()
               }
             >
               {allEvents?.map((event, index) => {
