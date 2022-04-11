@@ -7,12 +7,12 @@ export const IntroWrapper = styled.div`
   .st0 {
     width: 100vw;
     height: 100vw;
-    fill: url("#img1");
+    fill: url(${(props) => props.animationImage});
     fill: #fff;
   }
 
-  /* background: url("https://4.bp.blogspot.com/-24y91W-nPOI/V4ugJsZ6eQI/AAAAAAAAUb8/EWAFXebHEbQwF2n_u_VQOquOdcoAhQVVgCLcB/s1600/CROM%2BMAG.jpg");
-    background-position: center center; */
+  background: url(${(props) => props.backgroundImage});
+  background-position: center center;
   background-color: #000;
   overflow-x: hidden;
   box-sizing: border-box;

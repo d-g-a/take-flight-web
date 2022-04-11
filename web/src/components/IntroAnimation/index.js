@@ -1,11 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { IntroWrapper } from "./style";
 import { Link } from "gatsby";
 import KUTE from "kute.js";
 import psychTest from "../../images/psychTest.png";
 
+import sanityClient from "../../client.js";
 
 export const IntroAnimation = () => {
+  const [images, setImages] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "intro-animation"]{
+        title,
+        animation{
+              alt,
+              caption,
+              asset->{
+                url
+          }
+        },
+        background{
+          alt,
+          caption,
+          asset->{
+            url
+      }
+    },
+      }`
+      )
+      .then((data) => setImages(data))
+      .catch(console.error);
+  }, []);
+
+  console.log(images);
   // useEffect(() => {
   //   var triggerDiv = document.getElementById("wrapper");
   //   var firstBox = document.querySelector(".first-box");
@@ -76,7 +105,7 @@ export const IntroAnimation = () => {
   // }, []);
 
   const clicked = (e) => {
-    console.log(clicked)
+    console.log(clicked);
     let tween1 = KUTE.to(
       ".ta-i",
       { path: ".t-f" },
@@ -108,11 +137,14 @@ export const IntroAnimation = () => {
     // !tween3.playing && tween3.start();
     // !tween4.playing && tween4.start();
     // !tween5.playing && tween5.start();
-    
   };
 
   return (
-    <IntroWrapper onMouseEnter={(e) => clicked(e)}>
+    <IntroWrapper
+      onMouseEnter={(e) => clicked(e)}
+      backgroundImage={images?.[0]?.background.asset.url}
+      animationImage={images?.[0]?.animation.asset.url}
+    >
       <button onClick={clicked}>ENTER</button>
       <Link to="/home">HOME</Link>
       <div className="container" id="wrapper">
@@ -132,15 +164,10 @@ export const IntroAnimation = () => {
             <pattern
               id="img1"
               patternUnits="userSpaceOnUse"
-            
               width="100vw"
               height="100vh"
             >
-              <image
-                href={psychTest}
-                width="100vw"
-                height="100vh"
-              />
+              <image href={psychTest} width="100vw" height="100vh" />
             </pattern>
 
             <path

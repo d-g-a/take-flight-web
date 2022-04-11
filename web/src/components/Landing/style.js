@@ -65,7 +65,7 @@ export const LandingStyled = styled.div`
   }
 
   #del1 {
-    top: 10vh;
+    top: 5vh;
     left: 20vw;
     width: 60vw;
     @media (max-width: ${LG}) {

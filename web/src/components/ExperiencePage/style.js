@@ -77,6 +77,7 @@ export const EventsPageStyled = styled.div`
     -webkit-text-stroke-width: px;
     -webkit-text-stroke-color: black;
     -webkit-font-smoothing: antialiased;
+    margin-bottom: 20px;
     @media (max-width: ${SM}) {
       font-size: 32px;
     }
@@ -99,6 +100,7 @@ export const EventsPageStyled = styled.div`
     width: auto;
     min-width: 600px;
     margin: 20px 20px 40px;
+   overflow: visible;
     h4 {
       font-family: "baikal";
       font-style: bold;
@@ -115,7 +117,7 @@ export const EventsPageStyled = styled.div`
       bottom: -20px;
     }
 
-    h4:hover {
+    a:hover {
       color: #04a025;
     }
   }

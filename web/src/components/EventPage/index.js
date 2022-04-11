@@ -53,7 +53,7 @@ export const EventPage = ({ eventInfo, key }) => {
   }, []);
   
   return (
-    <div>
+    <div id={eventInfo.title}>
       {!eventInfo ? (
         <LoadingWrapper>
           <h1>LOADING</h1>

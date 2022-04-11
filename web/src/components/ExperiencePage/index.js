@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { EventsPageStyled } from "./style";
 import { ExperienceTabs } from "./ExperienceTabs";
-import Tabs from "react-bootstrap/Tabs";
-import Tab from "react-bootstrap/Tab";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "gatsby";
-import wtow from "../../images/wtow_green.png";
-
-import { EventThumbnail } from "./EventThumbnail";
 
 import sanityClient from "../../client.js";
 
 export const ExperiencePage = () => {
-  const [key, setKey] = useState("home");
   const [allEvents, setAllEvents] = useState(null);
 
   useEffect(() => {
@@ -49,41 +44,10 @@ export const ExperiencePage = () => {
     <EventsPageStyled id="experience">
       <div className="Content">
         <h2>ABOUT THE EXPERIENCE</h2>
-        <Tabs
-          id="controlled-tab-example"
-          activeKey={key}
-          onSelect={(k) => setKey(k)}
-          className="mb-3 tabSelector"
-          defaultActiveKey="home"
-        >
-          {/* <Tab
-            eventKey="home"
-            title="ABOUT"
-            tabClassName="individualTab"
-            activeKey="home"
-          >
-            <ExperienceTabs />
-          </Tab> */}
-          <ExperienceTabs />
-
-          {/* {allEvents?.map((event) => (
-            <Tab
-              eventKey={event?.title}
-              title={event?.title}
-              tabClassName="individualTab"
-              activeKey={event?.title}
-            >
-              <EventThumbnail
-                backgroundImage={event?.image_1.asset.url}
-                eventInfo={event}
-              />
-            </Tab>
-          ))} */}
-        </Tabs>
         <ExperienceTabs />
         <div className="events">
           {allEvents?.map((event) => (
-            <Link to="/events">
+            <Link to={`/events#${event.title}`}>
               <button className="eventButton">
                 <img src={event.graffiti.asset.url} alt="test" />
                 <h4>{event.title}</h4>

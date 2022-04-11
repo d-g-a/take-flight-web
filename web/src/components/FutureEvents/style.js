@@ -56,10 +56,10 @@ export const FutureEventsStyled = styled.div`
     margin: 0;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
-    @media (max-width: ${LG}) {
+    /* @media (max-width: ${LG}) {
       border-bottom-left-radius: 1em;
       border-bottom-right-radius: 1em;
-    }
+    } */
   }
 
   .nav-tabs {
