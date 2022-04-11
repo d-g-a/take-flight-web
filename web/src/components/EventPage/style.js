@@ -36,7 +36,7 @@ export const EventPageWrapper = styled.div`
     p {
       width: 90vw;
       padding-bottom: 20px;
-      font-family: 'baikal';
+      font-family: "baikal";
       font-weight: lighter;
       font-style: lighter;
       font-size: 24px;
@@ -44,6 +44,12 @@ export const EventPageWrapper = styled.div`
       @media (max-width: ${LG}) {
         font-size: 32px;
         width: 90vw;
+      }
+      @media (max-width: ${LG}) {
+        font-size: 24px;
+      }
+      @media (max-width: ${LG}) {
+        font-size: 18px;
       }
     }
 
@@ -61,8 +67,8 @@ export const EventPageWrapper = styled.div`
         font-family: "baikal";
         font-weight: bold;
         font-size: 24px;
-        span{
-          color: #04a025
+        span {
+          color: #04a025;
         }
         @media (max-width: ${LG}) {
           text-align: center;

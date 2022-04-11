@@ -104,9 +104,16 @@ export const EventsPageStyled = styled.div`
     @media (max-width: ${MD}) {
       min-width: 400px;
     }
-
     @media (max-width: ${SM}) {
       min-width: 320px;
+    }
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: #04a025;
     }
     h4 {
       font-family: "baikal";
@@ -128,10 +135,6 @@ export const EventsPageStyled = styled.div`
       position: absolute;
       right: 10px;
       bottom: 20px;
-    }
-
-    a:hover {
-      color: #04a025;
     }
   }
 
