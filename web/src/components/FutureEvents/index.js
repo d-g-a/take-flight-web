@@ -68,15 +68,11 @@ export const FutureEvents = () => {
       .catch(console.error);
   }, []);
 
-  console.log(window.location);
-  console.log(key);
-
   let locationEvent = window.location.hash
     .replace(/#/g, "")
     .replaceAll(/%20/g, " ")
     .trim();
 
-  console.log(locationEvent);
   return (
     <div>
       {!allEvents ? (
@@ -99,7 +95,6 @@ export const FutureEvents = () => {
               }
             >
               {allEvents?.map((event, index) => {
-                console.log(event.title);
                 return (
                   <Tab
                     eventKey={event.title}

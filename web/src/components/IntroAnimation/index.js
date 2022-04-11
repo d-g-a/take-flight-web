@@ -34,7 +34,6 @@ export const IntroAnimation = () => {
       .catch(console.error);
   }, []);
 
-  console.log(images);
   // useEffect(() => {
   //   var triggerDiv = document.getElementById("wrapper");
   //   var firstBox = document.querySelector(".first-box");
@@ -105,7 +104,6 @@ export const IntroAnimation = () => {
   // }, []);
 
   const clicked = (e) => {
-    console.log(clicked);
     let tween1 = KUTE.to(
       ".ta-i",
       { path: ".t-f" },
