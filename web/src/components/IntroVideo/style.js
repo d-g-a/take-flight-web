@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MD } from "../../constants/mediaQueries";
+import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const IntroVideoWrapper = styled.div`
   width: 100vw;
@@ -22,13 +22,25 @@ export const IntroVideoWrapper = styled.div`
   }
 
   button {
-    width: 20vw;
+    width: 40vw;
     top: 45vh;
-    left: 40vw;
+    left: 30vw;
     border-radius: 40px;
     padding: 10px 20px;
     position: absolute;
     background-color: #f2e7d7;
+    @media (max-width: ${LG}) {
+      width: 50vw;
+      left: 25vw;
+    }
+    @media (max-width: ${MD}) {
+      width: 60vw;
+      left: 20vw;
+    }
+    @media (max-width: ${SM}) {
+      width: 60vw;
+      left: 20vw;
+    }
   }
 
   a {
@@ -37,6 +49,15 @@ export const IntroVideoWrapper = styled.div`
     font-family: "baikal";
     font-style: bold;
     font-weight: bold;
+    @media (max-width: ${LG}) {
+      font-size: 28px;
+    }
+    @media (max-width: ${MD}) {
+      font-size: 24px;
+    }
+    @media (max-width: ${SM}) {
+      font-size: 18px;
+    }
   }
 
   a:hover {
