@@ -22,7 +22,7 @@ export const HamburgerMenu = ({ close, eventUrl }) => {
         </Link>
       </Menu>
       <LogoWrapper>
-        <Link to="/home">
+        <Link to="/home" onClick={close}>
           <img src={isotipo} alt="logo" />
         </Link>
       </LogoWrapper>

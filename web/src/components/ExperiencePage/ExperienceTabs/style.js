@@ -25,15 +25,12 @@ export const EventTabsStyled = styled.div`
       position: relative;
     }
     @media (max-width: ${LG}) {
-      font-size: 50px;
+      font-size: 20px;
       width: 95vw;
       margin-bottom: 20px;
     }
-    @media (max-width: ${MD}) {
-      font-size: 44px;
-    }
     @media (max-width: ${SM}) {
-      font-size: 32px;
+      font-size: 18px;
     }
   }
 

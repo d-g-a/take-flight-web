@@ -2,18 +2,18 @@ import styled from "styled-components";
 import { SM, MD, LG } from "../../constants/mediaQueries";
 
 export const FloatingFooterStyled = styled.div`
- .display {
-      @media (max-width: ${MD}) {
-        display: none;
-      }
-    }
-
-    .mobile {
+  .display {
+    @media (max-width: ${MD}) {
       display: none;
-      @media (max-width: ${MD}) {
-        display: flex;
-      }
     }
+  }
+
+  .mobile {
+    display: none;
+    @media (max-width: ${MD}) {
+      display: flex;
+    }
+  }
   footer {
     position: fixed;
     bottom: 30px;
@@ -42,8 +42,9 @@ export const FloatingFooterStyled = styled.div`
       text-decoration: none;
       color: #4814cc;
       font-family: "baikal", sans-serif;
-      font-weight: normal;
+      font-weight: bold;
       margin: 0;
+      font-size: 16px;
     }
     a:hover {
       color: #000;

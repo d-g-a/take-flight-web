@@ -8,7 +8,6 @@ export const SecondaryContentWrapper = styled.div`
   color: #f2e7d7;
   background-color: #000;
   overflow: hidden;
- 
 
   @media (max-width: ${MD}) {
     height: 140vh;
@@ -63,32 +62,31 @@ export const SecondaryContentWrapper = styled.div`
     right: 10%;
   }
 
-
   @media (max-width: ${LG}) {
     #del1 {
-    top: 120vh;
-    left: 6vw;
-    width: 400px;
-  }
+      top: 120vh;
+      left: 6vw;
+      width: 400px;
+    }
 
-  #del2 {
-    top: 150vh;
-    left: 35vw;
-    width: 400px;
-  }
+    #del2 {
+      top: 150vh;
+      left: 35vw;
+      width: 400px;
+    }
 
-  #del3 {
-    top: 112vh;
-    left: 67vw;
-    width: 200px;
-    right: 5vw;
-  }
+    #del3 {
+      top: 112vh;
+      left: 67vw;
+      width: 200px;
+      right: 5vw;
+    }
 
-  #del4 {
-    top: 115vh;
-    left: 10%;
-    right: 10%;
-  }
+    #del4 {
+      top: 115vh;
+      left: 5vw;
+      right: 5vw;
+    }
   }
 
   @media (max-width: ${MD}) {
@@ -112,11 +110,10 @@ export const SecondaryContentWrapper = styled.div`
 
     #del4 {
       top: 120vh;
-      left: 10vw;
-      right: 10vw;
+      left: 5vw;
+      right: 5vw;
     }
-
-  } 
+  }
 
   @media (max-width: ${SM}) {
     #del1 {
@@ -140,13 +137,10 @@ export const SecondaryContentWrapper = styled.div`
 
     #del4 {
       top: 120vh;
-      left: 10vw;
-      right: 10vw;
+      left: 5vw;
+      right: 5vw;
     }
-
   }
-
-
 
   .sub-title {
     text-transform: uppercase;
@@ -162,16 +156,17 @@ export const SecondaryContentWrapper = styled.div`
       font-size: 48px;
       width: 90vw;
     }
-    
+
     @media (max-width: ${MD}) {
-      font-size: 40px;
+      font-size: 44px;
+      width: 90vw;
     }
     @media (max-width: ${SM}) {
-      width: 85vw;
-      font-size: 24px;
+      width: 90vw;
+      font-size: 32px;
       -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-color: black;
+      -webkit-font-smoothing: antialiased;
+    }
   }
-  } 
 `;

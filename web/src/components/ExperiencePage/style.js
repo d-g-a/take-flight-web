@@ -83,13 +83,13 @@ export const EventsPageStyled = styled.div`
     }
   }
 
-  .events{
+  .events {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   }
+  }
 
   .eventButton {
     border: 1.5px solid black;
@@ -100,7 +100,14 @@ export const EventsPageStyled = styled.div`
     width: auto;
     min-width: 600px;
     margin: 20px 20px 40px;
-   overflow: visible;
+    overflow: visible;
+    @media (max-width: ${MD}) {
+      min-width: 400px;
+    }
+
+    @media (max-width: ${SM}) {
+      min-width: 320px;
+    }
     h4 {
       font-family: "baikal";
       font-style: bold;
@@ -108,6 +115,12 @@ export const EventsPageStyled = styled.div`
       font-size: 24px;
       margin: 0;
       padding: 0;
+      @media (max-width: ${MD}) {
+        font-size: 18px;
+      }
+      @media (max-width: ${SM}) {
+        font-size: 14px;
+      }
     }
 
     img {

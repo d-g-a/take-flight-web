@@ -17,7 +17,7 @@ export const FooterWrapper = styled.div`
   color: #f2e7d7;
 
   ul {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0;
     .logo{
       cursor: pointer;
