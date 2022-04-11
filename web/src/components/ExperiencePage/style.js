@@ -101,6 +101,7 @@ export const EventsPageStyled = styled.div`
     min-width: 600px;
     margin: 20px 20px 40px;
     overflow: visible;
+    color: #000;
     @media (max-width: ${MD}) {
       min-width: 400px;
     }
