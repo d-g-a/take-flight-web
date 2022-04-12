@@ -12,7 +12,7 @@ export const IntroVideoWrapper = styled.div`
     display: none;
   }
 
-  @media (max-width: ${MD}) {
+  @media (max-width: ${LG}) {
     .desktop {
       display: none;
     }

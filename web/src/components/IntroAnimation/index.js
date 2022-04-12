@@ -221,9 +221,10 @@ export const IntroAnimation = () => {
         <svg
           id="a big-logo"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 widthOfContainer heightOfContainer"
-          width="100%"
-          height="100%"
+          viewBox="0 0 1920 1080"
+          //viewBox="0 0 194 186"
+          // width="100%"
+          // height="100%"
         >
           <pattern
             id="img1"

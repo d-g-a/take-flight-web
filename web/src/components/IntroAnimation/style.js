@@ -4,12 +4,8 @@ export const IntroWrapper = styled.div`
   .st0 {
     fill: url("#img1");
   }
-
   background: url(${(props) => props.backgroundImage});
   background-position: center center;
-  background-size: auto, cover;
-  padding: 0;
-  margin: 0;
 
   .container {
     //position: relative;
@@ -19,21 +15,17 @@ export const IntroWrapper = styled.div`
     align-items: flex-start;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+
     svg {
       display: flex;
       justify-content: center;
-      position: fixed;
-      top: 10px;
-      left: -55px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(0%, -5%);
       pointer-events: none;
-      width: 150vw;
-      height: 100vh;
-      margin: 0;
-      margin-bottom: 100px;
-      margin-right: 100px;
-      padding: 0;
-      overflow: hidden;
+      width: 100vw;
+      height: 105vh;
     }
   }
 `;
