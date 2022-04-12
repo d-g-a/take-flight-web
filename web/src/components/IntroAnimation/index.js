@@ -135,7 +135,7 @@ export const IntroAnimation = () => {
     //tl.add(scrollDown, "+=2");
     tl.add(function () {
       isBrowser() ? (window.location = "/home") : isBrowser();
-    }, "+=4");
+    }, "+=3.5");
   }, []);
 
   // const clicked = (e) => {
