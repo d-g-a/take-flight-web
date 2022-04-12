@@ -12,8 +12,8 @@ const IndexPage = (props) => {
         <meta name="icon" href={favicon} />
       </Helmet>
       <SEO
-      //title={site.title}
-      //description={site.description}
+        title="Take Flight"
+        description="Take Flight Intensive"
       //keywords={site.keywords}
       />
       <IntroVideo />
