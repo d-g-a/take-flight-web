@@ -16,14 +16,18 @@ export const IntroWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     svg {
-      position: absolute;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 10px;
+      left: -55px;
       pointer-events: none;
-      width: 100vw;
+      width: 150vw;
       height: 100vh;
       margin: 0;
       margin-bottom: 100px;
