@@ -17,16 +17,19 @@ export const IntroWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     svg {
       position: absolute;
-      top: -5vh;
-      left: -5vw;
       pointer-events: none;
-      width: 150vw;
-      height: 150vh;
+      width: 100vw;
+      height: 100vh;
       margin: 0;
+      margin-bottom: 100px;
+      margin-right: 100px;
       padding: 0;
+      overflow: hidden;
     }
   }
 `;
