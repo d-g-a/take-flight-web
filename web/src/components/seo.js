@@ -21,18 +21,18 @@ function SEO({ description, lang, meta, keywords, title, image }) {
       title={title}
       titleTemplate={title === siteTitle ? "%s" : `%s | ${siteTitle}`}
       meta={[
-        {
-          name: "description",
-          content: metaDescription,
-        },
+        // {
+        //   name: "description",
+        //   content: metaDescription,
+        // },
         {
           property: "og:title",
           content: title,
         },
-        {
-          property: "og:description",
-          content: metaDescription,
-        },
+        // {
+        //   property: "og:description",
+        //   content: metaDescription,
+        // },
         {
           property: "og:type",
           content: "website",

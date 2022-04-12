@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 const Home = () => {
   return (
     <Layout>
-      <SEO title="Take Flight | Home" />
+      <SEO title="Home" />
       <Helmet>
         <meta name="icon" href="../images/favicon.ico" />
       </Helmet>

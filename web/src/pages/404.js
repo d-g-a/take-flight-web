@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 const NotFoundPage = () => {
   return (
     <>
-      <SEO title="Take Flight | Not found" />
+      <SEO title="404 | Not found" />
       <Helmet>
         <meta name="icon" href="../images/favicon.ico" />
       </Helmet>
