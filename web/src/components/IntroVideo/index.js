@@ -3,6 +3,7 @@ import { IntroVideoWrapper } from "./style";
 import testLoop from "../Video/take_loop.mp4";
 import { Link } from "gatsby";
 import sanityClient from "../../client.js";
+import { IntroAnimation } from "../IntroAnimation";  
 
 export const IntroVideo = () => {
   const [images, setImages] = useState(null);
@@ -33,12 +34,17 @@ export const IntroVideo = () => {
   }, []);
   return (
     <IntroVideoWrapper backgroundImage={images?.[0]?.background.asset.url}>
-      <video autoPlay loop muted className="video">
-        <source src={testLoop} type="video/mp4" />
-      </video>
-      <button>
-        <Link to="/home">ENTER SITE</Link>
-      </button>
+      <div className="desktop" >
+        <IntroAnimation />
+      </div>
+      <div className="mobile">
+        <video autoPlay loop muted className="video">
+          <source src={testLoop} type="video/mp4" />
+        </video>
+        <button>
+          <Link to="/home">ENTER SITE</Link>
+        </button>
+      </div>
     </IntroVideoWrapper>
   );
 };
