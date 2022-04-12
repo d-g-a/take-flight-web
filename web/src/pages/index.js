@@ -12,7 +12,7 @@ const IndexPage = (props) => {
       </Helmet>
       <SEO
         title="Take Flight"
-        //description="Take Flight Intensive"
+        description="Take Flight Intensive"
         //keywords={site.keywords}
       />
       <IntroVideo />

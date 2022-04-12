@@ -43,21 +43,21 @@ export default () =>
   S.list()
     .title("Content")
     .items([
-      // S.listItem()
-      //   .title("Settings")
-      //   .icon(MdSettings)
-      //   .child(
-      //     S.editor()
-      //       .id("siteSettings")
-      //       .schemaType("siteSettings")
-      //       .documentId("siteSettings")
-      //   ),
-      // S.divider(),
-      // S.listItem()
-      //   .title("Blog posts")
-      //   .icon(MdDescription)
-      //   .schemaType("post")
-      //   .child(S.documentTypeList("post").title("Blog posts")),
+      S.listItem()
+        .title("Settings")
+        .icon(MdSettings)
+        .child(
+          S.editor()
+            .id("siteSettings")
+            .schemaType("siteSettings")
+            .documentId("siteSettings")
+        ),
+      S.divider(),
+      S.listItem()
+        .title("Blog posts")
+        .icon(MdDescription)
+        .schemaType("post")
+        .child(S.documentTypeList("post").title("Blog posts")),
       S.listItem()
         .title("Past Teachers")
         .icon(MdPerson)
