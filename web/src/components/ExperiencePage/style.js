@@ -27,7 +27,8 @@ export const EventsPageStyled = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #f2e7d7;
+    color: #000;
+    border-bottom: 1.5px solid #000;
     @media (max-width: ${LG}) {
       flex-direction: column;
       justify-content: center;
@@ -41,7 +42,12 @@ export const EventsPageStyled = styled.div`
   }
 
   .nav-link.active {
-    background-color: #f2e7d7;
+    // background-color: #f2e7d7;
+    //border-bottom: 1px solid #000;
+    @media (max-width: ${LG}) {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+    }
   }
   .individualTab {
     border-top-left-radius: 20px;
@@ -50,7 +56,12 @@ export const EventsPageStyled = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    color: #f2e7d7;
+    color: #000;
+    @media (max-width: ${LG}) {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+    }
+    //border-bottom: 1.5px solid #000;
   }
 
   .nav-link {
@@ -59,6 +70,10 @@ export const EventsPageStyled = styled.div`
     border-top-right-radius: 20px;
     @media (max-width: ${SM}) {
       font-size: 14px;
+    }
+    @media (max-width: ${LG}) {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
     }
   }
 
@@ -113,10 +128,11 @@ export const EventsPageStyled = styled.div`
       color: #000;
     }
 
-    a:hover {
-      color: #04a025;
+    .hovered {
+      color: #4814cc;
     }
-    h4 {
+
+    a {
       font-family: "baikal";
       font-style: bold;
       font-weight: bold;
@@ -144,5 +160,6 @@ export const EventsPageStyled = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
   }
 `;

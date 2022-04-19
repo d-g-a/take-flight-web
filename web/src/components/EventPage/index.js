@@ -69,9 +69,9 @@ export const EventPage = ({ eventInfo, key }) => {
           <EventAliasMarquee eventAlias={eventInfo.eventAlias} />
           <div className="EventDetails">
             <div className="titleButton">
-              <h4> CITY: <span>{eventInfo.city}</span></h4>
-              <h4> LOCATION: <span>{eventInfo.location}</span></h4>
-              <h4> DATES: <span>{eventInfo.dates}</span></h4>
+              <h4> CITY <span>{eventInfo.city}</span></h4>
+              <h4> LOCATION <span>{eventInfo.location}</span></h4>
+              <h4> DATES <span>{eventInfo.dates}</span></h4>
             </div>
             <p>{eventInfo.description}</p>
               <button className="GetTicketsButton">

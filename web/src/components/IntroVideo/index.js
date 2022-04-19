@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { IntroVideoWrapper } from "./style";
-import testLoop from "../Video/take_loop.mp4";
+import introLoop from "../Video/enter_video_TF.mp4";
 import { Link } from "gatsby";
 import sanityClient from "../../client.js";
 import { IntroAnimation } from "../IntroAnimation";  
@@ -34,12 +34,12 @@ export const IntroVideo = () => {
   }, []);
   return (
     <IntroVideoWrapper backgroundImage={images?.[0]?.background.asset.url}>
-      <div className="desktop" >
+      {/* <div className="desktop" >
         <IntroAnimation />
-      </div>
+      </div> */}
       <div className="mobile">
         <video autoPlay loop muted className="video">
-          <source src={testLoop} type="video/mp4" />
+          <source src={introLoop} type="video/mp4" />
         </video>
         <button>
           <Link to="/home">ENTER SITE</Link>

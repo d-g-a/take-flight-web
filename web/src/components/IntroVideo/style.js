@@ -8,7 +8,7 @@ export const IntroVideoWrapper = styled.div`
   background-position: center center;
   background-color: #000;
 
-  .mobile {
+  /* .mobile {
     display: none;
   }
 
@@ -19,7 +19,7 @@ export const IntroVideoWrapper = styled.div`
     .mobile {
       display: flex;
     }
-  }
+  } */
 
   video {
     position: absolute;

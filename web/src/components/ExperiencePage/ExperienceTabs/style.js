@@ -7,11 +7,14 @@ export const EventTabsStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'baikal';
+  font-family: "baikal";
   font-style: lighter;
   font-weight: lighter;
-  margin-bottom: 50px;
-
+  margin-top: 50px;
+  margin-bottom: 100px;
+  @media (max-width: ${MD}) {
+    margin-bottom: 50px;
+    }
 
   p {
     margin-top: 10px;

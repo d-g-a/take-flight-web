@@ -151,6 +151,11 @@ export const SecondaryContentWrapper = styled.div`
     -webkit-font-smoothing: antialiased;
     line-height: 1.5em;
     text-align: center;
+    -webkit-text-stroke: 2px #000;
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    z-index: -1;
 
     @media (max-width: ${LG}) {
       font-size: 48px;
@@ -167,6 +172,11 @@ export const SecondaryContentWrapper = styled.div`
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;
       -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke: 1px #000;
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      z-index: -1;
     }
   }
 `;

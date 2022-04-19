@@ -35,7 +35,7 @@ export const EventPageWrapper = styled.div`
 
     p {
       width: 90vw;
-      padding-bottom: 20px;
+      padding-bottom: 60px;
       font-family: "baikal";
       font-weight: lighter;
       font-style: lighter;
@@ -58,7 +58,7 @@ export const EventPageWrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 60px;
       @media (max-width: ${LG}) {
         flex-direction: column;
       }

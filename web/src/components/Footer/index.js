@@ -4,19 +4,37 @@ import isotipo from "../../images/isotipo.svg";
 import isotipoPurple from "../../images/isotipo_purple.svg";
 import { Link } from "gatsby";
 
-export const Footer = ({linkTo}) => {
+export const Footer = ({ linkTo }) => {
   const [hover, setHover] = useState(false);
   return (
     <FooterWrapper>
       <ul>
         <li>
-          <a href="https://www.youtube.com/watch?v=kPX4PQeP0ZU ">YOUTUBE</a>
+          <a
+            href="https://www.youtube.com/channel/UCq3WvHbrUiMkT7F4qYHlUnQ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            YOUTUBE
+          </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/takeflightintensive_dublin">INSTAGRAM</a>
+          <a
+            href="https://www.instagram.com/takeflightintensive_dublin"
+            rel="noreferrer"
+            target="_blank"
+          >
+            INSTAGRAM
+          </a>
         </li>
         <li>
-          <a href="mailto:hello@takeflight.world">CONTACT</a>
+          <a
+            href="mailto:hello@takeflight.world"
+            rel="noreferrer"
+            target="_blank"
+          >
+            CONTACT
+          </a>
         </li>
         <li
           onMouseEnter={() => setHover(true)}
