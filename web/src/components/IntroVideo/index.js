@@ -42,7 +42,7 @@ export const IntroVideo = () => {
           <source src={introLoop} type="video/mp4" />
         </video>
         <button>
-          <Link to="/home">ENTER SITE</Link>
+          <Link to="/home">TAKE FLIGHT</Link>
         </button>
       </div>
     </IntroVideoWrapper>

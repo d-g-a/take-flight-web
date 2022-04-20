@@ -8,19 +8,6 @@ export const IntroVideoWrapper = styled.div`
   background-position: center center;
   background-color: #000;
 
-  /* .mobile {
-    display: none;
-  }
-
-  @media (max-width: ${LG}) {
-    .desktop {
-      display: none;
-    }
-    .mobile {
-      display: flex;
-    }
-  } */
-
   video {
     position: absolute;
     width: 100vw;
@@ -29,7 +16,7 @@ export const IntroVideoWrapper = styled.div`
     height: 100vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
-    @media (max-width: ${MD}) {
+    @media (max-width: ${LG}) {
       display: none;
     }
   }

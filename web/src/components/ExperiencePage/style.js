@@ -35,6 +35,15 @@ export const EventsPageStyled = styled.div`
     }
   }
 
+
+  .nav-tabs .nav-link{
+    border: 1.5px solid black;
+    border-bottom: none;
+    @media (max-width: ${LG}) {
+      border-bottom: 1.5px solid black;
+    }
+  }
+
   .tabSelector {
     margin: 0;
     border-top-left-radius: 1em;
@@ -42,11 +51,14 @@ export const EventsPageStyled = styled.div`
   }
 
   .nav-link.active {
-    // background-color: #f2e7d7;
+     background-color: #f2e7d7;
+     color: #000;
     //border-bottom: 1px solid #000;
+    
     @media (max-width: ${LG}) {
       border-bottom-left-radius: 1em;
       border-bottom-right-radius: 1em;
+      margin-bottom: 20px;
     }
   }
   .individualTab {
@@ -76,6 +88,7 @@ export const EventsPageStyled = styled.div`
       border-bottom-right-radius: 1em;
     }
   }
+
 
   ul {
     margin-bottom: 0 !important;

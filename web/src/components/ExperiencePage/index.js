@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { EventsPageStyled  } from "./style";
+import { EventsPageStyled } from "./style";
 import { ExperienceTabs } from "./ExperienceTabs";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
