@@ -10,6 +10,10 @@ export const TeacherPageStyled = styled.div`
   font-family: "baikal", sans-serif;
   font-weight: bold;
 
+  @media (max-width: ${LG}) {
+    height: auto;
+  }
+
   h1 {
     text-align: center;
     font-size: 72px;

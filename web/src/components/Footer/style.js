@@ -4,7 +4,7 @@ import { SM, MD } from "../../constants/mediaQueries";
 
 export const FooterWrapper = styled.div`
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
   background-color: #04a025;
   color: white;
   text-align: center;
@@ -14,7 +14,7 @@ export const FooterWrapper = styled.div`
   justify-content: center;
   align-items: center;
   color: #f2e7d7;
-  padding: 120px;
+  padding: 100px;
 
   ul {
     margin-top: 30px;
